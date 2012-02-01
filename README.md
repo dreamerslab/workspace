@@ -17,6 +17,7 @@
 - finish project coke
 
 ### Fred
+- setup dev env
 - compare cvl and make notes
 - project management compare and blogging
   - redmine, basecamp, wrike, trello,...
