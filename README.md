@@ -12,8 +12,6 @@
 ### General
 
 ### Ben
-- open wordpress account
-- add google apps account
 - employee insurance
 - finish project coke
 
