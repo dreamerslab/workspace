@@ -21,6 +21,7 @@
 - compare cvl and make notes
 - project management compare and blogging
   - redmine, basecamp, wrike, trello,...
+- rewrite dreamerscorp.com
 - learn jsdoc
 - write docs for existing projects including jquery and node
 - write a simple jquery light-box plugin
