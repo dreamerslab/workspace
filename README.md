@@ -1,4 +1,4 @@
-# DreamersLab Work dairy
+# DreamersLab Work Dairy
 
 ## Members
 - Ben
