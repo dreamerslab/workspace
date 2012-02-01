@@ -13,6 +13,7 @@
 
 #### FEB
 - 5, coke v0.0.3
+- 8, dreamerscorp.com rewrote
 - 28, all existing projects on github documented
 
 #### MAR
@@ -33,15 +34,20 @@
 
 
 ### Ben
+- 20120205
+  - finish project coke v0.0.3
 - employee insurance(50% done, wait for reply)
-- finish project coke
 
 ### Fred
-- add intro to dreamerslab.com
-- compare cvl and make notes
-- project management compare and blogging
-  - redmine, basecamp, wrike, trello,...
-- rewrite dreamerscorp.com
-- learn jsdoc
-- write docs for existing projects including jquery and node
-- write a simple jquery light-box plugin
+- 20120202
+  - add intro to dreamerslab.com
+  - compare cvl and make notes
+- 20120206
+  - project management compare and blogging including redmine, basecamp, wrike, trello,...
+- 20120208
+  - rewrite dreamerscorp.com
+- 20120228
+  - learn jsdoc
+  - write docs for existing projects including jquery and node
+- 20120302
+  - write a simple jquery light-box plugin
