@@ -16,7 +16,6 @@
 - finish project coke
 
 ### Fred
-- setup dev env
 - add intro to dreamerslab.com
 - compare cvl and make notes
 - project management compare and blogging
