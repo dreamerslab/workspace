@@ -47,7 +47,6 @@
 
 ### Fred
 - 20120202
-  - compare cvl and make notes
 - 20120206
   - project management compare and blogging including redmine, basecamp, wrike, trello,...
 - 20120208
