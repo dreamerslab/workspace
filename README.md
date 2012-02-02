@@ -15,6 +15,7 @@
 - 5, coke v0.0.3
 - 5, jsdc agenda
 - 8, dreamerscorp.com rewrote
+- 27, lemonade v0.0.1
 - 28, all existing projects on github documented
 
 #### MAR
