@@ -19,11 +19,13 @@
 - 28, all existing projects on github documented
 
 #### MAR
+- 24, all lemonade docs and code comments finished
 - 31, all coke docs and code comments finished
 
 #### APR
+- 1, launch lemonade-js.org beta1
 - 1, launch washabi.fm beta1
-- 1, launch cokejs.org beta1
+- 1, launch coke-js.org beta1
 
 #### MAY
 - 12, jsdc talks prepared
@@ -46,7 +48,6 @@
 - coke: protect_from_forgery
 
 ### Fred
-- 20120202
 - 20120206
   - project management compare and blogging including redmine, basecamp, wrike, trello,...
 - 20120208
