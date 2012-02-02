@@ -18,7 +18,7 @@
 - 28, all existing projects on github documented
 
 #### MAR
-- 31, all coke docs finished
+- 31, all coke docs and code comments finished
 
 #### APR
 - 1, launch washabi.fm beta1
@@ -54,3 +54,8 @@
   - write docs for existing projects including jquery and node
 - 20120302
   - write a simple jquery light-box plugin
+
+## Mason
+- 20120331
+  - all coke docs and code comments finished
+
