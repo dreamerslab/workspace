@@ -13,6 +13,7 @@
 
 #### FEB
 - 5, coke v0.0.3
+- 5, jsdc agenda
 - 8, dreamerscorp.com rewrote
 - 28, all existing projects on github documented
 
@@ -37,6 +38,7 @@
 ### Ben
 - 20120205
   - finish project coke v0.0.3
+  - jsdc agenda
 - employee insurance(50% done, wait for reply)
 
 ### Fred
