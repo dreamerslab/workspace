@@ -42,6 +42,7 @@
 - 20120206
   - namecard for fred
 - employee insurance(50% done, wait for reply)
+- coke: protect_from_forgery
 
 ### Fred
 - 20120202
