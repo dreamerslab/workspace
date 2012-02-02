@@ -39,6 +39,8 @@
 - 20120205
   - finish project coke v0.0.3
   - jsdc agenda
+- 20120206
+  - namecard for fred
 - employee insurance(50% done, wait for reply)
 
 ### Fred
