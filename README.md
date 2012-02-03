@@ -15,15 +15,15 @@
 - 5, coke v0.0.3
 - 5, jsdc agenda
 - 8, dreamerscorp.com rewrote
-- 27, lemonade v0.0.1
+- 27, whisky v0.0.1
 - 28, all existing projects on github documented
 
 #### MAR
-- 24, all lemonade docs and code comments finished
+- 24, all whisky docs and code comments finished
 - 31, all coke docs and code comments finished
 
 #### APR
-- 1, launch lemonade-js.org beta1
+- 1, launch whisky-js.org beta1
 - 1, launch washabi.fm beta1
 - 1, launch coke-js.org beta1
 
