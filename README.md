@@ -60,7 +60,7 @@
   - learn jsdoc
   - write docs for existing projects including jquery and node
 - 20120302
-  - write a simple jquery light-box plugin
+  - write a simple jquery light-box plugin and blogging
 - 20120305
   - todo list sample website with cideigniter and blogging
 - 20120306
@@ -68,7 +68,9 @@
 - 20120307
   - todo list sample website with coke and blogging
 - 201203010
-  - todo list sample website with bavkbone and blogging
+  - todo list sample website with backbone and blogging
+- 201203012
+  - todo list sample website with whisky and blogging
 
 ## Mason
 - 20120331
