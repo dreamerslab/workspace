@@ -41,7 +41,6 @@
 ### Ben
 - 20120205
   - finish project coke v0.0.2
-
 - 20120206
   - namecard for fred
 - employee insurance(50% done, wait for reply)
@@ -53,6 +52,10 @@
   - project management compare and blogging including redmine, basecamp, wrike, trello,...
 - 20120208
   - rewrite dreamerscorp.com
+- 20120212
+  - finished cvl stage 2
+- 20120214
+  - rewrite cvl with coke
 - 20120228
   - learn jsdoc
   - write docs for existing projects including jquery and node
