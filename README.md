@@ -62,7 +62,7 @@
 - 20120302
   - write a simple jquery light-box plugin and blogging
 - 20120305
-  - todo list sample website with cideigniter and blogging
+  - todo list sample website with codeigniter and blogging
 - 20120306
   - todo list sample website with rails and blogging
 - 20120307
