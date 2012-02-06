@@ -34,14 +34,14 @@
 
 
 ### Delayed Jobs
-- None
+- finish project coke v0.0.2
 
 
 
 ### Ben
 - 20120205
   - finish project coke v0.0.2
-  - jsdc agenda
+
 - 20120206
   - namecard for fred
 - employee insurance(50% done, wait for reply)
@@ -57,6 +57,14 @@
   - write docs for existing projects including jquery and node
 - 20120302
   - write a simple jquery light-box plugin
+- 20120305
+  - todo list sample website with cideigniter and blogging
+- 20120306
+  - todo list sample website with rails and blogging
+- 20120307
+  - todo list sample website with coke and blogging
+- 201203010
+  - todo list sample website with bavkbone and blogging
 
 ## Mason
 - 20120331
