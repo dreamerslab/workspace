@@ -45,7 +45,8 @@
 - 20120206
   - namecard for fred
 - employee insurance(50% done, wait for reply)
-- coke: protect_from_forgery
+- [coke]: protect_from_forgery
+- [coke]: easier extend coke generator
 
 ### Fred
 - 20120206
