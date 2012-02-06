@@ -31,7 +31,8 @@
 - 12, jsdc talks prepared
 - 19, jsdc
 
-
+#### One Day
+- make a kick ass name card browser app!!!
 
 ### Delayed Jobs
 - finish project coke v0.0.2
