@@ -42,8 +42,6 @@
 ### Ben
 - 20120205
   - finish project coke v0.0.2
-- 20120206
-  - namecard for fred
 - employee insurance(50% done, wait for reply)
 - [coke]: protect_from_forgery
 - [coke]: easier extend coke generator
