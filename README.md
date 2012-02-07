@@ -46,6 +46,8 @@
 - employee insurance(50% done, wait for reply)
 - [coke]: protect_from_forgery
 - [coke]: easier extend coke generator
+- blog about making a promotion video
+- buy domain for coke-js.org and whisky-js.org
 
 ### Fred
 - 20120206
