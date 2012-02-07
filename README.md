@@ -53,6 +53,7 @@
 - 20120206
   - project management compare and blogging including redmine, basecamp, wrike, trello,...
 - 20120208
+  - add wordpress custom field data to comparing article, then publish (see other article's setting )
   - rewrite dreamerscorp.com
 - 20120212
   - finished cvl stage 2
