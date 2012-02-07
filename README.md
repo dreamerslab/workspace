@@ -12,8 +12,6 @@
 ### General
 
 #### FEB
-- 5, coke v0.0.2
-- 5, jsdc agenda
 - 8, dreamerscorp.com rewrote
 - 27, whisky v0.0.1
 - 28, all existing projects on github documented
@@ -41,8 +39,6 @@
 
 
 ### Ben
-- 20120205
-  - finish project coke v0.0.2
 - employee insurance(50% done, wait for reply)
 - [coke]: protect_from_forgery
 - [coke]: easier extend coke generator
