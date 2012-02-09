@@ -34,7 +34,6 @@
 
 ### Delayed Jobs
 - finish project coke v0.0.2
-- project management compare and blogging
 
 
 
