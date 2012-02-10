@@ -31,6 +31,7 @@
 
 #### One Day
 - make a kick ass name card browser app!!!
+- make a kick ass project management browser app based on github!!!
 
 ### Delayed Jobs
 - finish project coke v0.0.2
@@ -45,9 +46,9 @@
 - buy domain for coke-js.org and whisky-js.org
 
 ### Fred
-- 20120208
+- 20120215
   - rewrite dreamerscorp.com
-- 20120214
+- 20120217
   - rewrite cvl with coke
 - 20120228
   - learn jsdoc
