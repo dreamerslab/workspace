@@ -1,0 +1,484 @@
+/* line 17, /Users/ben/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, /Users/ben/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, /Users/ben/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, /Users/ben/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, /Users/ben/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, /Users/ben/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, /Users/ben/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, /Users/ben/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, /Users/ben/.rvm/gems/ruby-1.9.3-p0/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/util.sass */
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 7, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/util.sass */
+.align-c {
+  text-align: center;
+}
+
+/* line 10, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/util.sass */
+.align-r {
+  text-align: right;
+}
+
+/* line 13, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/util.sass */
+.float-l {
+  float: left;
+  display: inline;
+}
+
+/* line 16, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/util.sass */
+.float-r {
+  float: right;
+  display: inline;
+}
+
+/* line 20, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/util.sass */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 27, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/util.sass */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 31, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/util.sass */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 34, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/util.sass */
+.clearfix {
+  display: block;
+}
+
+/* line 37, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/util.sass */
+.hidden {
+  display: none;
+}
+
+/* line 4, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/base.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 13px;
+}
+
+/* line 7, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/base.sass */
+li {
+  list-style-position: outside;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+/* line 12, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/base.sass */
+a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 17, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/base.sass */
+html, body {
+  height: 100%;
+}
+
+/* line 20, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/base.sass */
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 12px;
+  color: white;
+  line-height: 2em;
+  background: black;
+}
+
+/* line 27, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/base.sass */
+#view-port {
+  width: 1024px;
+  height: 768px;
+  margin: -384px 0 0 -512px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+}
+
+/* line 36, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/base.sass */
+#wrap {
+  position: absolute;
+}
+
+/* line 39, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/base.sass */
+#content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 406px;
+}
+
+/* line 46, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/base.sass */
+#gallery-title, #gallery p {
+  display: none;
+}
+
+/* line 3, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/header.sass */
+header {
+  position: absolute;
+  z-index: 3;
+  top: 524px;
+  left: 500px;
+}
+
+/* line 9, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/header.sass */
+#logo {
+  display: block;
+  text-indent: -9999px;
+  width: 24px;
+  height: 62px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -397px;
+}
+
+/* line 26, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+nav {
+  position: absolute;
+  top: 406px;
+  left: 0;
+  width: 1024px;
+  height: 361px;
+  text-align: center;
+  z-index: 2;
+  background: url("../img/common/nav-bg.jpg");
+}
+
+/* line 36, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#fashion {
+  position: absolute;
+  width: 263px;
+  top: 30px;
+  left: 0;
+}
+
+/* line 39, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#photographer {
+  position: absolute;
+  width: 498px;
+  top: 30px;
+  left: 263px;
+}
+
+/* line 42, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#casting {
+  position: absolute;
+  width: 263px;
+  top: 30px;
+  left: 761px;
+}
+
+/* line 45, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#artists {
+  position: absolute;
+  width: 263px;
+  top: 116px;
+  left: 0;
+}
+
+/* line 48, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#film {
+  position: absolute;
+  width: 263px;
+  top: 116px;
+  left: 761px;
+}
+
+/* line 51, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#fashion-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 61px;
+  height: 16px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -314px;
+}
+
+/* line 54, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#photographer-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 106px;
+  height: 19px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -501px;
+}
+
+/* line 57, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#casting-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 58px;
+  height: 21px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -119px;
+}
+
+/* line 60, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#artists-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 51px;
+  height: 14px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -79px;
+}
+
+/* line 63, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#film-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 34px;
+  height: 17px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -356px;
+}
+
+/* line 66, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#fashion-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 124px;
+  height: 13px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -301px;
+}
+
+/* line 69, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#casting-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 145px;
+  height: 13px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -106px;
+}
+
+/* line 72, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#artists-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 96px;
+  height: 13px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -66px;
+}
+
+/* line 75, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#film-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 145px;
+  height: 13px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -343px;
+}
+
+/* line 78, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#fashion-subtitle:hover {
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -288px;
+}
+
+/* line 81, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#casting-subtitle:hover {
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -93px;
+}
+
+/* line 84, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#artists-subtitle:hover {
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -53px;
+}
+
+/* line 87, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#film-subtitle:hover {
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -330px;
+}
+
+/* line 90, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#photographer-subtitle {
+  padding: 11px 0 0;
+}
+/* line 93, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#photographer-subtitle li, #photographer-subtitle h3 {
+  display: inline;
+}
+
+/* line 96, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#loki-tsai {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 56px;
+  height: 10px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -469px;
+}
+
+/* line 99, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#minshi-jiang {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 80px;
+  height: 11px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -490px;
+}
+
+/* line 102, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#jack-wang {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 71px;
+  height: 12px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -385px;
+}
+
+/* line 105, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#loki-tsai:hover, #loki-tsai.selected {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 56px;
+  height: 10px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -459px;
+}
+
+/* line 108, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#minshi-jiang:hover, #minshi-jiang.selected {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 80px;
+  height: 11px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -479px;
+}
+
+/* line 111, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/nav.sass */
+#jack-wang:hover, #jack-wang.selected {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 71px;
+  height: 12px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -373px;
+}
+
+/* line 3, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/footer.sass */
+footer {
+  position: absolute;
+  z-index: 2;
+  top: 587px;
+  left: 261px;
+  width: 498px;
+}
+/* line 10, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/footer.sass */
+footer p {
+  text-indent: -9999px;
+}
+
+/* line 13, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/footer.sass */
+#address {
+  width: 261px;
+  height: 45px;
+  margin: 24px auto 25px;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 0;
+}
+
+/* line 19, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/footer.sass */
+#copyright {
+  width: 106px;
+  height: 28px;
+  margin: 0 auto;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -239px;
+}
+
+/* line 25, /srv/www/training/css/02-absolute-and-all-img-for-fonts/sass/common/footer.sass */
+#contact-us {
+  text-indent: -9999px;
+  width: 25px;
+  height: 8px;
+  margin: 23px auto;
+  display: block;
+  background: url('../img/sprite-s182a8e7430.png') no-repeat 0 -45px;
+}

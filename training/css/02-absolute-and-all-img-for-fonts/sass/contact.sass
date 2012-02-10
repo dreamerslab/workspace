@@ -1,0 +1,70 @@
+@import "compass/utilities/general/clearfix"
+@import "common/lib"
+
+#wrap
+  top: -406px
+
+#contact
+  position: absolute
+  top: 852px
+  z-index: 1
+
+#contact-wrap
+  position: absolute
+  top: 9px
+  left: 60px
+
+#contact-title
+  @include bg_text( 198px, 22px, contact-title )
+
+#contact-info
+  margin: 10px 0 0
+  @include bg_text( 199px, 61px, contact-info )
+
+#contact-form-wrap
+  position: absolute
+  top: 0
+  left: 360px
+  width: 300px
+
+.form-row
+  padding: 0 0 15px
+  position: relative
+  @include clearfix
+
+#corp
+  padding: 0 0 33px
+
+#corp-title
+  float: left
+  @include bg_text( 46px, 10px, corp-title )
+
+#corp-email
+  margin: 0 80px 0 0
+  @include bg_text( 120px, 11px, corp-email )
+
+#contact-email, #contact-name
+  float: left
+  margin: 5px 0 0
+
+#contact-email
+  @include bg_text( 80px, 8px, contact-email )
+
+#contact-name
+  @include bg_text( 65px, 8px, contact-name )
+
+#message
+  height: 100px
+
+#send
+  position: absolute
+  bottom: 15px
+
+#message, #corp-email, .contact-input
+  float: right
+
+#message, .contact-input
+  color: #fff
+  width: 197px
+  background: #000
+  border: 1px solid #fff

@@ -1,0 +1,243 @@
+/* line 26, ../../sass/common/nav.sass */
+nav {
+  position: absolute;
+  top: 406px;
+  left: 0;
+  width: 1024px;
+  height: 361px;
+  text-align: center;
+  z-index: 2;
+  background: url("../img/common/nav-bg.jpg");
+}
+
+/* line 36, ../../sass/common/nav.sass */
+#fashion {
+  position: absolute;
+  width: 263px;
+  top: 30px;
+  left: 0;
+}
+
+/* line 39, ../../sass/common/nav.sass */
+#photographer {
+  position: absolute;
+  width: 498px;
+  top: 30px;
+  left: 263px;
+}
+
+/* line 42, ../../sass/common/nav.sass */
+#casting {
+  position: absolute;
+  width: 263px;
+  top: 30px;
+  left: 761px;
+}
+
+/* line 45, ../../sass/common/nav.sass */
+#artists {
+  position: absolute;
+  width: 263px;
+  top: 116px;
+  left: 0;
+}
+
+/* line 48, ../../sass/common/nav.sass */
+#film {
+  position: absolute;
+  width: 263px;
+  top: 116px;
+  left: 761px;
+}
+
+/* line 51, ../../sass/common/nav.sass */
+#fashion-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 61px;
+  height: 16px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -314px;
+}
+
+/* line 54, ../../sass/common/nav.sass */
+#photographer-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 106px;
+  height: 19px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -501px;
+}
+
+/* line 57, ../../sass/common/nav.sass */
+#casting-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 58px;
+  height: 21px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -119px;
+}
+
+/* line 60, ../../sass/common/nav.sass */
+#artists-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 51px;
+  height: 14px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -79px;
+}
+
+/* line 63, ../../sass/common/nav.sass */
+#film-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 34px;
+  height: 17px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -356px;
+}
+
+/* line 66, ../../sass/common/nav.sass */
+#fashion-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 124px;
+  height: 13px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -301px;
+}
+
+/* line 69, ../../sass/common/nav.sass */
+#casting-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 145px;
+  height: 13px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -106px;
+}
+
+/* line 72, ../../sass/common/nav.sass */
+#artists-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 96px;
+  height: 13px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -66px;
+}
+
+/* line 75, ../../sass/common/nav.sass */
+#film-subtitle {
+  margin: 12px auto;
+  display: block;
+  text-indent: -9999px;
+  width: 145px;
+  height: 13px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -343px;
+}
+
+/* line 78, ../../sass/common/nav.sass */
+#fashion-subtitle:hover {
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -288px;
+}
+
+/* line 81, ../../sass/common/nav.sass */
+#casting-subtitle:hover {
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -93px;
+}
+
+/* line 84, ../../sass/common/nav.sass */
+#artists-subtitle:hover {
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -53px;
+}
+
+/* line 87, ../../sass/common/nav.sass */
+#film-subtitle:hover {
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -330px;
+}
+
+/* line 90, ../../sass/common/nav.sass */
+#photographer-subtitle {
+  padding: 11px 0 0;
+}
+/* line 93, ../../sass/common/nav.sass */
+#photographer-subtitle li, #photographer-subtitle h3 {
+  display: inline;
+}
+
+/* line 96, ../../sass/common/nav.sass */
+#loki-tsai {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 56px;
+  height: 10px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -469px;
+}
+
+/* line 99, ../../sass/common/nav.sass */
+#minshi-jiang {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 80px;
+  height: 11px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -490px;
+}
+
+/* line 102, ../../sass/common/nav.sass */
+#jack-wang {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 71px;
+  height: 12px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -385px;
+}
+
+/* line 105, ../../sass/common/nav.sass */
+#loki-tsai:hover, #loki-tsai.selected {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 56px;
+  height: 10px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -459px;
+}
+
+/* line 108, ../../sass/common/nav.sass */
+#minshi-jiang:hover, #minshi-jiang.selected {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 80px;
+  height: 11px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -479px;
+}
+
+/* line 111, ../../sass/common/nav.sass */
+#jack-wang:hover, #jack-wang.selected {
+  margin: 0 5px;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  vertical-align: top;
+  text-indent: -9999px;
+  width: 71px;
+  height: 12px;
+  background: url('../../img/sprite-s182a8e7430.png') no-repeat 0 -373px;
+}

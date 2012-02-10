@@ -1,0 +1,47 @@
+$font-base: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif
+$base-color: white
+
+h1, h2, h3, h4, h5, h6
+  font-size: 13px
+
+li
+  list-style-position: outside
+  list-style-image: none
+  list-style-type: none
+
+a
+  color: $base-color
+  text-decoration: none
+  outline: none
+
+html, body
+  height: 100%
+
+body
+  font-family: $font-base
+  font-size: 12px
+  color: $base-color
+  line-height: 2em
+  background: black
+
+#view-port
+  width: 1024px
+  height: 768px
+  margin: -384px 0 0 -512px
+  position: absolute
+  top: 50%
+  left: 50%
+  overflow: hidden
+
+#wrap
+  position: absolute
+
+#content
+  position: absolute
+  top: 0
+  left: 0
+  width: 1024px
+  height: 406px
+
+#gallery-title, #gallery p
+  display: none
