@@ -1,0 +1,112 @@
+@import "lib"
+
+@mixin nav-item( $width, $top, $left )
+  position: absolute
+  width: $width
+  top: $top
+  left: $left
+
+@mixin nav-title( $width, $height, $sprite-name )
+  margin: 0 auto
+  @include bg_text( $width, $height, $sprite-name )
+
+@mixin nav-subtitle( $width, $sprite-name )
+  margin: 12px auto
+  display: block
+  @include bg_text( $width, 13px, $sprite-name )
+
+@mixin photographer-item( $width, $height, $sprite-name )
+  margin: 0 5px
+  display: inline-block
+  *display: inline
+  zoom: 1
+  vertical-align: top
+  @include bg_text( $width, $height, $sprite-name )
+
+nav
+  position: absolute
+  top: 406px
+  left: 0
+  width: 1024px
+  height: 361px
+  text-align: center
+  z-index: 2
+  background: url("../img/common/nav-bg.jpg")
+
+#fashion
+  @include nav-item( 263px, 30px, 0 )
+
+#photographer
+  @include nav-item( 498px, 30px, 263px )
+
+#casting
+  @include nav-item( 263px, 30px, 761px )
+
+#artists
+  @include nav-item( 263px, 116px, 0 )
+
+#film
+  @include nav-item( 263px, 116px, 761px )
+
+#fashion-title
+  @include nav-title( 61px, 16px, fashion-title )
+
+#photographer-title
+  @include nav-title( 106px, 19px, photographer-title )
+
+#casting-title
+  @include nav-title( 58px, 21px, casting-title )
+
+#artists-title
+  @include nav-title( 51px, 14px, artists-title )
+
+#film-title
+  @include nav-title( 34px, 17px, film-title )
+
+#fashion-subtitle
+  @include nav-subtitle( 124px, fashion-subtitle )
+
+#casting-subtitle
+  @include nav-subtitle( 145px, casting-subtitle )
+
+#artists-subtitle
+  @include nav-subtitle( 96px, artists-subtitle )
+
+#film-subtitle
+  @include nav-subtitle( 145px, film-subtitle )
+
+#fashion-subtitle:hover
+  @include _sprite( $sprite, fashion-subtitle-hover )
+
+#casting-subtitle:hover
+  @include _sprite( $sprite, casting-subtitle-hover )
+
+#artists-subtitle:hover
+  @include _sprite( $sprite, artists-subtitle-hover )
+
+#film-subtitle:hover
+  @include _sprite( $sprite, film-subtitle-hover )
+
+#photographer-subtitle
+  padding: 11px 0 0
+
+  li, h3
+    display: inline
+
+#loki-tsai
+  @include photographer-item( 56px, 10px, loki )
+
+#minshi-jiang
+  @include photographer-item( 80px, 11px, minshi )
+
+#jack-wang
+  @include photographer-item( 71px, 12px, jack )
+
+#loki-tsai:hover, #loki-tsai.selected
+  @include photographer-item( 56px, 10px, loki-hover )
+
+#minshi-jiang:hover, #minshi-jiang.selected
+  @include photographer-item( 80px, 11px, minshi-hover )
+
+#jack-wang:hover, #jack-wang.selected
+  @include photographer-item( 71px, 12px, jack-hover )

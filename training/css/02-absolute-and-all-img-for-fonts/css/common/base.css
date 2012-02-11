@@ -1,0 +1,62 @@
+/* line 4, ../../sass/common/base.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 13px;
+}
+
+/* line 7, ../../sass/common/base.sass */
+li {
+  list-style-position: outside;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+/* line 12, ../../sass/common/base.sass */
+a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 17, ../../sass/common/base.sass */
+html, body {
+  height: 100%;
+}
+
+/* line 20, ../../sass/common/base.sass */
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 12px;
+  color: white;
+  line-height: 2em;
+  background: black;
+}
+
+/* line 27, ../../sass/common/base.sass */
+#view-port {
+  width: 1024px;
+  height: 768px;
+  margin: -384px 0 0 -512px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+}
+
+/* line 36, ../../sass/common/base.sass */
+#wrap {
+  position: absolute;
+}
+
+/* line 39, ../../sass/common/base.sass */
+#content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 406px;
+}
+
+/* line 46, ../../sass/common/base.sass */
+#gallery-title, #gallery p {
+  display: none;
+}
