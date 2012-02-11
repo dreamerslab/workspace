@@ -12,7 +12,7 @@
 ### General
 
 #### FEB
-- 8, dreamerscorp.com rewrote
+- 15, dreamerscorp.com rewrote
 - 27, whisky v0.0.1
 - 28, all existing projects on github documented
 
