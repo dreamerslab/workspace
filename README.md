@@ -53,7 +53,7 @@
 - 20120228
   - learn jsdoc
   - write docs for existing projects including jquery and node
-  - check if existing node.js projects with for in, if yes, changed the for in to Object.keys(obj).forEach(function(name){})
+  - check if existing node.js and jQuery projects with for in, if yes, node.js projects changed the for in to Object.keys(obj).forEach(function(name){}), jQuery projects added hasOwnproperty to check whethter default value
 - 20120302
   - write a simple jquery light-box plugin and blogging
 - 20120305
