@@ -1,0 +1,119 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import compass/reset
+@import compass/css3/inline-block
+@import compass/utilities/general/float
+@import compass/typography/text/replacement
+@import compass/utilities/general/clearfix
+
+body
+  background: url("/img/background.png")
+  font-family: sans-serif
+
+a
+  color: #fff
+  text-decoration: none
+  font-family: sans-serif
+
+a:hover
+  text-decoration: underline
+
+a, img
+  +inline-block
+  vertical-align: top
+
+#page-wrapper
+  width: 1261px
+  margin: 0 auto
+  padding: 30px 0 0 0
+
+#header
+  text-align: center
+
+#logo
+  @include replace-text-with-dimensions("logo.png")
+  margin: 0 auto
+
+nav
+  +clearfix
+  color: #fff
+  font-size: 25px
+  font-style: normal
+  margin: 0 auto
+  padding: 40px 0 0 0
+  text-align: center
+
+.nav-item
+  +inline-block
+  padding: 0 38px
+
+#nav-home
+  @include replace-text-with-dimensions("nav-home.png")
+
+#nav-work
+  @include replace-text-with-dimensions("nav-work.png")
+
+#nav-blog
+  @include replace-text-with-dimensions("nav-blog.png")
+
+#gallery-wrapper
+  +clearfix
+  width: 960px
+  margin: 0 auto
+  padding: 2px 0 0
+
+#desc-top
+  @include replace-text-with-dimensions("gallery-top.png")
+  margin: 0 auto
+  padding: 10px 0
+
+#gallery-title
+  @include replace-text-with-dimensions("gallery-title.png")
+  margin: 27px auto 0
+
+#gallery-top
+  @include replace-text-with-dimensions("gallery-bottom.png")
+  margin: 42px auto 0
+
+#gallery-list-wrapper
+  +clearfix
+  padding: 30px 0 0 0
+  text-align: center
+
+.gallery-item
+  +float-left
+  +inline-block
+  padding: 0 10px
+  height: 277px
+  width: 220px
+
+.gallery-span
+  color: rgb(4, 145, 171)
+
+.item-title
+  +inline-block
+  color: #333
+  font-size: 17px
+  padding: 17px 0 2px 0
+  border-bottom: 1px solid #aaa
+
+.item-subtitle
+  color: #333
+  padding: 3px 0 14px 0
+  font-size: 12px
+  line-height: 17px
+
+#gallery-bottom
+  @include replace-text-with-dimensions("gallery-bottom.png")
+  margin: 52px auto 0
+  // padding: 10px 0 0
+
+footer
+  color: #444
+  text-align: center
+  padding: 15px
+  font-size: 12px
+  line-height: 17px
