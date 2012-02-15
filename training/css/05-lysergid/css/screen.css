@@ -67,86 +67,212 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 11, ../sass/screen.sass */
+/* line 12, ../sass/screen.sass */
+body {
+  background: #151515;
+}
+
+/* line 15, ../sass/screen.sass */
 a {
-  color: #999999;
+  color: white;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: serif;
 }
 
-/* line 16, ../sass/screen.sass */
+/* line 20, ../sass/screen.sass */
 a:hover {
-  color: black;
+  text-decoration: underline;
 }
 
-/* line 19, ../sass/screen.sass */
+/* line 23, ../sass/screen.sass */
 a, img {
-  display: block;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  vertical-align: top;
+}
+/* line 7, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+a, img {
+  *display: inline;
 }
 
-/* line 22, ../sass/screen.sass */
+/* line 27, ../sass/screen.sass */
 #page-wrapper {
-  position: absolute;
-  width: 764px;
-  height: 451px;
-  top: 50%;
-  left: 50%;
-  margin: -225px 0 0 -384px;
+  width: 1261px;
+  margin: 0 auto;
+  padding: 111px 0 0 0;
 }
 
-/* line 30, ../sass/screen.sass */
+/* line 32, ../sass/screen.sass */
+#header {
+  padding: 0 265px 0 0;
+}
+
+/* line 35, ../sass/screen.sass */
 #logo {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/img/logo.png?1329219896');
+  background-image: url('/img/logo.png?1329275884');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 120px;
-  height: 18px;
-  margin: 0 auto;
-}
-
-/* line 34, ../sass/screen.sass */
-#nav {
-  position: absolute;
-  top: 438px;
-  left: 0px;
+  width: 363px;
+  height: 44px;
+  display: inline;
+  float: right;
 }
 
 /* line 39, ../sass/screen.sass */
-.nav-item {
-  display: inline;
-  float: left;
-  color: #aaaaaa;
-  padding: 0 25px 0 0;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-/* line 46, ../sass/screen.sass */
 #gallery-wrapper {
-  padding: 32px 0 0;
+  overflow: hidden;
+  *zoom: 1;
+  width: 1110px;
+  margin: 0 auto;
+  padding: 74px 0 0;
 }
 
-/* line 49, ../sass/screen.sass */
-.list-item {
+/* line 45, ../sass/screen.sass */
+#gallery-title {
+  color: white;
+  font-size: 35px;
+  font-style: italic;
+  padding: 0 0 20px 7px;
+}
+
+/* line 51, ../sass/screen.sass */
+.gallery-item {
   display: inline;
   float: left;
-  border-left: 1px solid white;
-  border-bottom: 1px solid white;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 0 7px 119px;
+  height: 321px;
+  width: 540px;
 }
-
-/* line 54, ../sass/screen.sass */
-#controller-wrapper {
-  display: inline;
-  float: right;
-  padding: 24px 0 0 0;
+/* line 7, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.gallery-item {
+  *display: inline;
 }
 
 /* line 58, ../sass/screen.sass */
-.controller-item {
+.gallery-span {
+  color: #0491ab;
+}
+
+/* line 61, ../sass/screen.sass */
+.item-title {
+  color: white;
+  font-size: 22px;
+  padding: 20px 0 15px 0;
+}
+
+/* line 66, ../sass/screen.sass */
+.item-subtitle {
+  background: black;
+  color: #999999;
+  padding: 0 0 14px 0;
+  font-size: 12px;
+}
+
+/* line 72, ../sass/screen.sass */
+#content {
+  color: white;
+  width: 1100px;
+  margin: -35px auto 0;
+  text-align: center;
+  font-style: italic;
+}
+
+/* line 79, ../sass/screen.sass */
+#content-bar-top {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/img/content-bar-top.png?1329284666');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 1110px;
+  height: 2px;
+}
+
+/* line 82, ../sass/screen.sass */
+#content-bar-bottom {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/img/content-bar-bottom.png?1329284666');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 1110px;
+  height: 14px;
+}
+
+/* line 85, ../sass/screen.sass */
+#content-title {
+  font-size: 35px;
+  padding: 60px 0 0 0;
+}
+
+/* line 89, ../sass/screen.sass */
+#content-content {
+  font-size: 19px;
+  padding: 22px 0 0 0;
+}
+
+/* line 93, ../sass/screen.sass */
+nav {
+  color: white;
+  font-size: 25px;
+  font-style: normal;
+  padding: 30px 0 60px 0;
+}
+
+/* line 99, ../sass/screen.sass */
+.nav-item {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  background: #0491ab;
+}
+/* line 7, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.nav-item {
+  *display: inline;
+}
+
+/* line 103, ../sass/screen.sass */
+#footer-wrapper {
+  width: 1100px;
+  padding: 56px 0 0 0;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 109, ../sass/screen.sass */
+.info-wrapper {
   display: inline;
   float: left;
-  padding: 0 0 0 17px;
+  width: 247px;
+  padding: 0 27px 0 0;
+}
+
+/* line 114, ../sass/screen.sass */
+.info-title {
+  color: white;
+  font-size: 22px;
+  padding: 0 0 17px 0;
+}
+
+/* line 119, ../sass/screen.sass */
+.info-content {
+  background: #111111;
+  color: #888888;
+  font-size: 13px;
 }

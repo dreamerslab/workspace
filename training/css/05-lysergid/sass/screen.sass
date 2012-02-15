@@ -7,54 +7,116 @@
 @import compass/css3/inline-block
 @import compass/utilities/general/float
 @import compass/typography/text/replacement
+@import compass/utilities/general/clearfix
+
+body
+  background: #151515
 
 a
-  color: #999
+  color: #fff
   text-decoration: none
-  font-family: sans-serif
+  font-family: serif
 
 a:hover
-  color: #000
+  text-decoration: underline
 
 a, img
-  display: block
+  +inline-block
+  vertical-align: top
 
 #page-wrapper
-  position: absolute
-  width: 764px
-  height: 451px
-  top: 50%
-  left: 50%
-  margin: -225px 0 0 -384px
+  width: 1261px
+  margin: 0 auto
+  padding: 111px 0 0 0
+
+#header
+  padding: 0 265px 0 0
 
 #logo
   @include replace-text-with-dimensions("logo.png")
-  margin: 0 auto
-
-#nav
-  position: absolute
-  top: 438px
-  left: 0px
-
-.nav-item
-  +float-left
-  color: #aaa
-  padding: 0 25px 0 0
-  font-size: 14px
-  letter-spacing: 1px
+  +float-right
 
 #gallery-wrapper
-  padding: 32px 0 0
+  +clearfix
+  width: 1110px
+  margin: 0 auto
+  padding: 74px 0 0
 
-.list-item
+#gallery-title
+  color: #fff
+  font-size: 35px
+  font-style: italic
+  padding: 0 0 20px 7px
+
+.gallery-item
   +float-left
-  border-left: 1px solid #fff
-  border-bottom: 1px solid #fff
+  +inline-block
+  padding: 0 7px 119px
+  height: 321px
+  width: 540px
 
-#controller-wrapper
-  +float-right
-  padding: 24px 0 0 0
+.gallery-span
+  color: rgb(4, 145, 171)
 
-.controller-item
+.item-title
+  color: #fff
+  font-size: 22px
+  padding: 20px 0 15px 0
+
+.item-subtitle
+  background: #000
+  color: #999
+  padding: 0 0 14px 0
+  font-size: 12px
+
+#content
+  color: #fff
+  width: 1100px
+  margin: -35px auto 0
+  text-align: center
+  font-style: italic
+
+#content-bar-top
+  @include replace-text-with-dimensions("content-bar-top.png")
+
+#content-bar-bottom
+  @include replace-text-with-dimensions("content-bar-bottom.png")
+
+#content-title
+  font-size: 35px
+  padding: 60px 0 0 0
+
+#content-content
+  font-size: 19px
+  padding: 22px 0 0 0
+
+nav
+  color: #fff
+  font-size: 25px
+  font-style: normal
+  padding: 30px 0 60px 0
+
+.nav-item
+  +inline-block
+  background: rgb(4, 145, 171)
+
+#footer-wrapper
+  width: 1100px
+  padding: 56px 0 0 0
+  margin: 0 auto
+  +clearfix
+
+.info-wrapper
   +float-left
-  padding: 0 0 0 17px
+  width: 247px
+  padding: 0 27px 0 0
+
+.info-title
+  color: #fff
+  font-size: 22px
+  padding: 0 0 17px 0
+
+.info-content
+  background: #111
+  color: #888
+  font-size: 13px
