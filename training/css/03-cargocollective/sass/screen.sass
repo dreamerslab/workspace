@@ -1,0 +1,83 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import compass/reset
+@import compass/css3/inline-block
+
+a
+  color: #000
+  text-decoration: none
+  display: block
+
+a:hover
+  color: #f00
+
+img
+  display: block
+
+body
+  position: relative
+  width: 1260px
+  margin: 0px auto 0px
+  padding: 45px 0 0 0
+
+header
+  margin: 0 auto
+
+#logo
+  background: url('/img/logo.png')
+  text-indent: -9999px
+  width: 305px
+  height: 84px
+  margin: 0 auto
+
+#float-eagle
+  position: absolute
+  top: -104px
+  right: 40px
+
+nav
+  font-family: sans-serif
+  text-align: center
+  margin: 0px auto
+  padding: 34px 0 52px
+
+.nav-item
+  padding: 0 10px
+  font-size: 11px
+  +inline-block
+
+.gallery-item
+  padding: 0 35px 24px 0
+  float: left
+  display: inline
+  text-align: center
+  width: 200px
+  min-height: 182px
+  _height: 182px
+  +inline-block
+
+#gallery-wrapper
+  position: relative
+  width: 1180px
+  margin: 0 auto
+
+.item-title, .item-subtitle
+  font-weight: normal
+
+.item-title
+  font-family: serif, sans-serif
+  font-size: 11px
+  color: #aaa
+  padding: 6px 0 2px 0
+
+.item-title:hover
+  color: #aaa
+  text-decoration: underline
+
+.item-subtitle
+  font-family: serif, sans-serif
+  width: 200px
+  font-size: 11px

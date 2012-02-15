@@ -1,0 +1,152 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 11, ../sass/screen.sass */
+a {
+  color: #999999;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* line 16, ../sass/screen.sass */
+a:hover {
+  color: black;
+}
+
+/* line 19, ../sass/screen.sass */
+a, img {
+  display: block;
+}
+
+/* line 22, ../sass/screen.sass */
+#page-wrapper {
+  position: absolute;
+  width: 764px;
+  height: 451px;
+  top: 50%;
+  left: 50%;
+  margin: -225px 0 0 -384px;
+}
+
+/* line 30, ../sass/screen.sass */
+#logo {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/img/logo.png?1329219896');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 120px;
+  height: 18px;
+  margin: 0 auto;
+}
+
+/* line 34, ../sass/screen.sass */
+#nav {
+  position: absolute;
+  top: 438px;
+  left: 0px;
+}
+
+/* line 39, ../sass/screen.sass */
+.nav-item {
+  display: inline;
+  float: left;
+  color: #aaaaaa;
+  padding: 0 25px 0 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* line 46, ../sass/screen.sass */
+#gallery-wrapper {
+  padding: 32px 0 0;
+}
+
+/* line 49, ../sass/screen.sass */
+.list-item {
+  display: inline;
+  float: left;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+/* line 54, ../sass/screen.sass */
+#controller-wrapper {
+  display: inline;
+  float: right;
+  padding: 24px 0 0 0;
+}
+
+/* line 58, ../sass/screen.sass */
+.controller-item {
+  display: inline;
+  float: left;
+  padding: 0 0 0 17px;
+}
