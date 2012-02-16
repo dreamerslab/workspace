@@ -234,7 +234,7 @@ nav {
   line-height: 17px;
 }
 
-/* line 104, ../sass/screen.sass */
+/* line 103, ../sass/screen.sass */
 .price {
   display: inline;
   float: right;
@@ -243,23 +243,23 @@ nav {
   margin: -14px 0 0 0;
 }
 
-/* line 110, ../sass/screen.sass */
+/* line 109, ../sass/screen.sass */
 #gallery-info {
   color: #0491ab;
   text-align: center;
 }
 
-/* line 114, ../sass/screen.sass */
+/* line 113, ../sass/screen.sass */
 #gallery-info-title {
   font-size: 15px;
 }
 
-/* line 117, ../sass/screen.sass */
+/* line 116, ../sass/screen.sass */
 #gallery-info-content {
   font-size: 13px;
 }
 
-/* line 120, ../sass/screen.sass */
+/* line 119, ../sass/screen.sass */
 footer {
   color: #aaaaaa;
   clear: both;
