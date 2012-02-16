@@ -26,99 +26,95 @@ a, img
 
 #page-wrapper
   +clearfix
-  width: 1007px
+  position: relative
+  width: 1261px
+  height: 771px
   margin: 0 auto
 
 #header
-  +float-left
-  width: 220px
+  background: url("/img/header-bg.png")
+  margin: 0 auto
+  width: 800px
+  height: 176px
+  position: relative
 
 #logo
   @include replace-text-with-dimensions("logo.png")
-  margin: 0 auto
+  position: absolute
+  top: 51px
+  left: 20px
 
-nav
-  +clearfix
-  color: #fff
-  font-size: 12px
-  font-weight: bold
-  font-style: normal
-  margin: 0 auto
-  padding: 22px 0 0 0
+#nav-item-portfolio
+  @include replace-text-with-dimensions("nav-portfolio.png")
+  position: absolute
+  top: 51px
+  right: 145px
 
-.nav-link
-  width: 210px
-  height: 20px
-  padding: 10px 0 0px 10px
+#nav-item-about-me
+  @include replace-text-with-dimensions("nav-about-me.png")
+  position: absolute
+  top: 51px
 
-.nav-link:hover
-  text-decoration: none
-  background: #efefef
+#nav-item-lion
+  @include replace-text-with-dimensions("nav-float.png")
+  position: absolute
+  top: 13px
 
-#nav-item-first
-  border-top: 1px solid #ddd
+#nav-item-about-me, #nav-item-lion
+  right: 38px
 
-.nav-item
-  border-bottom: 1px solid #ddd
+#info
+  @include replace-text-with-dimensions("info.png")
+  position: absolute
+  top: 146px
+  left: 20px
 
-.info
-  color: #454545
-  padding: 26px 0 0 0
-  font-size: 12px
-  line-height: 15px
+#bg-left
+  @include replace-text-with-dimensions("bg-left.png")
+  position: absolute
+  top: 0
+  left: 1px
+  z-index: 2
 
-#gallery-wrapper
-  +float-right
-  +clearfix
-  width: 750px
-  margin: 0 auto
-  padding: 27px 0 0 0
+#bg-right
+  @include replace-text-with-dimensions("bg-right.png")
+  position: absolute
+  top: 0
+  right: 1px
+  z-index: 2
 
-.gallery-item
-  +float-left
-  +inline-block
-  padding: 0 14px 18px 0
-  width: 169px
-  height: 171px
+#gallery
+  @include replace-text-with-dimensions("gallery.png")
+  position: absolute
+  top: 243px
+  left: 230px
 
-.item-wrapper
-  +clearfix
-  border: 1px solid #ddd
-  padding: 7px
+#bg-middle-01
+  @include replace-text-with-dimensions("bg-middle-01.png")
+  position: absolute
+  top: 176px
+  left: 230px
 
-.gallery-span
-  color: rgb(4, 145, 171)
+#bg-middle-02
+  @include replace-text-with-dimensions("bg-middle-02.png")
+  position: absolute
+  top: 614px
+  left: 230px
 
-.item-title
-  +inline-block
-  color: #444
-  font-size: 11px
-  padding: 5px 0 0 0
+#copyright
+  @include replace-text-with-dimensions("copyright.png")
+  position: absolute
+  top: 741px
+  left: 230px
 
-.item-subtitle
-  color: #888
-  font-size: 11px
-  line-height: 17px
+#twitter
+  @include replace-text-with-dimensions("twitter-logo.png")
+  position: absolute
+  top: 741px
+  right: 231px
 
-.price
-  +float-right
-  color: rgb(120, 192, 66)
-  font-size: 11px
-  margin: -14px 0 0 0
-
-#gallery-info
-  color: rgb(4, 145, 171)
-  text-align: center
-
-#gallery-info-title
-  font-size: 15px
-
-#gallery-info-content
-  font-size: 13px
-
-footer
-  color: #aaa
-  clear: both
-  text-align: center
-  padding: 61px 0 58px 0
-  font-size: 11px
+#footer
+  @include replace-text-with-dimensions("footer.png")
+  position: absolute
+  top: 741px
+  right: 399px
