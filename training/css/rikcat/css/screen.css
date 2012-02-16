@@ -1,0 +1,269 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/screen.sass */
+body {
+  font-family: sans-serif;
+}
+
+/* line 15, ../sass/screen.sass */
+a {
+  color: #222222;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* line 20, ../sass/screen.sass */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 23, ../sass/screen.sass */
+a, img {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  vertical-align: top;
+}
+/* line 7, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+a, img {
+  *display: inline;
+}
+
+/* line 27, ../sass/screen.sass */
+#page-wrapper {
+  overflow: hidden;
+  *zoom: 1;
+  width: 1007px;
+  margin: 0 auto;
+}
+
+/* line 32, ../sass/screen.sass */
+#header {
+  display: inline;
+  float: left;
+  width: 220px;
+}
+
+/* line 36, ../sass/screen.sass */
+#logo {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/img/logo.png?1329365050');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 225px;
+  height: 137px;
+  margin: 0 auto;
+}
+
+/* line 40, ../sass/screen.sass */
+nav {
+  overflow: hidden;
+  *zoom: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0 auto;
+  padding: 22px 0 0 0;
+}
+
+/* line 49, ../sass/screen.sass */
+.nav-link {
+  width: 210px;
+  height: 20px;
+  padding: 10px 0 0px 10px;
+}
+
+/* line 54, ../sass/screen.sass */
+.nav-link:hover {
+  text-decoration: none;
+  background: #efefef;
+}
+
+/* line 58, ../sass/screen.sass */
+#nav-item-first {
+  border-top: 1px solid #dddddd;
+}
+
+/* line 61, ../sass/screen.sass */
+.nav-item {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 64, ../sass/screen.sass */
+.info {
+  color: #454545;
+  padding: 26px 0 0 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/* line 70, ../sass/screen.sass */
+#gallery-wrapper {
+  display: inline;
+  float: right;
+  overflow: hidden;
+  *zoom: 1;
+  width: 750px;
+  margin: 0 auto;
+  padding: 27px 0 0 0;
+}
+
+/* line 77, ../sass/screen.sass */
+.gallery-item {
+  display: inline;
+  float: left;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 0 14px 18px 0;
+  width: 169px;
+  height: 171px;
+}
+/* line 7, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.gallery-item {
+  *display: inline;
+}
+
+/* line 84, ../sass/screen.sass */
+.item-wrapper {
+  overflow: hidden;
+  *zoom: 1;
+  border: 1px solid #dddddd;
+  padding: 7px;
+}
+
+/* line 89, ../sass/screen.sass */
+.gallery-span {
+  color: #0491ab;
+}
+
+/* line 92, ../sass/screen.sass */
+.item-title {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  color: #444444;
+  font-size: 11px;
+  padding: 5px 0 0 0;
+}
+/* line 7, ../../../../../../../Users/fred/.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.item-title {
+  *display: inline;
+}
+
+/* line 98, ../sass/screen.sass */
+.item-subtitle {
+  color: #888888;
+  font-size: 11px;
+  line-height: 17px;
+}
+
+/* line 104, ../sass/screen.sass */
+.price {
+  display: inline;
+  float: right;
+  color: #78c042;
+  font-size: 11px;
+  margin: -14px 0 0 0;
+}
+
+/* line 110, ../sass/screen.sass */
+#gallery-info {
+  color: #0491ab;
+  text-align: center;
+}
+
+/* line 114, ../sass/screen.sass */
+#gallery-info-title {
+  font-size: 15px;
+}
+
+/* line 117, ../sass/screen.sass */
+#gallery-info-content {
+  font-size: 13px;
+}
+
+/* line 120, ../sass/screen.sass */
+footer {
+  color: #aaaaaa;
+  clear: both;
+  text-align: center;
+  padding: 61px 0 58px 0;
+  font-size: 11px;
+}

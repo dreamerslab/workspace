@@ -1,0 +1,125 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import compass/reset
+@import compass/css3/inline-block
+@import compass/utilities/general/float
+@import compass/typography/text/replacement
+@import compass/utilities/general/clearfix
+
+body
+  font-family: sans-serif
+
+a
+  color: #222
+  text-decoration: none
+  font-family: sans-serif
+
+a:hover
+  text-decoration: underline
+
+a, img
+  +inline-block
+  vertical-align: top
+
+#page-wrapper
+  +clearfix
+  width: 1007px
+  margin: 0 auto
+
+#header
+  +float-left
+  width: 220px
+
+#logo
+  @include replace-text-with-dimensions("logo.png")
+  margin: 0 auto
+
+nav
+  +clearfix
+  color: #fff
+  font-size: 12px
+  font-weight: bold
+  font-style: normal
+  margin: 0 auto
+  padding: 22px 0 0 0
+
+.nav-link
+  width: 210px
+  height: 20px
+  padding: 10px 0 0px 10px
+
+.nav-link:hover
+  text-decoration: none
+  background: #efefef
+
+#nav-item-first
+  border-top: 1px solid #ddd
+
+.nav-item
+  border-bottom: 1px solid #ddd
+
+.info
+  color: #454545
+  padding: 26px 0 0 0
+  font-size: 12px
+  line-height: 15px
+
+#gallery-wrapper
+  +float-right
+  +clearfix
+  width: 750px
+  margin: 0 auto
+  padding: 27px 0 0 0
+
+.gallery-item
+  +float-left
+  +inline-block
+  padding: 0 14px 18px 0
+  width: 169px
+  height: 171px
+
+.item-wrapper
+  +clearfix
+  border: 1px solid #ddd
+  padding: 7px
+
+.gallery-span
+  color: rgb(4, 145, 171)
+
+.item-title
+  +inline-block
+  color: #444
+  font-size: 11px
+  padding: 5px 0 0 0
+
+.item-subtitle
+  color: #888
+  // padding: 3px 0 14px 0
+  font-size: 11px
+  line-height: 17px
+
+.price
+  +float-right
+  color: rgb(120, 192, 66)
+  font-size: 11px
+  margin: -14px 0 0 0
+
+#gallery-info
+  color: rgb(4, 145, 171)
+  text-align: center
+
+#gallery-info-title
+  font-size: 15px
+
+#gallery-info-content
+  font-size: 13px
+
+footer
+  color: #aaa
+  clear: both
+  text-align: center
+  padding: 61px 0 58px 0
+  font-size: 11px
