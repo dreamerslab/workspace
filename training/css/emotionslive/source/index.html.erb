@@ -1,0 +1,104 @@
+<% content_for :head do %>
+  <title>Emotionslive</title>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<% end %>
+<div id="page-wrapper">
+  <div id="shadow"></div>
+  <div id="main-pic"></div>
+  <div id="main-wrapper">
+    <div id="header">
+      <header>
+         <h1><a id="logo" href="#">Emotionslive</a></h1>
+      </header><!-- /header -->
+      <nav>
+        <ul>
+          <li class="nav-item"><a id="nav-home" class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a id="nav-portfolio" class="nav-link" href="#">Portfolio</a></li>
+          <li class="nav-item"><a id="nav-about" class="nav-link" href="#">About Me</a></li>
+        </ul>
+      </nav>
+    </div> <!-- #header -->
+    <div id="about-wrapper">
+      <h2 id="about">About This Site</h2>
+      <p class="info"><%= lorem.sentences 3 %></p>
+      <p class="info">Enjoy!</p>
+    </div> <!-- #about -->
+    <div id="gallery-wrapper">
+      <div id="gallery-top"></div>
+      <div id="gallery-list">
+        <ul>
+          <li class="gallery-item">
+            <div class="item-wrapper">
+              <h3 id="item-title-web">Secret</h3>
+              <div class="photo-wrapper">
+                <a href="#">
+                  <img src="/images/gallery-1.jpeg" alt="Gallery item">
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="gallery-item">
+            <div class="item-wrapper">
+              <h3 class="item-title">Ex</h3>
+              <div class="photo-wrapper">
+                <a href="#">
+                  <img src="/images/gallery-2.jpeg" alt="Gallery item">
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="gallery-item">
+            <div class="item-wrapper">
+              <h3 class="item-title">Wish</h3>
+              <div class="photo-wrapper">
+                <a href="#">
+                  <img src="/images/gallery-3.jpeg" alt="Gallery item">
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="gallery-item">
+            <div class="item-wrapper">
+              <h3 class="item-title">Edward Scissorhan...</h3>
+              <div class="photo-wrapper">
+                <a href="#">
+                  <img src="/images/gallery-4.jpeg" alt="Gallery item">
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="gallery-item">
+            <div class="item-wrapper">
+              <h3 class="item-title">Push</h3>
+              <div class="photo-wrapper">
+                <a href="#">
+                  <img src="/images/gallery-5.jpeg" alt="Gallery item">
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="gallery-item">
+            <div class="item-wrapper">
+              <h3 class="item-title">Fallout No.2</h3>
+              <div class="photo-wrapper">
+                <a href="#">
+                  <img src="/images/gallery-6.jpeg" alt="Gallery item">
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="gallery-bottom-wrapper">
+        <a id="gallery-more" href="#" ></a>
+        <div id="gallery-bottom"></div>
+      </div>
+    </div> <!-- #gallery-list -->
+    <footer>
+      <div><a id="contact" href="mailto:fake@email.com"></a></div>
+    </footer>
+  </div> <!-- #main-wrapper -->
+</div> <!-- #page-wrapper -->
+<div id="copyright">2010 All Right Reserved</div>
