@@ -8,7 +8,8 @@ $font-color: #000
 body
   font-family: $font-family
   color: $font-color
-  background: url("/images/main-bg.jpeg")
+  background: url("/images/main-bg.jpeg") repeat-x
+  background-color: #82B64A
 
 a, img
   display: block
@@ -59,39 +60,52 @@ nav
   @include replace-text-with-dimensions("m3.gif")
 
 #about-wrapper
-  padding: 30px 0 20px 0
+  padding: 30px 0 0 0
   width: 350px
 
 #about
   @include replace-text-with-dimensions("about.gif")
 
 .info
-  color: #eee
+  color: #eaeaea
   font-size: 11px
   line-height: 16px
-  padding: 15px 0 0 3px
+  padding: 13px 0 0 3px
+
+#gallery-top-wrapper
+  padding: 20px 0
 
 #gallery-top
   @include replace-text-with-dimensions("line.gif")
 
-#item-title-web
+.item-title-web
   @include replace-text-with-dimensions("p-web.gif")
 
-.item-title
+#item-title-logo
   @include replace-text-with-dimensions("p-logo.gif")
 
 .gallery-item
   +inline-block
-  padding: 0 22px 0 0
+  padding: 0 22px 12px 0
+
+.item-link
+  width: 94px
+  height: 55px
+  position: absolute
+  top: 50%
+  left: 50%
+  margin: -28px 0 0 -48px
 
 .photo-wrapper
   background: url("/images/preview-bg.jpeg") no-repeat
   width: 110px
   height: 72px
+  position: relative
 
 #gallery-bottom-wrapper
   position: relative
   width: 375px
+  padding: 0 0 10px
 
 #gallery-more
   @include replace-text-with-dimensions("more.gif")
