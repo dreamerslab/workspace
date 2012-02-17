@@ -8,6 +8,8 @@
   - lysergid
   - philcoffman
   - rikcat
+  - emotionslive
+  - justinmaller
 - 02 Absolute and all img for fonts
   - cvl
   - chriswoods
