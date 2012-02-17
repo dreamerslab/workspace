@@ -1,0 +1,152 @@
+@import compass
+
+$font-family: Tahoma, sans-serif
+$font-color: #fff
+$link-hover: #aaf
+$page-width: 1207px
+$page-half-width: $page-width/-2
+$gallery-bg: #191919
+
+@include global-reset
+
+body
+  font-family: $font-family
+  color: $font-color
+  background: #000
+
+a, img
+  display: block
+
+a
+  color: $font-color
+  text-decoration: none
+
+a:hover
+  color: $link-hover
+  text-decoration: none
+
+#page-wrapper
+  position: relative
+  width: $page-width
+  margin: 0 auto
+
+#header
+  background: #000
+  width: $page-width
+  position: fixed
+  top: 0px
+  left: 50%
+  margin: 0 0 0 $page-half-width
+  padding: 7px 0 0 0
+  text-align: center
+  border-bottom: 1px solid #ccc
+  z-index: 1
+
+#logo
+  @include replace-text-with-dimensions("logo.jpeg")
+  margin: 0 auto
+
+.nav-item
+  +inline-block
+  font-size: 13px
+  color: #fff
+  text-decoration: none
+  padding: 0px 11px 10px
+  // margin: 0 0 0 0
+
+#nav-twitter
+  @include replace-text-with-dimensions("justinmaller.png")
+
+#gallery-wrapper
+  padding: 160px 0 70px 3px
+
+.gallery-item
+  +inline-block
+  padding: 0 0 3px 0
+
+.item-wrapper
+  position: relative
+  background: $gallery-bg
+  @include border-radius(2px, 2px)
+  width: 287px
+  height: 322px
+  padding: 5px 6px 5px 3px
+
+.item-wrapper:hover
+  background: #fff
+  color: #000
+
+.counts
+  @include border-top-left-radius(5px)
+  background: $gallery-bg
+  position: absolute
+  width: 60px
+  height: 14px
+  top: 276px
+  right: 3px
+  font-size: 10px
+  color: #fff
+  text-align: center
+  padding: 5px 0 0 2px
+
+.item-title
+  font-size: 11px
+  font-weight: bold
+  padding: 2px 0 2px 0
+
+.item-subtitle
+  font-size: 11px
+
+footer
+  background: #000
+  width: $page-width
+  height: 35px
+  position: fixed
+  bottom: 0
+  left: 50%
+  margin: 0 0 0 $page-half-width
+  text-align: center
+  border-top: 1px solid #ccc
+
+#footer-top
+  background: url("/images/footer-top.png")
+  width: $page-width
+  height: 40px
+  position: absolute
+  top: -41px
+  left: 0px
+
+#contact
+  @include border-radius(5px, 5px)
+  background: #000
+  position: absolute
+  top: -30px
+  right: 0px
+  padding: 4px 7px 0 4px
+
+#email
+  background: #000
+  border: 1px solid #202020
+  color: #888
+  width: 154px
+  height: 16px
+  margin: 0 8px 0 0
+
+#depthcore
+  position: absolute
+  top: 7px
+  left: 5px
+  @include replace-text-with-dimensions("depthcore.jpeg")
+
+#hosting
+  position: absolute
+  top: 8px
+  right: 6px
+  @include replace-text-with-dimensions("www.mediatemple.jpeg")
+
+#copyright
+  @include replace-text-with-dimensions("copyright.jpeg")
+  margin: 0 auto
+
+#footer-info-wrapper
+  padding: 8px 0 0 0
