@@ -13,3 +13,6 @@
 - 02 Absolute and all img for fonts
   - cvl
   - chriswoods
+  - getfinch
+- unsorted
+  - mjarosz
