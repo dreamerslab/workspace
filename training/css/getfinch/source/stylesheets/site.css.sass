@@ -1,20 +1,27 @@
 @import compass
 
-$font-family: sans-serif
+$font-family: serif
 $font-color: #888888
-$b-font-color: #666666
 $link-color: #08AC86
-$link-hover: #fff
-$nav-color: #CCCCCC
-$page-width: 1220px
-$gallery-bg: #000000
+$link-hover: #000
+$nav-color: #888888
+$page-width: 1180px
 
 @include global-reset
+
+// #original
+//   @include replace-text-with-dimensions("original.png")
+//   position: absolute
+//   top: 0
+//   left: 50%
+//   margin: 0 0 0 -630px
+//   opacity: 0.2
+//   z-index: 9999
 
 body
   font-family: $font-family
   color: $font-color
-  background: #222222
+  background: #fff
 
 a, img
   display: block
@@ -25,123 +32,175 @@ a
 
 a:hover
   color: $link-hover
-  font-weight: bold
   text-decoration: none
 
-// li
-//   list-style: disc
+#page-wrapper
+  +clearfix
+  position: relative
+  width: $page-width
+  margin: 0 auto
+  padding: 99px 0 0 0
 
-// p
-//   padding: 2px 0
+#top-bg
+  @include replace-text-with-dimensions("topbg.png")
+  position: absolute
+  top: 0px
+  left: 0px
 
-// .content-bold
-//   font-weight: bold
+#logo
+  @include replace-text-with-dimensions("logo.png")
+  margin: 0 auto
 
-// #page-wrapper
-//   +clearfix
-//   position: relative
-//   width: $page-width
-//   margin: 0 auto
-//   padding: 35px 0 0 0
+#sublogo
+  @include replace-text-with-dimensions("sublogo.png")
+  position: absolute
+  top: 69px
+  left: 122px
 
-// #logo
-//   @include replace-text-with-dimensions("logo.png")
+#desc
+  font-size: 38px
+  position: absolute
+  top: 494px
+  left: 231px
+  width: 827px
+  line-height: 44px
 
-// #top
-//   @include replace-text-with-dimensions("top.png")
-//   position: fixed
-//   top: 670px
-//   right: 110px
+nav
+  position: absolute
+  color: $nav-color
+  top: 186px
+  left: 121px
 
-// .nav-item
-//   +inline-block
-//   font-size: 12px
-//   color: $nav-color
-//   text-decoration: none
-//   padding: 37px 15px 0 0
+.nav-link
+  +inline-block
+  font-family: sans-serif
+  font-size: 15px
+  color: $nav-color
+  text-decoration: none
+  padding: 0 0 13px 0
 
-// .nav-link
-//   text-decoration: none
+#share
+  position: absolute
+  top: 70px
+  right: 116px
 
-// #main-wrapper
-//   padding: 32px 0 0 0
+#share-twitter
+  @include replace-text-with-dimensions("share-twitter.png")
 
-// article
-//   +float-left
-//   @include border-radius(5px, 5px)
-//   background: #000
-//   width: 640px
-//   font-size: 12px
-//   font-family: sans-serif
-//   padding: 13px 20px 20px 20px
+#share-rss
+  @include replace-text-with-dimensions("share-rss.png")
 
-// #article-title-logo
-//   @include replace-text-with-dimensions("article-title-logo.png")
-//   +float-right
+#share-dribble
+  @include replace-text-with-dimensions("share-dribble.png")
 
-// .content-list-wrapper
-//   padding: 5px 0 1px 15px
+.share-item
+  +inline-block
+  padding: 0 19px 0 0
 
-// .b-content-list-wrapper
-//   padding: 19px 0 16px 55px
-//   color: $b-font-color
+#main-wrapper
+  padding: 186px 0 0 232px
 
-// .b-content-list-with-title-wrapper
-//   padding: 10px 0 4px 55px
-//   color: $b-font-color
+#here, #there, #about
+  +inline-block
+  width: 274px
+  vertical-align: top
 
-// .b-list-item
-//   font-size: 12px
-//   padding: 0 0 6px 0
+#there
+  padding: 0 0 0 21px
+  width: 207px
 
-// .content-list-item
-//   padding: 0 0 4px 0
+#about
+  width: 233px
+  padding: 0 0 0 29px
 
-// #article-title
-//   font-size: 21px
-//   font-family: serif
-//   color: #CCCCCC
-//   padding: 5px 0 13px 0
+#here-logo-wrapper
+  padding: 1px 95px 33px 0
 
-// .content-img
-//   padding: 0 0 37px
+#there-logo-wrapper
+  padding: 1px 63px 33px 0
 
-// .article-subtitle
-//   font-size: 15px
-//   font-weight: bold
-//   padding: 33px 0 17px 0
+#about-logo-wrapper
+  padding: 1px 90px 33px 0
 
-// #gallery-wrapper
-//   +float-right
-//   width: 465px
-//   text-align: center
-//   padding: 0 70px 0 0
+#here-logo
+  @include replace-text-with-dimensions("title-here.png")
+  margin: 0 auto
 
-// .gallery-item
-//   +inline-block
-//   padding: 0 6px 10px 0
+#there-logo
+  @include replace-text-with-dimensions("title-there.png")
+  margin: 0 auto
 
-// .item-wrapper
-//   background: $gallery-bg
-//   @include border-radius(5px, 5px)
-//   padding: 9px
-//   width: 202px
-//   height: 177px
+#about-logo
+  @include replace-text-with-dimensions("title-about.png")
+  margin: 0 auto
 
-// .item-title
-//   color: #CCCCCC
-//   font-size: 11px
-//   font-weight: bold
-//   padding: 12px 0 4px 0
+.subtitle
+  font-size: 11px
+  color: #888
+  letter-spacing: 4px
+  word-spacing: 3px
 
-// .item-subtitle
-//   color: #66665F
-//   font-size: 11px
+#here-title
+  color: #000
+  font-size: 32px
+  padding: 13px 0 7px 0
+  line-height: 42px
+  word-spacing: 2px
 
-// #permalink, #permalink-p
-//   color: $b-font-color
-//   font-style: italic
-//   font-size: 11px
+#here-content
+  color: #000
+  line-height: 24px
 
-// #permalink
-//   display: inline
+#here-more
+  font-size: 14px
+  color: #000
+  text-decoration: dotted
+  padding: 26px 0 0 0
+
+
+#there-subtitle
+  padding: 0 0 12px 0
+
+.there-title
+  color: #000
+  font-size: 18px
+  padding: 0 0 10px 0
+  text-transform: capitalize
+
+.there-subtitle
+  font-size: 14px
+  font-style: italic
+  padding: 0 0 24px 0
+
+#about-content
+  padding: 11px 0 0 0
+  color: #777
+  font-size: 15px
+  font-style: italic
+  line-height: 23px
+
+#copyright
+  +float-left
+
+footer
+  +clearfix
+  position: relative
+  padding: 129px 0 35px 120px
+  font-size: 12px
+  text-transform: uppercase
+
+#footer-warning
+  color: #000
+
+#smashing
+  +float-right
+  @include replace-text-with-dimensions("smashing.png")
+  margin: -21px 0 0 0
+  padding: 0 310px 0 0
+
+#dotted-line
+  @include replace-text-with-dimensions("dotted-line.png")
+  position: absolute
+  top: 95px
+  left: 50%
+  margin: 0 0 0 -630px

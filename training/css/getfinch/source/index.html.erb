@@ -4,7 +4,9 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 <% end %>
+<!-- <div id="original"></div> -->
 <div id="page-wrapper">
+  <div id="top-bg"></div>
   <div id="sublogo"></div>
   <div id="header">
     <header>
@@ -13,44 +15,51 @@
     </header><!-- /header -->
     <nav>
       <ul>
-        <li class="nav-item"><a class="nav-link" href="#">About Mlchat</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About Mlchat</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
       </ul>
     </nav>
   </div> <!-- #header -->
   <div id="main-wrapper">
     <div id="here">
-      <h2 id="here">Here</h2>
+      <div id="here-logo-wrapper">
+        <h2 id="here-logo">Here</h2>
+      </div>
       <h3 class="subtitle">FRESH FROM THE BLOG</h3>
       <h3 id="here-title">Long Live the Redsign</h3>
-      <p><%= lorem.sentences 3 %></p>
+      <p id="here-content"><%= lorem.sentences 3 %></p>
       <a href="#" id="here-more">CONTINUE READING</a>
     </div>
     <div id="there">
-      <h2 id="there">There</h2>
-      <h3 class="subtitle">FRESH FROM THE BLOG</h3>
+      <div id="there-logo-wrapper">
+        <h2 id="there-logo">There</h2>
+      </div>
+      <h3 id="there-subtitle" class="subtitle">PUBLISHED ARTICLES</h3>
       <% 5.times do %>
-        <h3 class="there-title"></h3>
-        <h4 class="there-subtitle"></h4>
+        <h3 class="there-title"><%= lorem.words 3 %></h3>
+        <h4 class="there-subtitle"><%= lorem.words 4 %></h4>
       <% end %>
     </div>
     <div id="about">
-      <h2 id="about">About</h2>
+      <div id="about-logo-wrapper">
+        <h2 id="about-logo">About</h2>
+      </div>
       <h3 class="subtitle">BEHIND THE MYSTERY</h3>
-      <p id="about-content"><%= lorem.sentences 4 %></p>
+      <p id="about-content"><%= lorem.sentences 6 %></p>
     </div>
     <div id="share">
       <ul>
-        <li><a href="#" class="shrare-item">Twitter</a></li>
-        <li><a href="#" class="shrare-item">RSS</a></li>
-        <li><a href="#" class="shrare-item">Dribble</a></li>
+        <li class="share-item"><a href="#" id="share-twitter" >Twitter</a></li>
+        <li class="share-item"><a href="#" id="share-rss" >RSS</a></li>
+        <li class="share-item"><a href="#" id="share-dribble" >Dribble</a></li>
       </ul>
     </div>
   </div> <!-- #main-wrapper -->
   <footer>
-    <div id="copyright"></div>
+    <div id="dotted-line"></div>
+    <div id="copyright"><%= lorem.words 6 %><span id="footer-warning">BE ORIGINAL</span></div>
     <div id="smashing"></div>
   </footer>
 </div> <!-- #page-wrapper -->
