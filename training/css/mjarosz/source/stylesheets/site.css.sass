@@ -1,0 +1,200 @@
+@import compass
+
+$font-family: sans-serif
+$font-color: #888888
+$b-font-color: #666666
+$link-color: #08AC86
+$link-hover: #fff
+$nav-color: #CCCCCC
+$page-width: 1220px
+$gallery-bg: #000000
+
+@include global-reset
+
+body
+  font-family: $font-family
+  color: $font-color
+  background: #222222
+
+a, img
+  display: block
+
+a
+  color: $link-color
+  text-decoration: underline
+
+a:hover
+  color: $link-hover
+  font-weight: bold
+  text-decoration: none
+
+li
+  list-style: disc
+
+p
+  padding: 2px 0
+
+.content-bold
+  font-weight: bold
+
+#page-wrapper
+  +clearfix
+  position: relative
+  width: $page-width
+  margin: 0 auto
+  padding: 35px 0 0 0
+
+#logo
+  @include replace-text-with-dimensions("logo.png")
+
+#top
+  @include replace-text-with-dimensions("top.png")
+  position: fixed
+  top: 670px
+  right: 110px
+
+.nav-item
+  +inline-block
+  font-size: 12px
+  color: $nav-color
+  text-decoration: none
+  padding: 37px 15px 0 0
+
+.nav-link
+  text-decoration: none
+
+#main-wrapper
+  padding: 32px 0 0 0
+
+article
+  +float-left
+  @include border-radius(5px, 5px)
+  background: #000
+  width: 640px
+  font-size: 12px
+  font-family: sans-serif
+  padding: 13px 20px 20px 20px
+
+#article-title-logo
+  @include replace-text-with-dimensions("article-title-logo.png")
+  +float-right
+
+.content-list-wrapper
+  padding: 5px 0 1px 15px
+
+.b-content-list-wrapper
+  padding: 19px 0 16px 55px
+  color: $b-font-color
+
+.b-content-list-with-title-wrapper
+  padding: 10px 0 4px 55px
+  color: $b-font-color
+
+.b-list-item
+  font-size: 12px
+  padding: 0 0 6px 0
+
+.content-list-item
+  padding: 0 0 4px 0
+
+#article-title
+  font-size: 21px
+  font-family: serif
+  color: #CCCCCC
+  padding: 5px 0 13px 0
+
+.content-img
+  padding: 0 0 37px
+
+.article-subtitle
+  font-size: 15px
+  font-weight: bold
+  padding: 33px 0 17px 0
+
+#gallery-wrapper
+  +float-right
+  width: 465px
+  text-align: center
+  padding: 0 70px 0 0
+
+.gallery-item
+  +inline-block
+  padding: 0 6px 10px 0
+
+.item-wrapper
+  background: $gallery-bg
+  @include border-radius(5px, 5px)
+  padding: 9px
+  width: 202px
+  height: 177px
+
+.item-title
+  color: #CCCCCC
+  font-size: 11px
+  font-weight: bold
+  padding: 12px 0 4px 0
+
+.item-subtitle
+  color: #66665F
+  font-size: 11px
+
+#permalink, #permalink-p
+  color: $b-font-color
+  font-style: italic
+  font-size: 11px
+
+#permalink
+  display: inline
+// footer
+//   background: #000
+//   width: $page-width
+//   height: 35px
+//   position: fixed
+//   bottom: 0
+//   left: 50%
+//   margin: 0 0 0 $page-half-width
+//   text-align: center
+//   border-top: 1px solid #ccc
+
+// #footer-top
+//   background: url("/images/footer-top.png")
+//   width: $page-width
+//   height: 40px
+//   position: absolute
+//   top: -41px
+//   left: 0px
+
+// #contact
+//   @include border-radius(5px, 5px)
+//   background: #000
+//   position: absolute
+//   top: -30px
+//   right: 0px
+//   padding: 4px 7px 0 4px
+
+// #email
+//   background: #000
+//   border: 1px solid #202020
+//   color: #888
+//   width: 154px
+//   height: 16px
+//   margin: 0 8px 0 0
+
+// #depthcore
+//   position: absolute
+//   top: 7px
+//   left: 5px
+//   @include replace-text-with-dimensions("depthcore.jpeg")
+
+// #hosting
+//   position: absolute
+//   top: 8px
+//   right: 6px
+//   @include replace-text-with-dimensions("www.mediatemple.jpeg")
+
+// #copyright
+//   @include replace-text-with-dimensions("copyright.jpeg")
+//   margin: 0 auto
+
+// #footer-info-wrapper
+//   padding: 8px 0 0 0
