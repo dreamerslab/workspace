@@ -1,0 +1,142 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import compass/reset
+@import compass/css3/inline-block
+@import compass/utilities/general/float
+@import compass/typography/text/replacement
+@import compass/utilities/general/clearfix
+
+body
+  background: url("/img/background.png")
+  font-family: sans-serif
+
+a
+  color: #fff
+  text-decoration: none
+  font-family: sans-serif
+
+a:hover
+  text-decoration: underline
+
+a, img
+  +inline-block
+  vertical-align: top
+
+#page-wrapper
+  width: 1261px
+  margin: 0 auto
+  padding: 30px 0 0
+
+#header
+  text-align: center
+
+#logo
+  background: url("/img/logo.png") no-repeat
+  text-indent: -9999px
+  width: 60px
+  height: 72px
+  margin: 0 auto
+
+nav
+  +clearfix
+  color: #fff
+  font-size: 25px
+  font-style: normal
+  margin: 0 auto
+  padding: 40px 0 0
+  text-align: center
+
+.nav-item
+  +inline-block
+  padding: 0 38px
+
+#nav-home
+  background: url("/img/nav-home.png") no-repeat
+  text-indent: -9999px
+  width: 41px
+  height: 17px
+
+#nav-work
+  background: url("/img/nav-work.png") no-repeat
+  text-indent: -9999px
+  width: 44px
+  height: 17px
+
+#nav-blog
+  background: url("/img/nav-blog.png") no-repeat
+  text-indent: -9999px
+  width: 36px
+  height: 17px
+
+#gallery-wrapper
+  +clearfix
+  width: 960px
+  margin: 0 auto
+  padding: 2px 0 0
+
+#desc-top
+  background: url("/img/gallery-top.png") no-repeat
+  text-indent: -9999px
+  width: 360px
+  height: 1px
+  margin: 0 auto
+  padding: 10px 0
+
+#gallery-title
+  background: url("/img/gallery-title.png") no-repeat
+  text-indent: -9999px
+  width: 325px
+  height: 46px
+  margin: 27px auto 0
+
+#gallery-top
+  background: url("/img/gallery-bottom.png") no-repeat
+  text-indent: -9999px
+  width: 940px
+  height: 1px
+  margin: 42px auto 0
+
+#gallery-list-wrapper
+  +clearfix
+  padding: 30px 0 0
+  text-align: center
+
+.gallery-item
+  +float-left
+  +inline-block
+  padding: 0 10px
+  height: 277px
+  width: 220px
+
+.gallery-span
+  color: rgb(4, 145, 171)
+
+.item-title
+  +inline-block
+  color: #333
+  font-size: 17px
+  padding: 17px 0 2px
+  border-bottom: 1px solid #aaa
+
+.item-subtitle
+  color: #333
+  padding: 3px 0 14px
+  font-size: 12px
+  line-height: 17px
+
+#gallery-bottom
+  background: url("/img/gallery-bottom.png") no-repeat
+  text-indent: -9999px
+  width: 940px
+  height: 1px
+  margin: 52px auto 0
+
+footer
+  color: #444
+  text-align: center
+  padding: 15px
+  font-size: 12px
+  line-height: 17px
