@@ -1,0 +1,270 @@
+@import compass
+
+$font-family: serif
+$font-color: #B3B3AD
+$link-color: #08AC86
+$link-hover: #000
+$span-color: #fff
+$nav-color: #888888
+$page-width: 1180px
+
+@include global-reset
+
+#original
+  @include replace-text-with-dimensions("original.png")
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -630px
+  opacity: 0.1
+  z-index: 9999
+
+body
+  font-family: $font-family
+  color: $font-color
+  background: #1A1A1A url("/images/bg.png") no-repeat
+
+a, img
+  display: block
+
+a
+  color: $link-color
+  text-decoration: underline
+
+a:hover
+  color: $link-hover
+  text-decoration: none
+
+#page-wrapper
+  +clearfix
+  position: relative
+  width: $page-width
+  margin: 0 auto
+  padding: 219px 0 0 0
+
+#logo
+  @include replace-text-with-dimensions("logo.png")
+  margin: 0 auto
+
+#sublogo
+  @include replace-text-with-dimensions("sublogo.png")
+  position: absolute
+  top: 64px
+  right: 150px
+
+#desc
+  font-size: 15px
+  font-style: italic
+  text-transform: capitalize
+  text-align: center
+  padding: 25px 0 0 0
+
+#desc-line
+  @include replace-text-with-dimensions("summary-bg.png")
+  position: absolute
+  top: 394px
+  left: 50%
+  margin: 0 0 0 -630px
+
+nav
+  position: absolute
+  color: $nav-color
+  top: 71px
+  left: 151px
+
+.nav-item
+  +inline-block
+  padding: 0 33px 0 0
+
+.nav-link
+  +inline-block
+  font-family: serif
+  font-size: 13px
+  font-style: italic
+  color: $nav-color
+  text-decoration: none
+
+#share
+  position: absolute
+  top: 70px
+  right: 116px
+
+#main-wrapper
+  padding: 123px 0 0 151px
+
+#chat, #portfolio, #note
+  +inline-block
+  vertical-align: top
+
+#chat
+  width: 165px
+  vertical-align: top
+
+.chat-span
+  color: $span-color
+  font-family: sans-serif
+  font-weight: bold
+  font-style: normal
+
+#chat-first-p
+  font-style: italic
+  line-height: 24px
+  margin: -4px 0 0 0
+
+#chatterbox
+  color: $span-color
+  font-family: sans-serif
+  font-weight: bold
+  padding: 12px 0
+
+.chatterbox-info
+  font-size: 12px
+  font-family: sans-serif
+  line-height: 18px
+  padding: 0 0 15px 0
+
+#twitter
+  @include replace-text-with-dimensions("twitter.png")
+  padding: 16px 0 0 0
+
+#portfolio
+  padding: 0 0 0 50px
+  width: 446px
+
+#project
+  +clearfix
+  padding: 0 0 45px 0
+
+.project-item
+  +float-left
+
+.portfolio-title
+  color: $span-color
+  font-family: sans-serif
+  font-weight: bold
+  font-style: normal
+  padding: 0 0 15px 0
+
+.project-title
+  text-align: center
+  padding: 7px 0 0 0
+  font-size: 15px
+  font-style: italic
+
+.gallery-item
+  +float-left
+
+#flickr
+  @include replace-text-with-dimensions("flickr.png")
+  padding: 14px 0 0 0
+
+#note
+  width: 164px
+  padding: 0 0 0 45px
+
+.note-title
+  color: $span-color
+  font-size: 12px
+  font-weight: bold
+  font-style: normal
+  font-family: sans-serif
+  line-height: 18px
+
+#portfolio-subtitle
+  padding: 0 0 12px 0
+
+.note-content
+  font-family: sans-serif
+  font-size: 12px
+  line-height: 18px
+
+#delicious
+  @include replace-text-with-dimensions("delicious.png")
+  padding: 18px 0 0 0
+
+#line-shade
+  @include replace-text-with-dimensions("line-fade.png")
+  position: absolute
+  top: 478px
+  left: 50%
+  margin: 0 0 0 -715px
+
+#line
+  @include replace-text-with-dimensions("line.png")
+
+#copyright
+  +float-left
+
+footer
+  +clearfix
+  position: relative
+  padding: 32px 0 95px 150px
+  font-size: 12px
+
+#footer-title
+  +inline-block
+  vertical-align: top
+  font-weight: bold
+  font-family: sans-serif
+  width: 162px
+  padding: 38px 0 0 0
+
+#footer-content-1, #footer-content-2
+  +inline-block
+  vertical-align: top
+  font-family: proxima-nova-1, proxima-nova-2, Helvetica, Arial, sans-serif
+  font-size: 12px
+  line-height: 18px
+  padding: 37px 0 0 55px
+
+#footer-content-1
+  width: 328px
+  // text-indent: 10px
+
+#footer-content-2
+  width: 261px
+  // text-indent: 5px
+
+#footer-info img
+  +float-left
+
+.footer-img
+  +float-left
+  width: 45px
+  height: 26px
+
+#line-wide
+  @include replace-text-with-dimensions("line-wide.png")
+  position: absolute
+  top: 1187px
+  left: 50%
+  margin: 0 0 0 -630px
+
+#other-info
+  position: absolute
+  top: 180px
+  left: 150px
+
+#copyright
+  padding: 17px 0 0 0
+  text-transform: uppercase
+  font-size: 9px
+  font-family: sans-serif
+  color: #666
+
+#sizes
+  +float-right
+  +clearfix
+  color: #666
+  padding: 9px 0 0 0
+
+#size-pic
+  @include replace-text-with-dimensions("screens.png")
+  +float-left
+
+#sizes-content
+  +float-left
+  padding: 6px 3px 0 14px
+  font-size: 10px
+  font-family: sans-serif
+  color: #666

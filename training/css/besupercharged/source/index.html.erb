@@ -1,0 +1,82 @@
+<% content_for :head do %>
+  <title>Besupercharged</title>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<% end %>
+<div id="original"></div>
+<div id="line-shade"></div>
+<div id="page-wrapper">
+  <div id="sublogo"></div>
+  <div id="header">
+    <header>
+       <h1><a id="logo" href="#">Besupercharged</a></h1>
+       <p id="desc"><%= lorem.words 7 %></p>
+    </header><!-- /header -->
+    <nav>
+      <ul>
+        <li class="nav-item"><a class="nav-link" href="#">Welcome <span class="nav-span">HOME</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">From the <span class="nav-span">SHOWROOM</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About & <span class="nav-span">CONTACT</span></a></li>
+      </ul>
+    </nav>
+    <div id="desc-line"></div>
+  </div> <!-- #header -->
+
+  <div id="main-wrapper">
+    <div id="chat">
+      <p id="chat-first-p"><span class="chat-span">SUPERCHARHED</span> <%= lorem.words 5 %> <span class="chat-span">DARREN ANSLEY</span>.</p>
+      <h3 id="chatterbox">CHATTERBOX</h3>
+      <p class="chatterbox-info"><%= lorem.sentences 2 %></p>
+      <p class="chatterbox-info"><%= lorem.sentences 2 %><a href="#" id="twitter">Stalk me on Twitter.</a></p>
+    </div>
+    <div id="portfolio">
+      <div id="project">
+        <h2 class="portfolio-title">LATEST PROJECTS</h2>
+        <ul>
+          <li class="project-item">
+            <a href="#"><img src="/images/gallery-1.png" alt="project"></a>
+            <h3 class="project-title">Fieldstone Partners</h3>
+          </li>
+          <li class="project-item">
+            <a href="#"><img src="/images/gallery-2.png" alt="project"></a>
+            <h3 class="project-title">Lake Placid Ladge</h3>
+          </li>
+        </ul>
+      </div> <!-- #project -->
+      <div id="gallery">
+        <h2 class="portfolio-title">PHOTOGRAPHY</h2>
+        <ul>
+          <li class="gallery-item"><a href="#"><img src="/images/photo-1.png" alt=""></a></li>
+          <li class="gallery-item"><a href="#"><img src="/images/photo-2.png" alt=""></a></li>
+          <li class="gallery-item"><a href="#"><img src="/images/photo-3.png" alt=""></a></li>
+          <li class="gallery-item"><a href="#"><img src="/images/photo-4.png" alt=""></a></li>
+        </ul>
+        <a href="#" id="flickr"></a>
+      </div>
+    </div> <!-- #portfolio -->
+    <div id="note">
+      <h3 class="portfolio-title">NOTEWORTHY</h3>
+      <% 3.times do %>
+        <h4 class="note-title"><%= lorem.sentence %></h4>
+        <p class="note-content"><%= lorem.sentence %></p>
+      <% end %>
+      <a id="delicious" href="#"></a>
+    </div>
+  </div> <!-- #main-wrapper -->
+  <footer>
+    <div id="line"></div>
+    <div id="footer-info">
+      <h3 id="footer-title">Supercharged</h3>
+      <div id="footer-content-1"> <div class="footer-img"><img src="/images/w.png" alt=""></div>  <%= lorem.sentences 2 %></div>
+      <div id="footer-content-2"><div class="footer-img"><img src="/images/dg.png" alt=""></div> <%= lorem.sentences 2 %></div>
+    </div>
+    <div id="other-info">
+      <div id="copyright"><%= lorem.words 3 %></div>
+      <div id="sizes">
+        <div id="size-pic"></div>
+        <div id="sizes-content">COMES IN ALL SIZES!</div></div>
+    </div><!-- #other-info -->
+  </footer>
+  <div id="line-wide"></div>
+</div> <!-- #page-wrapper -->
