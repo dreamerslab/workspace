@@ -1,0 +1,138 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+a {
+  color: black;
+  text-decoration: none;
+  display: block; }
+
+a:hover {
+  color: red; }
+
+img {
+  display: block; }
+
+body {
+  position: relative;
+  width: 1260px;
+  margin: 0px auto 0px;
+  padding: 45px 0 0 0; }
+
+header {
+  margin: 0 auto; }
+
+#logo {
+  background: url("/img/logo.png");
+  text-indent: -9999px;
+  width: 305px;
+  height: 84px;
+  margin: 0 auto; }
+
+#float-eagle {
+  position: absolute;
+  top: -104px;
+  right: 40px; }
+
+nav {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0px auto;
+  padding: 34px 0 52px; }
+
+.nav-item {
+  padding: 0 10px;
+  font-size: 11px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto; }
+  .nav-item {
+    *display: inline; }
+
+.gallery-item {
+  padding: 0 35px 24px 0;
+  float: left;
+  display: inline;
+  text-align: center;
+  width: 200px;
+  min-height: 182px;
+  _height: 182px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto; }
+  .gallery-item {
+    *display: inline; }
+
+#gallery-wrapper {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto; }
+
+.item-title, .item-subtitle {
+  font-weight: normal; }
+
+.item-title {
+  font-family: serif, sans-serif;
+  font-size: 11px;
+  color: #aaaaaa;
+  padding: 6px 0 2px 0; }
+
+.item-title:hover {
+  color: #aaaaaa;
+  text-decoration: underline; }
+
+.item-subtitle {
+  font-family: serif, sans-serif;
+  width: 200px;
+  font-size: 11px; }
