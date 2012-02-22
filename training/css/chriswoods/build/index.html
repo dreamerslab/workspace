@@ -1,8 +1,20 @@
-<% content_for :head do %>
-  <title>Chriswoods</title>
-<% end%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-<div id="page-wrap">
+    <link href="/css/screen.css" media="screen" rel="stylesheet" type="text/css" />
+      <title>Chriswoods</title>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+<div id="page-wrapper">
   <div id="header">
     <header>
       <h1><a id="logo" href="http://chriswoods/">Chriswoods</a></h1>
@@ -27,7 +39,7 @@
       </ul>
     </nav>
   </div><!-- #header -->
-  <div id="gallery-wrap">
+  <div id="gallery-wrapper">
     <ul>
       <li class="list-item"><a href="#"><img src="/img/gallery-01.png" alt=""></a></li>
       <li class="list-item"><a href="#"><img src="/img/gallery-02.png" alt=""></a></li>
@@ -43,7 +55,7 @@
       <li class="list-item"><a href="#"><img src="/img/gallery-12.png" alt=""></a></li>
     </ul>
   </div>
-  <div id="controller-wrap">
+  <div id="controller-wrapper">
     <ul>
       <li class="controller-item"><img src="/img/controller1.png" alt=""></li>
       <li class="controller-item"><img src="/img/controller2.png" alt=""></li>
@@ -52,3 +64,5 @@
     </ul>
   </div>
 </div>
+  </body>
+</html>

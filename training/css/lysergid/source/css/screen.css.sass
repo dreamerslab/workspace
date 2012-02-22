@@ -3,11 +3,12 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import compass/reset
-@import compass/css3/inline-block
-@import compass/utilities/general/float
-@import compass/typography/text/replacement
-@import compass/utilities/general/clearfix
+@import "compass/reset"
+@import "compass/css3/inline-block"
+@import "compass/utilities/general/float"
+@import "compass/typography/text/replacement"
+@import "compass/utilities/general/clearfix"
+@import "lib"
 
 body
   background: #151515
@@ -29,15 +30,11 @@ a, img
   margin: 0 auto
   padding: 111px 0 0 0
 
-#header
+header
   padding: 0 265px 0 0
 
 #logo
-  // @include replace-text-with-dimensions("logo.png")
-  background: url("/img/logo.png")
-  text-indent: -9999px
-  width: 363px
-  height: 44px
+  @include replace-text-with-dimensions("logo.png")
   +float-right
 
 #gallery-wrapper
@@ -81,18 +78,10 @@ a, img
   font-style: italic
 
 #content-bar-top
-  // @include replace-text-with-dimensions("content-bar-top.png")
-  background: url("/img/content-bar-top.png")
-  text-indent: -9999px
-  width: 1110px
-  height: 2px
+  @include replace-text-with-dimensions("content-bar-top.png")
 
 #content-bar-bottom
-  // @include replace-text-with-dimensions("content-bar-bottom.png")
-  background: url("/img/content-bar-bottom.png")
-  text-indent: -9999px
-  width: 1110px
-  height: 14px
+  @include replace-text-with-dimensions("content-bar-bottom.png")
 
 #content-title
   font-size: 35px

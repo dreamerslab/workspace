@@ -3,8 +3,9 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import compass/reset
-@import compass/css3/inline-block
+@import "compass"
+@import "compass/reset"
+@import "lib"
 
 a
   color: #000
@@ -24,13 +25,11 @@ body
   padding: 45px 0 0
 
 header
+  +clearfix
   margin: 0 auto
 
 #logo
-  background: url('/img/logo.png')
-  text-indent: -9999px
-  width: 305px
-  height: 84px
+  @include bg_text( 305px, 84px, "logo" )
   margin: 0 auto
 
 #float-eagle
@@ -59,7 +58,7 @@ nav
   _height: 182px
   +inline-block
 
-#gallery-wrapper
+#gallery-wrap
   position: relative
   width: 1180px
   margin: 0 auto

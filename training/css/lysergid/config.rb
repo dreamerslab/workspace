@@ -60,19 +60,15 @@
 # end
 
 # Change the CSS directory
-# set :css_dir, "alternative_css_directory"
-# set :css_dir, "css"
-# set :http_stylesheets_path, "/css"
-
+set :css_dir, "css"
+set :http_stylesheets_path, "/css"
 
 # Change the JS directory
-# set :js_dir, "alternative_js_directory"
+set :js_dir, "js"
 
 # Change the images directory
-# set :img
 set :images_dir, "img"
 set :http_images_path , "/img"
-
 
 # Build-specific configuration
 configure :build do
