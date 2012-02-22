@@ -1,28 +1,28 @@
-@import compass
+@import "compass"
+@import "compass/reset"
+@import "lib"
 
 $font-family: serif
 $font-color: #B3B3AD
 $link-color: #08AC86
-$link-hover: #000
+$link-hover: #aaa
 $span-color: #fff
 $nav-color: #888888
 $page-width: 1180px
 
-@include global-reset
-
-#original
-  @include replace-text-with-dimensions("original.png")
-  position: absolute
-  top: 0
-  left: 50%
-  margin: 0 0 0 -630px
-  opacity: 0.1
-  z-index: 9999
+// #original
+//   @include bg_text( 1261px, 1238px,"original")
+//   position: absolute
+//   top: 0
+//   left: 50%
+//   margin: 0 0 0 -630px
+//   opacity: 0.1
+//   z-index: 9999
 
 body
   font-family: $font-family
   color: $font-color
-  background: #1A1A1A url("/images/bg.png") no-repeat
+  background: #1a1a1a url("/img/bg.png") no-repeat
 
 a, img
   display: block
@@ -35,62 +35,77 @@ a:hover
   color: $link-hover
   text-decoration: none
 
-#page-wrapper
+ul
   +clearfix
-  position: relative
-  width: $page-width
+
+#page-wrap
+  +clearfix
+  width: 1261px
   margin: 0 auto
-  padding: 219px 0 0 0
+
+#header
+  width: 1200px
+  margin: 0 auto
+  position: relative
+
+header
+  background: url("/img/line-fade.png") no-repeat bottom
+  padding: 217px 0 80px
 
 #logo
-  @include replace-text-with-dimensions("logo.png")
+  @include bg_text( 880px, 146px, "logo")
   margin: 0 auto
 
 #sublogo
-  @include replace-text-with-dimensions("sublogo.png")
+  @include bg_text( 32px, 32px, "sublogo")
   position: absolute
   top: 64px
-  right: 150px
+  right: 160px
 
 #desc
+  background: url("/img/summary-bg.png") no-repeat bottom
   font-size: 15px
   font-style: italic
   text-transform: capitalize
   text-align: center
-  padding: 25px 0 0 0
-
-#desc-line
-  @include replace-text-with-dimensions("summary-bg.png")
-  position: absolute
-  top: 394px
-  left: 50%
-  margin: 0 0 0 -630px
+  padding: 25px 0 0
 
 nav
   position: absolute
   color: $nav-color
-  top: 71px
-  left: 151px
+  top: 76px
+  left: 161px
 
 .nav-item
   +inline-block
-  padding: 0 33px 0 0
+  padding: 0 27px 0 0
 
 .nav-link
-  +inline-block
   font-family: serif
   font-size: 13px
   font-style: italic
   color: $nav-color
   text-decoration: none
+  padding: 0 0 7px 0
+
+.selected
+  background: url("/img/nav-bg.png") repeat-x 3px bottom
+  color: #fff
+
+.nav-span
+  font-family: sans-serif
+  font-style: normal
+  font-weight: bold
 
 #share
   position: absolute
   top: 70px
   right: 116px
 
-#main-wrapper
-  padding: 123px 0 0 151px
+#main-wrap
+  width: 879px
+  padding: 45px 0 38px
+  margin: 0 auto
 
 #chat, #portfolio, #note
   +inline-block
@@ -98,7 +113,6 @@ nav
 
 #chat
   width: 165px
-  vertical-align: top
 
 .chat-span
   color: $span-color
@@ -109,7 +123,7 @@ nav
 #chat-first-p
   font-style: italic
   line-height: 24px
-  margin: -4px 0 0 0
+  margin: -4px 0 0
 
 #chatterbox
   color: $span-color
@@ -121,11 +135,11 @@ nav
   font-size: 12px
   font-family: sans-serif
   line-height: 18px
-  padding: 0 0 15px 0
+  padding: 0 0 15px
 
 #twitter
-  @include replace-text-with-dimensions("twitter.png")
-  padding: 16px 0 0 0
+  @include bg_text( 64px, 12px, "twitter")
+  margin: 16px 0 0
 
 #portfolio
   padding: 0 0 0 50px
@@ -133,7 +147,7 @@ nav
 
 #project
   +clearfix
-  padding: 0 0 45px 0
+  padding: 0 0 45px
 
 .project-item
   +float-left
@@ -143,20 +157,23 @@ nav
   font-family: sans-serif
   font-weight: bold
   font-style: normal
-  padding: 0 0 15px 0
+  padding: 0 0 15px
 
 .project-title
   text-align: center
-  padding: 7px 0 0 0
+  padding: 7px 0 0
   font-size: 15px
   font-style: italic
+
+#gallery
+  +clearfix
 
 .gallery-item
   +float-left
 
 #flickr
-  @include replace-text-with-dimensions("flickr.png")
-  padding: 14px 0 0 0
+  @include bg_text( 74px, 14px, "flickr")
+  margin: 8px 0 0
 
 #note
   width: 164px
@@ -171,7 +188,7 @@ nav
   line-height: 18px
 
 #portfolio-subtitle
-  padding: 0 0 12px 0
+  padding: 0 0 12px
 
 .note-content
   font-family: sans-serif
@@ -179,26 +196,16 @@ nav
   line-height: 18px
 
 #delicious
-  @include replace-text-with-dimensions("delicious.png")
-  padding: 18px 0 0 0
-
-#line-shade
-  @include replace-text-with-dimensions("line-fade.png")
-  position: absolute
-  top: 478px
-  left: 50%
-  margin: 0 0 0 -715px
-
-#line
-  @include replace-text-with-dimensions("line.png")
+  @include bg_text( 75px, 14px, "delicious")
+  margin: 16px 0 0
 
 #copyright
   +float-left
 
 footer
   +clearfix
-  position: relative
-  padding: 32px 0 95px 150px
+  background: url("/img/line.png") no-repeat center top
+  padding: 2px 0 0
   font-size: 12px
 
 #footer-title
@@ -207,7 +214,7 @@ footer
   font-weight: bold
   font-family: sans-serif
   width: 162px
-  padding: 38px 0 0 0
+  padding: 38px 0 0
 
 #footer-content-1, #footer-content-2
   +inline-block
@@ -219,34 +226,29 @@ footer
 
 #footer-content-1
   width: 328px
-  // text-indent: 10px
 
 #footer-content-2
   width: 261px
-  // text-indent: 5px
-
-#footer-info img
-  +float-left
 
 .footer-img
   +float-left
   width: 45px
   height: 26px
 
-#line-wide
-  @include replace-text-with-dimensions("line-wide.png")
-  position: absolute
-  top: 1187px
-  left: 50%
-  margin: 0 0 0 -630px
+#footer-info
+  width: 880px
+  padding: 0 0 34px
+  margin: 0 auto
 
 #other-info
-  position: absolute
-  top: 180px
-  left: 150px
+  +clearfix
+  background: url("/img/line-wide.png") no-repeat top
+  width: 1261px
+  padding: 15px 0 13px
+  margin: 0 auto
 
 #copyright
-  padding: 17px 0 0 0
+  padding: 4px 0 0 193px
   text-transform: uppercase
   font-size: 9px
   font-family: sans-serif
@@ -255,16 +257,9 @@ footer
 #sizes
   +float-right
   +clearfix
+  background: url("/img/screens.png") no-repeat left top
   color: #666
-  padding: 9px 0 0 0
-
-#size-pic
-  @include replace-text-with-dimensions("screens.png")
-  +float-left
-
-#sizes-content
-  +float-left
-  padding: 6px 3px 0 14px
   font-size: 10px
   font-family: sans-serif
-  color: #666
+  padding: 6px 197px 0 102px
+  height: 28px
