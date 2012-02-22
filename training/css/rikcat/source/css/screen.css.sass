@@ -3,11 +3,12 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import compass/reset
-@import compass/css3/inline-block
-@import compass/utilities/general/float
-@import compass/typography/text/replacement
-@import compass/utilities/general/clearfix
+@import "compass/reset"
+@import "compass/css3/inline-block"
+@import "compass/utilities/general/float"
+@import "compass/typography/text/replacement"
+@import "compass/utilities/general/clearfix"
+@import "lib"
 
 body
   font-family: sans-serif
@@ -24,7 +25,7 @@ a, img
   +inline-block
   vertical-align: top
 
-#page-wrapper
+#page-wrap
   +clearfix
   width: 1007px
   margin: 0 auto
@@ -34,7 +35,7 @@ a, img
   width: 220px
 
 #logo
-  @include replace-text-with-dimensions("logo.png")
+  @include bg_text( 225px, 137px, "logo")
   margin: 0 auto
 
 nav
@@ -44,7 +45,7 @@ nav
   font-weight: bold
   font-style: normal
   margin: 0 auto
-  padding: 22px 0 0 0
+  padding: 22px 0 0
 
 .nav-link
   width: 210px
@@ -63,16 +64,16 @@ nav
 
 .info
   color: #454545
-  padding: 26px 0 0 0
+  padding: 26px 0 0
   font-size: 12px
   line-height: 15px
 
-#gallery-wrapper
+#gallery-wrap
   +float-right
   +clearfix
   width: 750px
   margin: 0 auto
-  padding: 27px 0 0 0
+  padding: 27px 0 0
 
 .gallery-item
   +float-left
@@ -81,7 +82,7 @@ nav
   width: 169px
   height: 171px
 
-.item-wrapper
+.item-wrap
   +clearfix
   border: 1px solid #ddd
   padding: 7px
@@ -90,10 +91,9 @@ nav
   color: rgb(4, 145, 171)
 
 .item-title
-  +inline-block
   color: #444
   font-size: 11px
-  padding: 5px 0 0 0
+  padding: 5px 0 0
 
 .item-subtitle
   color: #888
@@ -104,7 +104,7 @@ nav
   +float-right
   color: rgb(120, 192, 66)
   font-size: 11px
-  margin: -14px 0 0 0
+  margin: -14px 0 0
 
 #gallery-info
   color: rgb(4, 145, 171)
@@ -120,5 +120,5 @@ footer
   color: #aaa
   clear: both
   text-align: center
-  padding: 61px 0 58px 0
+  padding: 61px 0 58px
   font-size: 11px
