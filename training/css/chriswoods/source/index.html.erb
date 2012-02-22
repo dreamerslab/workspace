@@ -29,26 +29,16 @@
   </div><!-- #header -->
   <div id="gallery-wrap">
     <ul>
-      <li class="list-item"><a href="#"><img src="/img/gallery-01.png" alt=""></a></li>
-      <li class="list-item"><a href="#"><img src="/img/gallery-02.png" alt=""></a></li>
-      <li class="list-item"><a href="#"><img src="/img/gallery-03.png" alt=""></a></li>
-      <li class="list-item"><a href="#"><img src="/img/gallery-04.png" alt=""></a></li>
-      <li class="list-item"><a href="#"><img src="/img/gallery-05.png" alt=""></a></li>
-      <li class="list-item"><a href="#"><img src="/img/gallery-06.png" alt=""></a></li>
-      <li class="list-item"><a href="#"><img src="/img/gallery-07.png" alt=""></a></li>
-      <li class="list-item"><a href="#"><img src="/img/gallery-08.png" alt=""></a></li>
-      <li class="list-item"><a href="#"><img src="/img/gallery-09.png" alt=""></a></li>
-      <li class="list-item"><a href="#"><img src="/img/gallery-10.png" alt=""></a></li>
-      <li class="list-item"><a href="#"><img src="/img/gallery-11.png" alt=""></a></li>
-      <li class="list-item"><a href="#"><img src="/img/gallery-12.png" alt=""></a></li>
+      <% 12.times do | num | %>
+      <li class="list-item"><a href="#"><img src="/img/gallery-<%= num+1 %>.png" alt=""></a></li>
+      <% end %>
     </ul>
   </div>
   <div id="controller-wrap">
     <ul>
-      <li class="controller-item"><img src="/img/controller1.png" alt=""></li>
-      <li class="controller-item"><img src="/img/controller2.png" alt=""></li>
-      <li class="controller-item"><img src="/img/controller3.png" alt=""></li>
-      <li class="controller-item"><img src="/img/controller4.png" alt=""></li>
+      <% 4.times do | num | %>
+      <li class="controller-item"><img src="/img/controller<%= num+1 %>.png" alt=""></li>
+      <% end %>
     </ul>
   </div>
 </div>
