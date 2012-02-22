@@ -34,7 +34,7 @@ header
   padding: 0 265px 0 0
 
 #logo
-  @include replace-text-with-dimensions("logo.png")
+  @include bg_text(363px, 44px, "logo")
   +float-right
 
 #gallery-wrapper
@@ -67,35 +67,31 @@ header
 .item-subtitle
   background: #000
   color: #999
-  padding: 0 0 14px 0
+  padding: 0 0 14px
   font-size: 12px
 
 #content
   color: #fff
-  width: 1100px
+  width: 1111px
   margin: -35px auto 0
   text-align: center
   font-style: italic
 
-#content-bar-top
-  @include replace-text-with-dimensions("content-bar-top.png")
-
-#content-bar-bottom
-  @include replace-text-with-dimensions("content-bar-bottom.png")
-
 #content-title
+  background: url("/img/content-bar-top.png") no-repeat top
   font-size: 35px
-  padding: 60px 0 0 0
+  padding: 60px 0 0
 
 #content-content
   font-size: 19px
-  padding: 22px 0 0 0
+  padding: 22px 0 0
 
 nav
+  background: url("/img/content-bar-bottom.png") no-repeat bottom
   color: #fff
   font-size: 25px
   font-style: normal
-  padding: 30px 0 60px 0
+  padding: 30px 0 74px
 
 .nav-item
   +inline-block
@@ -103,7 +99,7 @@ nav
 
 #footer-wrapper
   width: 1100px
-  padding: 56px 0 0 0
+  padding: 56px 0 0
   margin: 0 auto
   +clearfix
 
@@ -115,7 +111,7 @@ nav
 .info-title
   color: #fff
   font-size: 22px
-  padding: 0 0 17px 0
+  padding: 0 0 17px
 
 .info-content
   background: #111
