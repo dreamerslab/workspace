@@ -3,11 +3,12 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import compass/reset
-@import compass/css3/inline-block
-@import compass/utilities/general/float
-@import compass/typography/text/replacement
-@import compass/utilities/general/clearfix
+@import "compass/reset"
+@import "compass/css3/inline-block"
+@import "compass/utilities/general/float"
+@import "compass/typography/text/replacement"
+@import "compass/utilities/general/clearfix"
+@import "lib"
 
 body
   font-family: sans-serif
@@ -24,7 +25,7 @@ a, img
   +inline-block
   vertical-align: top
 
-#page-wrapper
+#page-wrap
   +clearfix
   position: relative
   width: 1261px
@@ -39,24 +40,24 @@ a, img
   position: relative
 
 #logo
-  @include replace-text-with-dimensions("logo.png")
+  @include bg_text( 139px, 74px, "logo" )
   position: absolute
   top: 51px
   left: 20px
 
 #nav-item-portfolio
-  @include replace-text-with-dimensions("nav-portfolio.png")
+  @include bg_text( 80px, 50px, "nav-portfolio" )
   position: absolute
   top: 51px
   right: 145px
 
 #nav-item-about-me
-  @include replace-text-with-dimensions("nav-about-me.png")
+  @include bg_text( 74px, 50px, "nav-about-me" )
   position: absolute
   top: 51px
 
 #nav-item-lion
-  @include replace-text-with-dimensions("nav-float.png")
+  @include bg_text( 86px, 10px, "nav-float" )
   position: absolute
   top: 13px
 
@@ -64,57 +65,57 @@ a, img
   right: 38px
 
 #info
-  @include replace-text-with-dimensions("info.png")
+  @include bg_text( 167px, 10px, "info" )
   position: absolute
   top: 146px
   left: 20px
 
 #bg-left
-  @include replace-text-with-dimensions("bg-left.png")
+  @include bg_text( 230px, 774px, "bg-left" )
   position: absolute
   top: 0
   left: 1px
   z-index: 2
 
 #bg-right
-  @include replace-text-with-dimensions("bg-right.png")
+  @include bg_text( 231px, 774px, "bg-right" )
   position: absolute
   top: 0
   right: 1px
   z-index: 2
 
 #gallery
-  @include replace-text-with-dimensions("gallery.png")
+  @include bg_text( 800px, 372px, "gallery" )
   position: absolute
   top: 243px
   left: 230px
 
 #bg-middle-01
-  @include replace-text-with-dimensions("bg-middle-01.png")
+  @include bg_text( 800px, 67px, "bg-middle-01" )
   position: absolute
   top: 176px
   left: 230px
 
 #bg-middle-02
-  @include replace-text-with-dimensions("bg-middle-02.png")
+  @include bg_text( 800px, 128px, "bg-middle-02" )
   position: absolute
   top: 614px
   left: 230px
 
 #copyright
-  @include replace-text-with-dimensions("copyright.png")
+  @include bg_text( 428px, 30px, "copyright" )
   position: absolute
   top: 741px
   left: 230px
 
 #twitter
-  @include replace-text-with-dimensions("twitter-logo.png")
+  @include bg_text( 169px, 30px, "twitter-logo" )
   position: absolute
   top: 741px
   right: 231px
 
 #footer
-  @include replace-text-with-dimensions("footer.png")
+  @include bg_text( 221px, 30px, "footer" )
   position: absolute
   top: 741px
   right: 399px
