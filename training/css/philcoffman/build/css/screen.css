@@ -1,0 +1,191 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+body {
+  background: url("/img/background.png");
+  font-family: sans-serif; }
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif; }
+
+a:hover {
+  text-decoration: underline; }
+
+a, img {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  vertical-align: top; }
+  a, img {
+    *display: inline; }
+
+#page-wrap {
+  width: 1261px;
+  margin: 0 auto;
+  padding: 30px 0 0; }
+
+header {
+  text-align: center; }
+
+#logo {
+  text-indent: -9999px;
+  width: 60px;
+  height: 72px;
+  background: url('/img/sprite-s42c2c3ba2d.png') no-repeat 0 -46px;
+  margin: 0 auto; }
+
+nav {
+  overflow: hidden;
+  *zoom: 1;
+  color: white;
+  font-size: 25px;
+  font-style: normal;
+  margin: 0 auto;
+  padding: 40px 0 10px;
+  text-align: center; }
+
+.nav-item {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 0 38px; }
+  .nav-item {
+    *display: inline; }
+
+#nav-home {
+  text-indent: -9999px;
+  width: 41px;
+  height: 17px;
+  background: url('/img/sprite-s42c2c3ba2d.png') no-repeat 0 -135px; }
+
+#nav-work {
+  text-indent: -9999px;
+  width: 44px;
+  height: 17px;
+  background: url('/img/sprite-s42c2c3ba2d.png') no-repeat 0 -152px; }
+
+#nav-blog {
+  text-indent: -9999px;
+  width: 36px;
+  height: 17px;
+  background: url('/img/sprite-s42c2c3ba2d.png') no-repeat 0 -118px; }
+
+#gallery-wrap {
+  overflow: hidden;
+  *zoom: 1;
+  background: url("/img/gallery-top.png") no-repeat center top;
+  width: 960px;
+  margin: 0 auto;
+  padding: 39px 0 0; }
+
+#gallery-title {
+  text-indent: -9999px;
+  width: 325px;
+  height: 46px;
+  background: url('/img/sprite-s42c2c3ba2d.png') no-repeat 0 0;
+  margin: 0 auto; }
+
+#gallery-list-wrap {
+  background: url("/img/gallery-bottom.png") no-repeat 50% 42px;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 82px 0 0;
+  text-align: center; }
+
+.gallery-item {
+  display: inline;
+  float: left;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 0 10px;
+  height: 277px;
+  width: 220px; }
+  .gallery-item {
+    *display: inline; }
+
+.gallery-span {
+  color: #0491ab; }
+
+.item-title {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  color: #333333;
+  font-size: 17px;
+  padding: 17px 0 2px;
+  border-bottom: 1px solid #aaaaaa; }
+  .item-title {
+    *display: inline; }
+
+.item-subtitle {
+  color: #333333;
+  padding: 3px 0 14px;
+  font-size: 12px;
+  line-height: 17px; }
+
+footer {
+  background: url("/img/gallery-bottom.png") no-repeat 50% 52px;
+  color: #444444;
+  text-align: center;
+  padding: 67px 0;
+  font-size: 12px;
+  line-height: 17px; }

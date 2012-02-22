@@ -1,0 +1,186 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+body {
+  font-family: sans-serif; }
+
+a {
+  color: #222222;
+  text-decoration: none;
+  font-family: sans-serif; }
+
+a:hover {
+  text-decoration: underline; }
+
+a, img {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  vertical-align: top; }
+  a, img {
+    *display: inline; }
+
+#page-wrap {
+  overflow: hidden;
+  *zoom: 1;
+  width: 1007px;
+  margin: 0 auto; }
+
+#header {
+  display: inline;
+  float: left;
+  width: 220px; }
+
+#logo {
+  text-indent: -9999px;
+  width: 225px;
+  height: 137px;
+  background: url('/img/sprite-s010c2b0b64.png') no-repeat 0 0;
+  margin: 0 auto; }
+
+nav {
+  overflow: hidden;
+  *zoom: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  margin: 0 auto;
+  padding: 22px 0 0; }
+
+.nav-link {
+  width: 210px;
+  height: 20px;
+  padding: 10px 0 0px 10px; }
+
+.nav-link:hover {
+  text-decoration: none;
+  background: #efefef; }
+
+#nav-item-first {
+  border-top: 1px solid #dddddd; }
+
+.nav-item {
+  border-bottom: 1px solid #dddddd; }
+
+.info {
+  color: #454545;
+  padding: 26px 0 0;
+  font-size: 12px;
+  line-height: 15px; }
+
+#gallery-wrap {
+  display: inline;
+  float: right;
+  overflow: hidden;
+  *zoom: 1;
+  width: 750px;
+  margin: 0 auto;
+  padding: 27px 0 0; }
+
+.gallery-item {
+  display: inline;
+  float: left;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 0 14px 18px 0;
+  width: 169px;
+  height: 171px; }
+  .gallery-item {
+    *display: inline; }
+
+.item-wrap {
+  overflow: hidden;
+  *zoom: 1;
+  border: 1px solid #dddddd;
+  padding: 7px; }
+
+.gallery-span {
+  color: #0491ab; }
+
+.item-title {
+  color: #444444;
+  font-size: 11px;
+  padding: 5px 0 0; }
+
+.item-subtitle {
+  color: #888888;
+  font-size: 11px;
+  line-height: 17px; }
+
+.price {
+  display: inline;
+  float: right;
+  color: #78c042;
+  font-size: 11px;
+  margin: -14px 0 0; }
+
+#gallery-info {
+  color: #0491ab;
+  text-align: center; }
+
+#gallery-info-title {
+  font-size: 15px; }
+
+#gallery-info-content {
+  font-size: 13px; }
+
+footer {
+  color: #aaaaaa;
+  clear: both;
+  text-align: center;
+  padding: 61px 0 58px;
+  font-size: 11px; }

@@ -1,0 +1,184 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+body {
+  background: #151515; }
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: serif; }
+
+a:hover {
+  text-decoration: underline; }
+
+a, img {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  vertical-align: top; }
+  a, img {
+    *display: inline; }
+
+#page-wrap {
+  width: 1261px;
+  margin: 0 auto;
+  padding: 111px 0 0 0; }
+
+header {
+  padding: 0 265px 0 0; }
+
+#logo {
+  text-indent: -9999px;
+  width: 363px;
+  height: 44px;
+  background: url('/img/sprite-s0f663bd091.png') no-repeat 0 0;
+  display: inline;
+  float: right; }
+
+#gallery-wrap {
+  overflow: hidden;
+  *zoom: 1;
+  width: 1110px;
+  margin: 0 auto;
+  padding: 74px 0 0; }
+
+#gallery-title {
+  color: white;
+  font-size: 35px;
+  font-style: italic;
+  padding: 0 0 20px 7px; }
+
+.gallery-item {
+  display: inline;
+  float: left;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 0 7px 119px;
+  height: 321px;
+  width: 540px; }
+  .gallery-item {
+    *display: inline; }
+
+.gallery-span {
+  color: #0491ab; }
+
+.item-title {
+  color: white;
+  font-size: 22px;
+  padding: 20px 0 15px 0; }
+
+.item-subtitle {
+  background: black;
+  color: #999999;
+  padding: 0 0 14px;
+  font-size: 12px; }
+
+#content {
+  color: white;
+  width: 1111px;
+  margin: -35px auto 0;
+  text-align: center;
+  font-style: italic; }
+
+#content-title {
+  background: url("/img/content-bar-top.png") no-repeat top;
+  font-size: 35px;
+  padding: 60px 0 0; }
+
+#content-content {
+  font-size: 19px;
+  padding: 22px 0 0; }
+
+nav {
+  background: url("/img/content-bar-bottom.png") no-repeat bottom;
+  color: white;
+  font-size: 25px;
+  font-style: normal;
+  padding: 30px 0 74px; }
+
+.nav-item {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  background: #0491ab; }
+  .nav-item {
+    *display: inline; }
+
+#footer-wrap {
+  width: 1100px;
+  padding: 56px 0 0;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1; }
+
+.info-wrap {
+  display: inline;
+  float: left;
+  width: 247px;
+  padding: 0 27px 0 0; }
+
+.info-title {
+  color: white;
+  font-size: 22px;
+  padding: 0 0 17px; }
+
+.info-content {
+  background: #111111;
+  color: #888888;
+  font-size: 13px; }

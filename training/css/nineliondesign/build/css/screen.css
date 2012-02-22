@@ -1,0 +1,206 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+body {
+  font-family: sans-serif; }
+
+a {
+  color: #222222;
+  text-decoration: none;
+  font-family: sans-serif; }
+
+a:hover {
+  text-decoration: underline; }
+
+a, img {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  vertical-align: top; }
+  a, img {
+    *display: inline; }
+
+#page-wrap {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  width: 1261px;
+  height: 771px;
+  margin: 0 auto; }
+
+#header {
+  background: url("/img/header-bg.png");
+  margin: 0 auto;
+  width: 800px;
+  height: 176px;
+  position: relative; }
+
+#logo {
+  text-indent: -9999px;
+  width: 139px;
+  height: 74px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -2185px;
+  position: absolute;
+  top: 51px;
+  left: 20px; }
+
+#nav-item-portfolio {
+  text-indent: -9999px;
+  width: 80px;
+  height: 50px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -2319px;
+  position: absolute;
+  top: 51px;
+  right: 145px; }
+
+#nav-item-about-me {
+  text-indent: -9999px;
+  width: 74px;
+  height: 50px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -2259px;
+  position: absolute;
+  top: 51px; }
+
+#nav-item-lion {
+  text-indent: -9999px;
+  width: 86px;
+  height: 10px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -2309px;
+  position: absolute;
+  top: 13px; }
+
+#nav-item-about-me, #nav-item-lion {
+  right: 38px; }
+
+#info {
+  text-indent: -9999px;
+  width: 167px;
+  height: 10px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -2175px;
+  position: absolute;
+  top: 146px;
+  left: 20px; }
+
+#bg-left {
+  text-indent: -9999px;
+  width: 230px;
+  height: 774px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 0;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  z-index: 2; }
+
+#bg-right {
+  text-indent: -9999px;
+  width: 231px;
+  height: 774px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -969px;
+  position: absolute;
+  top: 0;
+  right: 1px;
+  z-index: 2; }
+
+#gallery {
+  text-indent: -9999px;
+  width: 800px;
+  height: 372px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -1803px;
+  position: absolute;
+  top: 243px;
+  left: 230px; }
+
+#bg-middle-01 {
+  text-indent: -9999px;
+  width: 800px;
+  height: 67px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -774px;
+  position: absolute;
+  top: 176px;
+  left: 230px; }
+
+#bg-middle-02 {
+  text-indent: -9999px;
+  width: 800px;
+  height: 128px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -841px;
+  position: absolute;
+  top: 614px;
+  left: 230px; }
+
+#copyright {
+  text-indent: -9999px;
+  width: 428px;
+  height: 30px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -1743px;
+  position: absolute;
+  top: 741px;
+  left: 230px; }
+
+#twitter {
+  text-indent: -9999px;
+  width: 169px;
+  height: 30px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -2369px;
+  position: absolute;
+  top: 741px;
+  right: 231px; }
+
+#footer {
+  text-indent: -9999px;
+  width: 221px;
+  height: 30px;
+  background: url('/img/sprite-se7eaeecca3.png') no-repeat 0 -1773px;
+  position: absolute;
+  top: 741px;
+  right: 399px; }
