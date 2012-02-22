@@ -1,4 +1,6 @@
-@import compass
+@import "compass"
+@import "compass/reset"
+@import "lib"
 
 $font-family: sans-serif
 $font-color: #888888
@@ -8,8 +10,6 @@ $link-hover: #fff
 $nav-color: #CCCCCC
 $page-width: 1220px
 $gallery-bg: #000000
-
-@include global-reset
 
 body
   font-family: $font-family
@@ -37,7 +37,7 @@ p
 .content-bold
   font-weight: bold
 
-#page-wrapper
+#page-wrap
   +clearfix
   position: relative
   width: $page-width
@@ -45,13 +45,16 @@ p
   padding: 35px 0 0 0
 
 #logo
-  @include replace-text-with-dimensions("logo.png")
+  @include bg_text( 371px, 74px, "logo")
 
 #top
-  @include replace-text-with-dimensions("top.png")
+  @include bg_text( 20px, 20px, "top")
   position: fixed
   top: 670px
   right: 110px
+
+nav
+  padding: 0 0 32px 0
 
 .nav-item
   +inline-block
@@ -63,9 +66,6 @@ p
 .nav-link
   text-decoration: none
 
-#main-wrapper
-  padding: 32px 0 0 0
-
 article
   +float-left
   @include border-radius(5px, 5px)
@@ -75,18 +75,14 @@ article
   font-family: sans-serif
   padding: 13px 20px 20px 20px
 
-#article-title-logo
-  @include replace-text-with-dimensions("article-title-logo.png")
-  +float-right
-
-.content-list-wrapper
+.content-list-wrap
   padding: 5px 0 1px 15px
 
-.b-content-list-wrapper
+.b-content-list-wrap
   padding: 19px 0 16px 55px
   color: $b-font-color
 
-.b-content-list-with-title-wrapper
+.b-content-list-with-title-wrap
   padding: 10px 0 4px 55px
   color: $b-font-color
 
@@ -98,6 +94,7 @@ article
   padding: 0 0 4px 0
 
 #article-title
+  background: url("/img/article-title-logo.png") no-repeat right top
   font-size: 21px
   font-family: serif
   color: #CCCCCC
@@ -111,7 +108,7 @@ article
   font-weight: bold
   padding: 33px 0 17px 0
 
-#gallery-wrapper
+#gallery-wrap
   +float-right
   width: 465px
   text-align: center
@@ -121,7 +118,7 @@ article
   +inline-block
   padding: 0 6px 10px 0
 
-.item-wrapper
+.item-wrap
   background: $gallery-bg
   @include border-radius(5px, 5px)
   padding: 9px
