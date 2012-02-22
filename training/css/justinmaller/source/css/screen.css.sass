@@ -1,13 +1,12 @@
-@import compass
+@import "compass"
+@import "compass/reset"
+@import "lib"
 
 $font-family: Tahoma, sans-serif
 $font-color: #fff
 $link-hover: #aaf
 $page-width: 1207px
-$page-half-width: $page-width/-2
 $gallery-bg: #191919
-
-@include global-reset
 
 body
   font-family: $font-family
@@ -25,7 +24,7 @@ a:hover
   color: $link-hover
   text-decoration: none
 
-#page-wrapper
+#page-wrap
   position: relative
   width: $page-width
   margin: 0 auto
@@ -34,16 +33,13 @@ a:hover
   background: #000
   width: $page-width
   position: fixed
-  top: 0px
-  left: 50%
-  margin: 0 0 0 $page-half-width
-  padding: 7px 0 0 0
+  padding: 7px 0 0
   text-align: center
   border-bottom: 1px solid #ccc
   z-index: 1
 
 #logo
-  @include replace-text-with-dimensions("logo.jpeg")
+  @include bg_text( 400px, 120px, "logo")
   margin: 0 auto
 
 .nav-item
@@ -52,27 +48,26 @@ a:hover
   color: #fff
   text-decoration: none
   padding: 0px 11px 10px
-  // margin: 0 0 0 0
 
 #nav-twitter
-  @include replace-text-with-dimensions("justinmaller.png")
+  @include bg_text( 25px, 20px, "justinmaller")
 
-#gallery-wrapper
+#gallery-wrap
   padding: 160px 0 70px 3px
 
 .gallery-item
   +inline-block
-  padding: 0 0 3px 0
+  padding: 0 0 3px
 
-.item-wrapper
+.item-wrap
+  @include border-radius(2px, 2px)
   position: relative
   background: $gallery-bg
-  @include border-radius(2px, 2px)
   width: 287px
   height: 322px
   padding: 5px 6px 5px 3px
 
-.item-wrapper:hover
+.item-wrap:hover
   background: #fff
   color: #000
 
@@ -92,7 +87,7 @@ a:hover
 .item-title
   font-size: 11px
   font-weight: bold
-  padding: 2px 0 2px 0
+  padding: 2px 0 2px
 
 .item-subtitle
   font-size: 11px
@@ -103,13 +98,11 @@ footer
   height: 35px
   position: fixed
   bottom: 0
-  left: 50%
-  margin: 0 0 0 $page-half-width
   text-align: center
   border-top: 1px solid #ccc
 
 #footer-top
-  background: url("/images/footer-top.png")
+  background: url("/img/footer-top.png")
   width: $page-width
   height: 40px
   position: absolute
@@ -122,7 +115,7 @@ footer
   position: absolute
   top: -30px
   right: 0px
-  padding: 4px 7px 0 4px
+  padding: 4px 7px 5px 4px
 
 #email
   background: #000
@@ -132,21 +125,19 @@ footer
   height: 16px
   margin: 0 8px 0 0
 
+#footer-info-wrap
+  padding: 8px 0 0
+
 #depthcore
-  position: absolute
-  top: 7px
-  left: 5px
-  @include replace-text-with-dimensions("depthcore.jpeg")
+  @include bg_text( 104px, 11px, "depthcore")
+  +float-left
+  margin: 0 0 0 5px
 
 #hosting
-  position: absolute
-  top: 8px
-  right: 6px
-  @include replace-text-with-dimensions("www.mediatemple.jpeg")
+  @include bg_text( 192px, 11px, "mediatemple")
+  +float-right
+  margin: 0 6px 0 0
 
 #copyright
-  @include replace-text-with-dimensions("copyright.jpeg")
+  @include bg_text( 322px, 10px, "copyright")
   margin: 0 auto
-
-#footer-info-wrapper
-  padding: 8px 0 0 0

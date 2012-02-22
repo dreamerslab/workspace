@@ -1,54 +1,52 @@
 <% content_for :head do %>
   <title>Justinmaller</title>
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
 <% end %>
-<div id="page-wrapper">
-  <div id="main-wrapper">
-    <div id="header">
-      <header>
-         <h1><a id="logo" href="#">Justinmaller</a></h1>
-      </header><!-- /header -->
-      <nav>
-        <ul>
-          <li class="nav-item"><a id="nav-home" class="nav-link" href="#">WALLPAPERS</a></li>
-          <li class="nav-item"><a id="nav-portfolio" class="nav-link" href="#">CONTACT</a></li>
-          <li class="nav-item"><a id="nav-about" class="nav-link" href="#">ABOUT</a></li>
-          <li class="nav-item"><a id="nav-about" class="nav-link" href="#">CATEGORIES</a></li>
-          <li class="nav-item"><a id="nav-twitter" class="nav-link" href="#">TWITTER</a></li>
-        </ul>
-      </nav>
-    </div> <!-- #header -->
-    <div id="gallery-wrapper">
+
+<div id="page-wrap">
+  <div id="header">
+    <header>
+       <h1><a id="logo" href="#">Justinmaller</a></h1>
+    </header><!-- /header -->
+    <nav>
       <ul>
-        <% 49.times do |num| %>
-        <li class="gallery-item">
-          <div class="item-wrapper">
-            <div class="photo-wrapper">
-              <a class="item-link" href="#">
-                <img src="/img/gallery-<%= num+1 %>.jpeg" alt="Gallery item">
-              </a>
-              <div class="counts"><%= num+1 %> IMAGES</div>
-            </div>
-            <h3 class="item-title"><%= lorem.words 5 %></h3>
-            <h3 class="item-subtitle"><%= lorem.words 7 %></h3>
-          </div>
-        </li>
-        <% end %>
+        <li class="nav-item"><a id="nav-home" class="nav-link" href="#">WALLPAPERS</a></li>
+        <li class="nav-item"><a id="nav-portfolio" class="nav-link" href="#">CONTACT</a></li>
+        <li class="nav-item"><a id="nav-about" class="nav-link" href="#">ABOUT</a></li>
+        <li class="nav-item"><a id="nav-about" class="nav-link" href="#">CATEGORIES</a></li>
+        <li class="nav-item"><a id="nav-twitter" class="nav-link" href="#">TWITTER</a></li>
       </ul>
-    </div> <!-- #gallery-wrapper -->
-    <footer>
-      <div id="footer-top"></div>
-      <div id="contact">
+    </nav>
+  </div> <!-- #header -->
+  <div id="gallery-wrap">
+    <ul>
+      <% 49.times do |num| %>
+      <li class="gallery-item">
+        <div class="item-wrap">
+          <div class="photo-wrap">
+            <a class="item-link" href="#">
+              <img src="/img/gallery-<%= num+1 %>.jpeg" alt="Gallery item">
+            </a>
+            <div class="counts"><%= num+1 %> IMAGES</div>
+          </div>
+          <h3 class="item-title"><%= lorem.words 5 %></h3>
+          <h3 class="item-subtitle"><%= lorem.words 7 %></h3>
+        </div>
+      </li>
+      <% end %>
+    </ul>
+  </div> <!-- #gallery-wrap -->
+  <footer>
+    <div id="footer-top"></div>
+    <div id="contact">
+      <form action="#" method="post" accept-charset="utf-8">
         <input id="email" type="email" name="email">
-        <input type="image" src="/img/newsletter.jpeg" name="submit">
-      </div>
-      <div id="footer-info-wrapper">
-        <div><a id="depthcore" href="#">Depthcore</a></div>
-        <div><a id="hosting" href="#">hosting</a></div>
-        <div id="copyright">2010 All Right Reserved</div>
-      </div>
-    </footer>
-  </div> <!-- #main-wrapper -->
-</div> <!-- #page-wrapper -->
+        <input type="image" src="/img/newsletter.png" name="submit">
+      </form>
+    </div>
+    <div id="footer-info-wrap">
+      <a id="depthcore" href="#">Depthcore</a>
+      <a id="hosting" href="#">hosting</a>
+      <div id="copyright">2010 All Right Reserved</div>
+    </div>
+  </footer>
+</div> <!-- #page-wrap -->
