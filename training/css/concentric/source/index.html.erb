@@ -1,0 +1,70 @@
+<% content_for :head do %>
+  <title>Concentric Studio™</title>
+<% end%>
+
+<!-- <div id="original"></div> -->
+<div id="top-bg">
+  <div id="top-bg-content">
+    <div id="sns">Follow Us On  <a id="facebook" href="#">Facebook</a> <a id="twitter" href="#">Twitter</a></div>
+    <p id="top-bg-info">
+      <%= lorem.sentence %> <a href="#" id="top-bg-link">Conatct Us</a>
+    </p>
+  </div>
+</div>
+<div id="header-bg">
+  <div id="header">
+    <header>
+      <h1><a id="logo" href="#">Concentric</a></h1>
+    </header>
+    <nav>
+      <ul>
+        <li class="nav-item"><a href="#" id="nav-client" class="navlink"><%= lorem.words 2 %></a></li>
+        <li class="nav-item"><a href="#" id="nav-work" class="navlink"><%= lorem.words 2 %></a></li>
+        <li class="nav-item"><a href="#" id="nav-about" class="navlink"><%= lorem.words 2 %></a></li>
+        <li class="nav-item"><a href="#" id="nav-service" class="navlink"><%= lorem.words 2 %></a></li>
+        <li class="nav-item"><a href="#" id="nav-news" class="navlink"><%= lorem.words 2 %></a></li>
+        <li class="nav-item"><a href="#" id="nav-touch" class="navlink"><%= lorem.words 2 %></a></li>
+      </ul>
+    </nav>
+  </div>
+</div> <!-- #header-wrap -->
+<div id="main-bg">
+  <div id="main">
+    <div id="main-content">
+      <p id="main-content-left"><%= lorem.sentences 2 %></p>
+      <p id="main-content-right"><%= lorem.sentences 2 %></p>
+    </div>
+    <div id="work">
+      <h3 id="work-title">THE WORK</h3>
+      <div class="work-img">
+        <img src="/img/cfr-icon.png" alt="CFR">
+      </div>
+      <div class="work-content">
+        <h4 class="work-subtitle"><%= lorem.words 2 %></h4>
+        <p class="work-p"><%= lorem.sentence %></p>
+        <a class="work-link" href="#"><%= lorem.words 2 %></a>
+      </div>
+      <div class="work-img">
+        <img src="/img/vs-checkout-icon.png" alt="CFR">
+      </div>
+      <div class="work-content">
+        <h4 class="work-subtitle"><%= lorem.words 2 %></h4>
+        <p class="work-p"><%= lorem.sentence %></p>
+        <a class="work-link" href="#"><%= lorem.words 2 %></a>
+      </div>
+    </div>
+    <div id="news">
+      <h3 id="news-title">GOOD NEWS</h3>
+      <% 3.times do %>
+      <div class="news-date"><%= lorem.date %></div>
+      <h4><a href="#" class="news-subtitle"><%= lorem.words 3 %></a></h4>
+      <% end %>
+    </div>
+  </div> <!-- #main -->
+</div> <!-- #main-bg -->
+<div id="bot-border">
+  <footer>
+    <p id="footer-info"><%= lorem.sentence %> <a href="#" id="footer-link">Conatct Us</a></p>
+    <p id="copyright"><%= lorem.words 5 %></p>
+  </footer>
+</div>

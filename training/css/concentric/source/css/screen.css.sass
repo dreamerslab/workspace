@@ -1,0 +1,244 @@
+@import "compass"
+@import "compass/reset"
+// You must put some pngs in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+a, img
+  +inline-block
+  vertical-align: top
+
+a
+  text-decoration: none
+
+ul
+  +clearfix
+
+body
+  background: #F2F2F2
+
+#original
+  background: url("/img/sprite/temp/original.png") no-repeat
+  width: 1261px
+  height: 1016px
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -630px
+  opacity: 0.4
+  z-index: 9999
+
+#top-bg
+  background: #161616
+  height: 32px
+
+#top-bg-content
+  +clearfix
+  width: 900px
+  margin: 0 auto
+  padding: 11px 0 0
+  font-family: tahoma, helvetica, arial, sans-serif
+  font-size: 9px
+  color: #6a6a6a
+
+#top-bg-link
+  +inline-block
+  vertical-align: top
+  color: #1D96B8
+
+#top-bg-link:hover
+  color: #fff
+
+#facebook
+  @include bg_text( 15px, 15px, "facebook")
+  +inline-block
+  margin: -3px 2px 0
+
+#twitter
+  @include bg_text( 15px, 15px, "twitter")
+  +inline-block
+  margin: -3px 0 0
+
+#facebook:hover
+  background-position: 0 -39px
+
+#twitter:hover
+  background-position: 0 -1092px
+
+#top-bg-info
+  +float-right
+
+#sns
+  +float-right
+  padding: 0 0 0 95px
+
+h1
+  +float-left
+  padding: 0 0 0 16px
+
+#logo
+  @include bg_text( 109px, 89px, "logo")
+
+#header-bg
+  background: #fff
+
+#header
+  +clearfix
+  width: 900px
+  margin: 0 auto
+  padding: 24px 0 21px
+  border-bottom: 1px solid #aaa
+
+nav
+  +float-right
+  padding: 74px 4px 0 0
+
+.nav-item
+  +inline-block
+
+#nav-client
+  @include bg_text( 77px, 12px, "our-clients")
+
+#nav-client:hover
+  @include bg_text( 77px, 12px, "our-clients-on")
+
+#nav-work
+  @include bg_text( 82px, 12px, "the-work")
+
+#nav-work:hover
+  @include bg_text( 82px, 12px, "the-work-on")
+
+#nav-about
+  @include bg_text( 82px, 12px, "about-us")
+
+#nav-about:hover
+  @include bg_text( 82px, 12px, "about-us-on")
+
+#nav-service
+  @include bg_text( 80px, 12px, "services")
+
+#nav-service:hover
+  @include bg_text( 80px, 12px, "services-on")
+
+#nav-news
+  @include bg_text( 93px, 12px, "good-news")
+
+#nav-news:hover
+  @include bg_text( 93px, 12px, "good-news-on")
+
+#nav-touch
+  @include bg_text( 87px, 12px, "get-in-touch")
+
+#nav-touch:hover
+  @include bg_text( 87px, 12px, "get-in-touch-on")
+
+#main-bg
+  background: #fff
+
+#main
+  +clearfix
+  width: 900px
+  margin: 0 auto
+  padding: 23px 0 95px
+
+#main-content
+  +clearfix
+  padding: 0 0 21px
+
+#main-content-left
+  @include bg_text( 390px, 407px, "front-fa1")
+  +float-left
+
+#main-content-right
+  @include bg_text( 510px, 407px, "front-fa2")
+  +float-right
+
+#work
+  +float-left
+  width: 345px
+  padding: 0 0 0 17px
+
+#work-title, #news-title
+  color: #1D96B8
+  font-family: helvetica
+  font-size: 19px
+  border-bottom: 1px solid #E9E9E9
+  padding: 0 0 15px
+
+.work-img
+  +float-left
+  padding: 19px 0 0
+
+.work-content
+  +float-right
+  width: 195px
+  height: 74px
+  padding: 20px 0 0
+
+.work-subtitle
+  color: #1A1A1A
+  font-family: 'lucida grande', helvetica, arial, sans-serif
+  font-size: 10px
+  line-height: 14px
+  font-weight: bold
+  text-transform: capitalize
+
+.work-p
+  font-family: 'lucida grande', helvetica, arial, sans-serif
+  font-size: 10px
+  line-height: 14px
+  color: #838383
+
+.work-link
+  font-family: 'lucida grande', helvetica, arial, sans-serif
+  font-size: 10px
+  line-height: 14px
+  color: #1D96B8
+
+.work-link:hover
+  color: #f87100
+
+#news
+  +float-right
+  width: 495px
+
+.news-subtitle
+  font-family: helvetica, arial, sans-serif
+  font-size: 29px
+  line-height: 29px
+  color: #1A1A1A
+  text-transform: capitalize
+
+.news-subtitle:hover
+  color: #616161
+
+.news-date
+  font-family: 'lucida grande', helvetica, arial, sans-serif
+  font-size: 10px
+  line-height: 19px
+  color: #a6acad
+  padding: 13px 0 0
+
+#bot-border
+  border-top: 1px solid #aaa
+  height: 80px
+
+footer
+  width: 900px
+  margin: 0 auto
+  padding: 24px 0 0
+  font-family: tahoma, helvetica, arial, sans-serif
+  font-size: 9px
+  color: #bbbbb4
+
+#footer-info
+  +float-left
+
+#footer-link
+  color: #bbbbb4
+  padding: 0 0 0 10px
+
+#footer-link:hover
+  color: #616161
+
+#copyright
+  +float-right
