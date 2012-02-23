@@ -1,0 +1,187 @@
+@import "compass"
+@import "compass/reset"
+// You must put some pngs in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+a, img
+  +inline-block
+
+a
+  text-decoration: none
+
+ul
+  +clearfix
+
+body
+  font-family: Arial, Helvetica, Geneva, sans-serif
+
+#original
+  @include bg_text( 1261px, 1238px, "original")
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -630px
+  opacity: 0.1
+  z-index: 9999
+
+#header
+  +clearfix
+  width: 940px
+  margin: 0 auto
+  padding: 12px 0 0
+  position: relative
+
+h1, header
+  +inline-block
+
+#logo
+  @include bg_text( 148px, 98px, "logo")
+
+#login
+  +float-right
+  font-size: 11px
+  position: absolute
+  top: 63px
+  right: 0px
+  text-transform: capitalize
+
+#main-bg
+  background: #F3F3F3
+  border-top: 1px solid #CACACA
+  border-bottom: 1px solid #CACACA
+
+#main
+  +clearfix
+  width: 940px
+  margin: 0 auto
+  padding: 0 0 42px
+
+#custom-page
+  @include bg_text( 159px, 26px, "custom-page")
+  margin: -1px 0 0
+
+#desc
+  +clearfix
+  background: url("/img/welcome-master.png") repeat-x center bottom
+  padding: 0 0 16px
+
+#desc-title, #desc-content, #desc-link, #dont-show-message
+  font-family: Helvetica, Arial, Geneva, sans-serif
+
+#desc-title
+  font-size: 60px
+  color: #333
+  padding: 30px 0 0
+  letter-spacing: -1px
+
+#desc-content
+  font-size: 36px
+  color: #333
+  padding: 15px 0 0
+
+#desc-link
+  font-size: 25px
+  color: #262626
+  padding: 28px 0 0
+
+#dont-show-message
+  +float-right
+  font-size: 11px
+  color: #3f3f3f
+  padding: 22px 0 0
+
+#dont-show-message:hover
+  text-decoration: underline
+
+#headline
+  +float-left
+  width: 302px
+  padding: 23px 0 0
+
+.headline-link
+  display: block
+  color: #434343
+  font-size: 11px
+  padding: 6px 0
+  border-bottom: 1px solid #cacaca
+
+.headline-link:hover
+  background: #e8e8e8
+  color: #048ccc
+
+.main-title
+  background: url("/img/main-title-bg.png") no-repeat right top
+  color: #212121
+  font-size: 16px
+  font-weight: bold
+  border-bottom: 1px solid #CACACA
+  padding: 0 0 5px
+
+#popular
+  +float-left
+  width: 302px
+  padding: 23px 0 0 20px
+
+#latest-images
+  +float-left
+  width: 302px
+  padding: 23px 0 0 14px
+
+.img-item
+  +inline-block
+  padding: 7px 0 0 3px
+
+.new-img
+  @include border-radius( 4px )
+
+footer
+  +clearfix
+  position: relative
+  color: #262626
+  width: 940px
+  margin: 0 auto
+  padding: 23px 0 59px
+
+#source, #more, #about
+  +float-left
+  width: 320px
+  margin: 0 auto
+
+.footer-title
+  font-size: 15px
+  padding: 0 0 8px
+
+.footer-link
+  color: #262626
+  font-size: 11px
+  text-transform: capitalize
+  padding: 3px 0
+
+.footer-link:hover
+  text-decoration: underline
+
+#about
+  width: 300px
+
+#copyright
+  position: absolute
+  bottom: 31px
+  left: 0
+  font-size: 11px
+  text-transform: capitalize
+
+#facebook
+  position: absolute
+  bottom: 24px
+  right: 172px
+  font-size: 11px
+  text-transform: capitalize
+
+#facebook-link
+  background: url("/img/facebook.gif") no-repeat left top
+  color: #048ccc
+  padding: 1px 0 0 21px
+  height: 15px
+
+#facebook-link:hover
+  text-decoration: underline
