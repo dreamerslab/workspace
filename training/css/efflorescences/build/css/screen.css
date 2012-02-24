@@ -1,0 +1,223 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+a, img {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  vertical-align: top; }
+  a, img {
+    *display: inline; }
+
+ul {
+  overflow: hidden;
+  *zoom: 1; }
+
+#original {
+  text-indent: -9999px;
+  width: 1261px;
+  height: 691px;
+  background: url('/img/sprite-s22c8b57fd2.png') no-repeat 0 -44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 9999; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: url("/img/bg.jpeg") no-repeat black;
+  color: white; }
+
+#page-wrap {
+  width: 700px; }
+
+#header {
+  overflow: hidden;
+  *zoom: 1; }
+
+header {
+  display: inline;
+  float: left; }
+
+h1 {
+  padding: 36px 0 0 68px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto; }
+  h1 {
+    *display: inline; }
+
+#logo {
+  text-indent: -9999px;
+  width: 237px;
+  height: 58px; }
+
+nav {
+  display: inline;
+  float: left;
+  position: relative; }
+
+#nav-work {
+  text-indent: -9999px;
+  width: 49px;
+  height: 13px;
+  background: url('/img/sprite-s22c8b57fd2.png') no-repeat 0 -735px;
+  position: absolute;
+  top: 63px;
+  left: 44px; }
+
+#nav-about {
+  text-indent: -9999px;
+  width: 55px;
+  height: 13px;
+  background: url('/img/sprite-s22c8b57fd2.png') no-repeat 0 0;
+  position: absolute;
+  top: 63px;
+  left: 115px; }
+
+#nav-links {
+  text-indent: -9999px;
+  width: 49px;
+  height: 13px;
+  background: url('/img/sprite-s22c8b57fd2.png') no-repeat 0 -22px;
+  position: absolute;
+  top: 63px;
+  left: 198px; }
+
+#nav-work:hover, #nav-about:hover, #nav-links:hover {
+  padding: 0 0 9px; }
+
+#desc {
+  display: inline;
+  float: left;
+  text-align: right;
+  width: 300px; }
+
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 26px 0 30px; }
+
+#desc-content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  line-height: normal; }
+
+#news {
+  display: inline;
+  float: right;
+  width: 349px;
+  padding: 28px 0 0; }
+
+#news-title {
+  font-size: 16px;
+  padding: 0 0 18px; }
+
+.news-item {
+  overflow: hidden;
+  *zoom: 1;
+  color: #909090;
+  font-size: 11px; }
+
+.news-photo {
+  display: inline;
+  float: left; }
+
+.news-subtitle {
+  display: inline;
+  color: white;
+  padding: 0 0 0 15px;
+  text-transform: capitalize; }
+
+.news-content {
+  display: inline;
+  float: right;
+  width: 289px; }
+
+.new-link {
+  color: #cccccc;
+  text-decoration: none; }
+
+.new-link:hover {
+  color: white;
+  text-decoration: underline; }
+
+.content-info {
+  padding: 0 0 4px; }
+
+.content-p {
+  padding: 0 0 37px; }
+
+footer {
+  display: inline;
+  float: left;
+  text-align: right;
+  font-size: 10px;
+  width: 300px;
+  padding: 51px 0 0; }
+
+#footer-title {
+  color: white;
+  font-size: 12px; }
+
+.footer-p {
+  color: #707070;
+  padding: 0 0 7px; }
+
+.footer-link {
+  color: #707070;
+  display: block;
+  padding: 9px 0 0;
+  text-decoration: none; }
+
+.footer-link:hover {
+  text-decoration: underline; }
