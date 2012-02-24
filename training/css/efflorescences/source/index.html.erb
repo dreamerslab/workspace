@@ -1,0 +1,49 @@
+<% content_for :head do %>
+  <title>efflorescences.org | Online portfolio of Julien Moreau</title>
+<% end%>
+<!-- <div id="original"></div> -->
+<div id="page-wrap">
+  <div id="header">
+    <header>
+      <h1>
+        <a href="#" id="logo">efflorescences.org | Online portfolio of Julien Moreau</a>
+      </h1>
+    </header>
+    <nav>
+      <a href="#" id="nav-work">WORK</a>
+      <a href="#" id="nav-about">ABOUT</a>
+      <a href="#" id="nav-links">LINKS</a>
+    </nav>
+  </div>
+  <div id="desc">
+    <h2>Welcome on efflorescences</h2>
+    <p id="desc-content"><%= lorem.sentences 3 %></p>
+  </div>
+  <div id="news">
+    <h3 id="news-title">News</h3>
+    <% 5.times do |num| %>
+    <div class="news-item">
+      <div class="news-photo">
+        <a href="#"><img src="/img/news-<%= num+1 %>.jpeg" alt="News Photo"></a>
+      </div>
+      <div class="news-content">
+        <div class="content-info">
+          <%= lorem.date %>
+          <h4 class="news-subtitle"><%= lorem.words 2 %></h4>
+        </div>
+        <p class="content-p"><%= lorem.sentences 2 %> <a href="#" class="new-link"> more...</a> </p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <footer>
+    <p id="footer-title" class="footer-p">Available for freelance at</p>
+    <% 2.times do %>
+    <p class="footer-p"><%= lorem.sentence %></p>
+    <% end %>
+    <div id="links">
+      <a class="footer-link" href="#"><%= lorem.words 2 %></a>
+      <a class="footer-link" href="#"><%= lorem.word %></a>
+    </div>
+  </footer>
+</div> <!-- #page-wrap -->

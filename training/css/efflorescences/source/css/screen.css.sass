@@ -1,0 +1,156 @@
+@import "compass"
+@import "compass/reset"
+// You must put some pngs in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+$nav-top: 63px
+$nav-padding-r: 22px
+$work-pos: 44px
+$work-width: 49px
+$about-pos: $work-pos + $work-width + $nav-padding-r
+$about-width: 55px
+$links-pos: $about-pos + $about-width + $nav-padding-r + 6px
+$links-width: 49px
+
+a, img
+  +inline-block
+  vertical-align: top
+
+ul
+  +clearfix
+
+#original
+  @include bg_text( 1261px, 691px, "original")
+  position: absolute
+  top: 0
+  left: 0
+  opacity: 0.2
+  z-index: 9999
+
+body
+  font-family: Arial, sans-serif
+  background: url("/img/bg.jpeg") no-repeat #000
+  color: #fff
+
+#page-wrap
+  width: 700px
+
+#header
+  +clearfix
+
+header
+  +float-left
+
+h1
+  padding: 36px 0 0 68px
+  +inline-block
+
+#logo
+  text-indent: -9999px
+  width: 237px
+  height: 58px
+
+nav
+  +float-left
+  position: relative
+
+#nav-work
+  @include bg_text( $work-width, 13px, "work")
+  position: absolute
+  top: $nav-top
+  left: $work-pos
+
+#nav-about
+  @include bg_text( $about-width, 13px, "about")
+  position: absolute
+  top: $nav-top
+  left: $about-pos
+
+#nav-links
+  @include bg_text( $links-width, 13px, "links")
+  position: absolute
+  top: $nav-top
+  left: $links-pos
+
+#nav-work:hover, #nav-about:hover, #nav-links:hover
+  padding: 0 0 9px
+
+#desc
+  +float-left
+  text-align: right
+  width: 300px
+
+h2
+  font-size: 16px
+  font-weight: bold
+  padding: 26px 0 30px
+
+#desc-content
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 10px
+  line-height: normal
+
+#news
+  +float-right
+  width: 349px
+  padding: 28px 0 0
+
+#news-title
+  font-size: 16px
+  padding: 0 0 18px
+
+.news-item
+  +clearfix
+  color: #909090
+  font-size: 11px
+
+.news-photo
+  +float-left
+
+.news-subtitle
+  display: inline
+  color: #fff
+  padding: 0 0 0 15px
+  text-transform: capitalize
+
+.news-content
+  +float-right
+  width: 289px
+
+.new-link
+  color: #ccc
+  text-decoration: none
+
+.new-link:hover
+  color: #fff
+  text-decoration: underline
+
+.content-info
+  padding: 0 0 4px
+
+.content-p
+  padding: 0 0 37px
+
+footer
+  +float-left
+  text-align: right
+  font-size: 10px
+  width: 300px
+  padding: 51px 0 0
+
+#footer-title
+  color: #fff
+  font-size: 12px
+
+.footer-p
+  color: #707070
+  padding: 0 0 7px
+
+.footer-link
+  color: #707070
+  display: block
+  padding: 9px 0 0
+  text-decoration: none
+
+.footer-link:hover
+  text-decoration: underline
