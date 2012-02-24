@@ -1,0 +1,46 @@
+<% content_for :head do %>
+  <title>SuperMegaUltraGroovy</title>
+<% end%>
+<!-- <div id="original"></div> -->
+<div id="page-wrap">
+  <div id="header">
+    <header>
+      <h1><a href="#" id="logo">SuperMegaUltraGroovy</a></h1>
+      <h2>Reverse Engineering Rock and Roll</h2>
+      <h3 id="desc"><%= lorem.words 20 %><a href="#" id="watch"></a></h3>
+    </header><!-- /header -->
+    <div id="header-link">
+      <a href="#" id="download">Download</a>
+      <a href="#" id="buy">Buy $49</a>
+    </div>
+  </div> <!-- #header -->
+  <div id="sample">
+    <div id="note"><%= lorem.words 10 %></div>
+    <img id="sample-img" src="/img/sample.png" alt="Sample">
+  </div>
+  <div id="main-title-bg">
+    <div id="main-title-wrap">
+      <h3 class="main-title" id="title-selected">Features</h3>
+      <h3 class="main-title">Tutorials</h3>
+    </div>
+  </div> <!-- #main-title-bg -->
+  <div id="feature-list">
+    <% 8.times do |num| %>
+    <div class="feature-item">
+      <div class="feature-img"><img src="/img/feature-<%= num+1 %>.png" alt=""></div>
+      <div class="feature-content">
+        <h4 class="feature-title"><%= lorem.words 3 %></h4>
+        <p class="feature-p"><%= lorem.words 24 %></p>
+      </div> <!-- .feature-content -->
+    </div> <!-- .feature-item -->
+    <% end %>
+  </div> <!-- #feature-list -->
+  <footer>
+    <div><a href="#" id="sublogo">SuperMegaUltraGroovy</a></div>
+    <div id="footer-link-wrap">
+      <a href="#" class="footer-link">Facebook</a>・
+      <a href="#" class="footer-link">Blog</a>・
+      <a href="#" class="footer-link">Contact Us</a>
+    </div>
+  </footer>
+</div>

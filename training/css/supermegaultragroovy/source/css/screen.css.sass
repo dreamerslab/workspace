@@ -1,0 +1,173 @@
+@import "compass"
+@import "compass/reset"
+// You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+a, img
+  +inline-block
+  vertical-align: top
+
+ul
+  +clearfix
+
+body
+  background: url("/img/body-bg.png") repeat
+  font-family: sans-serif
+  color: #A0A7AF
+
+#original
+  @include bg_text( 1261px, 1322px,"original")
+  background:url
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -630px
+  opacity: 0.3
+  z-index: 9999
+
+#page-wrap
+  +clearfix
+  background: url("/img/page-bg.png") repeat-y
+  width: 978px
+  margin: 0 auto
+
+#logo
+  @include bg_text( 194px, 71px,"logo")
+
+#header
+  +float-left
+  width: 374px
+  padding: 103px 0 0 40px
+
+h2
+  @include text-shadow(#000 0px -1px 1px)
+  color: #ABB1B6
+  font-size: 30px
+  font-weight: bold
+  padding: 21px 0 20px
+  line-height: 33px
+
+#desc
+  @include text-shadow(#000 0px -1px 1px)
+  color: #A7AEB6
+  line-height: 19px
+  padding: 0 0 26px
+  text-transform: capitalize
+
+#watch
+  @include bg_text( 96px, 15px,"watch")
+  margin: 0 0 0 4px
+
+#download
+  @include bg_text( 193px, 59px,"download")
+
+#buy
+  @include bg_text( 160px, 59px,"buy")
+
+#header-link
+  padding: 0 0 0 3px
+
+#sample
+  +clearfix
+  padding: 109px 36px 0 0
+
+#note
+  @include box-sink( 0px, 0px, 6px )
+  @include border-radius( 5px )
+  +float-right
+  background: url("/img/note-bg.png") repeat-x
+  color: #A7AEB6
+  width: 367px
+  padding: 10px
+  width: 339px
+  padding: 13px
+  font-size: 12px
+  line-height: 16px
+  text-transform: capitalize
+
+#sample-img
+  +float-right
+  padding: 15px 0 0
+
+#main-title-bg
+  background: url("/img/border.png") repeat-x center 92px
+  width: 889px
+  margin: 0 auto
+  padding: 82px 0 0
+
+#main-title-wrap
+  background: url("/img/page-bg.png") center
+  text-align: center
+  width: 257px
+  margin: 0 auto
+  padding: 0 0 47px
+
+.main-title
+  @include text-shadow(#000 0px -1px 1px)
+  display: inline
+  font-size: 25px
+  font-weight: bold
+  margin: 0 7px
+  color: #525D67
+  cursor: pointer
+
+.main-title:hover
+  color: #ABB1B6
+
+#title-selected
+  background: url("/img/title-border.png") repeat-x bottom
+  color: #ABB1B6
+
+#feature-list
+  +clearfix
+
+.feature-item
+  +clearfix
+  +float-left
+  width: 390px
+  padding: 0 35px 0px 43px
+  height: 131px
+
+.feature-img
+  +float-left
+  padding: 5px 0 0
+
+.feature-content
+  +float-right
+  width: 315px
+
+.feature-title
+  font-size: 13px
+  font-weight: bold
+  padding: 0 0 13px
+  text-transform: capitalize
+
+.feature-p
+  font-size: 12px
+  line-height: 18px
+
+footer
+  background: url("/img/border.png") repeat-x top
+  color: #4E5B68
+  width: 889px
+  margin: 0 auto
+  text-align: center
+  padding: 50px 0 40px
+
+#sublogo
+  @include bg_text( 180px, 51px, "sublogo")
+
+#footer-link-wrap
+  padding: 17px 0 0
+
+.footer-link
+  color: #4E5B68
+  font-size: 13px
+  padding: 0 0 2px
+  border-bottom: 1px solid #4E5B68
+  text-decoration: none
+  margin: 0 1px
+
+.footer-link:hover
+  color: #A0A7AF
+  border-bottom: 1px solid #A0A7AF
