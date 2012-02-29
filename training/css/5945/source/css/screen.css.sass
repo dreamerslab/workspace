@@ -1,0 +1,301 @@
+@import "compass"
+@import "compass/reset"
+// You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+body
+  font-family: sans-serif
+  line-height: 18px
+  font-size: 13px
+
+a, img
+  +inline-block
+  vertical-align: top
+
+a
+  font-family: sans-serif
+  text-decoration: none
+
+a:hover
+  text-decoration: underline
+
+ul
+  +clearfix
+
+#original
+  @include bg_text( 1261px, 1370px,"original")
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -630px
+  opacity: 0.3
+  z-index: 9999
+
+#nav-bg
+  background: #41B6EA
+  position: fixed
+  top: 0px
+  width: 100%
+  height: 44px
+
+#nav-wrap
+  +clearfix
+  width: 955px
+  margin: 0 auto
+  padding: 14px 0 0
+
+nav
+  +clearfix
+  +float-left
+  padding: 2px 0 0
+
+#sublogo
+  @include bg_text( 111px, 17px, "sublogo")
+  +float-left
+  padding: 0 37px 0 0
+
+.nav-item
+  +float-left
+  padding: 0 30px 0 0
+
+.nav-link
+  color: #fff
+  font-size: 16px
+
+#fb-login
+  @include bg_text( 58px, 22px, "fb")
+  +float-right
+  padding: 0 198px 0 0
+  margin: -3px 0 0
+
+$header-bg-padding: 231px
+$header-width: 1075px - $header-bg-padding
+
+#header
+  +clearfix
+  background: url("/img/header-bg.png") no-repeat bottom
+  width: $header-width
+  margin: 0 auto
+  padding: 147px 0 56px $header-bg-padding
+
+#logo
+  @include bg_text( 167px, 114px, "logo")
+  +float-left
+
+#header-content-wrap
+  +float-left
+  padding: 5px 0 0 23px
+
+#header-title
+  font-size: 18px
+  font-weight: bold
+  padding: 0 0 6px
+
+#search-content
+  @include border-radius(4px, 4px)
+  +float-left
+  width: 312px
+  height: 29px
+  font-size: 18px
+  color: #888
+
+#search-button
+  padding: 0 0 0 6px
+
+#keywords-list
+  font-size: 14px
+
+.keyword-link
+  color: #888
+
+#need-link
+  color: #41B6EA
+
+#keywords-list
+  +clearfix
+  width: 317px
+  padding: 5px 0 24px
+
+#keywords-title
+  +float-left
+
+#keywords-content
+  +float-left
+  width: 246px
+  line-height: 17px
+
+#fb-send-wrap
+  +clearfix
+  padding: 0 0 0 4px
+
+#fb-send
+  +inline-block
+  padding: 7px 0 0 3px
+  font-size: 12px
+
+#fb-send-link
+  @include bg_text( 117px, 24px, "fb-send")
+
+#google-plus
+  @include bg_text( 71px, 24px, "google-plus")
+
+#google-plus-wrap
+  padding: 7px 0 0 4px
+
+#main
+  +clearfix
+  width: 957px
+  margin: 0 auto
+  padding: 22px 0 68px 30px
+
+#sidebar-left
+  +float-left
+  width: 104px
+  padding: 14px 31px 0 0
+
+.sidebar-title
+  font-size: 14px
+  padding: 0 0 17px
+
+.sidebar-content
+  font-size: 13px
+  line-height: 19px
+
+.left-sidebar-link
+  color: #41B6EA
+  font-size: 13px
+  line-height: 19px
+
+.more
+  background: url("/img/sidebar-link.png") no-repeat right 19px
+  font-size: 11px
+  color: #7D8484
+  padding: 17px 9px 25px 0
+
+.sidebar-designer-link
+  font-size: 13px
+  color: #888
+  line-height: 18px
+
+#show-link
+  color: #888
+  display: inline
+
+#sifu-list-wrap
+  +float-left
+  width: 639px
+  border-left: 1px solid #888
+  border-right: 1px solid #888
+  padding: 15px 0 0 21px
+
+.list-item
+  +inline-block
+  width: 190px
+  padding: 0 19px 49px 0
+
+.gallery-title
+  color: #888
+  padding: 4px 0 0
+
+.gallery-title:hover
+  color: #41B6EA
+
+#sidebar-right
+  +float-right
+  padding: 14px 0 0
+  width: 135px
+
+#need-wrap
+  padding: 8px 0 26px
+
+#need
+  @include bg_text( 68px, 30px, "need")
+
+#yahoo-wrap
+  padding: 8px 0 20px
+
+#yahoo
+  @include bg_text( 97px, 30px, "yahoo")
+
+.tutorial
+  font-size: 11px
+  color: #7D8484
+  display: inline
+  padding: 0 4px 0 0
+
+.tutorial-title
+  padding: 0 0 2px
+
+.tutorial-title:hover
+  color: #41B6EA
+
+.tutorial-more
+  @include bg_text( 4px, 11px, "sidebar-link")
+
+#footer-link-wrap
+  +clearfix
+
+.footer-link-item
+  display: inline
+
+footer
+  background: url("/img/footer-bg.png") no-repeat top
+  text-align: center
+  margin: 0 auto
+  width: 1075px
+  padding: 22px 0 0
+
+.footer-link
+  color: #888
+
+#footer-info-list
+  display: inline
+
+#footer-sns-list
+  display: inline
+  padding: 0 0 0 12px
+
+#facebook-link
+  @include bg_text( 17px, 17px, "fb-logo")
+
+#twitter-link
+  @include bg_text( 17px, 17px, "twitter-logo")
+
+#youtube-link
+  @include bg_text( 17px, 17px, "youtube-logo")
+
+#plurk-link
+  @include bg_text( 17px, 17px, "plurk-logo")
+
+#copyright
+  padding: 18px 0 0
+
+#media
+  padding: 22px 0 0
+
+.media-link
+  +inline-block
+
+#media-1
+  @include bg_text( 59px, 22px, "media-1")
+
+#media-2
+  @include bg_text( 109px, 22px, "media-2")
+
+#media-3
+  @include bg_text( 100px, 22px, "media-3")
+
+#media-4
+  @include bg_text( 111px, 22px, "media-4")
+
+#media-5
+  @include bg_text( 73px, 22px, "media-5")
+
+#media-6
+  @include bg_text( 93px, 22px, "media-6")
+
+#media-7
+  @include bg_text( 126px, 22px, "media-7")
+
+#media-8
+  @include bg_text( 56px, 22px, "media-8")
