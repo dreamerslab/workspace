@@ -1,0 +1,319 @@
+@import "compass"
+@import "compass/reset"
+// You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+a, img
+  +inline-block
+
+a
+  text-decoration: none
+
+a:hover
+  text-decoration: none
+
+ul
+  +clearfix
+
+body
+  font-family: 'Sansumi Regular', HelveticaNeue-Light, 'Helvetica Neue Light', Helvetica, Arial, sans
+
+#original
+  background: url("/img/original.png") no-repeat
+  width: 1261px
+  height: 977px
+  text-indent: -9999px
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -630px
+  opacity: 0.1
+  z-index: 9999
+
+#header-main-bg
+  background: url("/img/background.jpeg")
+
+#header
+  +clearfix
+  width: 900px
+  margin: 0 auto
+  padding: 40px 0 0
+
+#logo
+  @include bg_text( 115px, 71px,"logo")
+  +float-left
+
+nav
+  +float-right
+  padding: 14px 30px 0 0
+
+.nav-item
+  display: inline
+  padding: 0 0 0 23px
+
+.nav-link
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans
+  font-size: 13px
+  color: #B24D44
+  letter-spacing: 2px
+
+.nav-link:hover
+  color: #222
+
+#main
+  +clearfix
+  width: 900px
+  margin: 0 auto
+  padding: 50px 0 28px
+
+#main-title
+  font-family: 'Sansumi Regular', HelveticaNeue-Light, 'Helvetica Neue Light', Helvetica, Arial, sans
+  font-size: 22px
+  color: #6f6f6f
+  letter-spacing: 4px
+  padding: 0 0 29px 9px
+
+#main-bg
+  +clearfix
+  background: url("/img/post-bg.png") no-repeat
+  width: 562px
+  height: 346px
+  padding: 23px 0 0 23px
+
+#just-done
+  +clearfix
+  +float-left
+  width: 580px
+
+#last-title
+  font-family: 'Sansumi Regular', HelveticaNeue-Light, 'Helvetica Neue Light', Helvetica, Arial, sans
+  color: #af554c
+  font-size: 22px
+  padding: 13px 0 0 5px
+
+#last-date
+  +float-left
+  color: #999
+  font-size: 13px
+  font-weight: bold
+  padding: 5px 0 0 6px
+
+#last-more-wrap
+  +float-right
+  padding: 0 64px 0 0
+
+#last-more
+  background: url("/img/link.png") no-repeat right
+  color: #C08882
+  font-size: 11px
+  font-weight: bold
+  padding: 0 18px 0 0
+
+#pager
+  padding: 23px 0 0 23px
+
+#last-more:hover
+  background: url("/img/link2.png") no-repeat right
+  color: #000
+
+.pager-link
+  color: #af554c
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans
+  font-size: 13px
+  font-weight: bold
+  display: inline
+  padding: 0 3px 0
+
+.pager-link:hover
+  color: #000
+
+#pager-current
+  color: #595959
+
+#last-photos
+  +clearfix
+  +float-right
+  width: 267px
+  padding: 0 0 45px
+
+#last-photos-title
+  font-family: 'Sansumi Regular', HelveticaNeue-Light, 'Helvetica Neue Light', Helvetica, Arial, sans
+  font-size: 22px
+  color: #6f6f6f
+  letter-spacing: 4px
+  padding: 0 0 14px 9px
+
+#last-photos-wrap
+  padding: 0 50px 0 0
+
+#last-photo-img
+  padding: 0 0 0 7px
+
+#last-photos-more
+  +float-right
+  background: url("/img/link.png") no-repeat right
+  padding: 0 18px 0 0
+  color: #af554c
+  font-size: 11px
+  font-weight: bold
+
+#last-photos-more:hover
+  color: #000
+
+#last-article
+  +clearfix
+  +float-right
+  width: 267px
+
+#last-article-title
+  font-family: 'Sansumi Regular', HelveticaNeue-Light, 'Helvetica Neue Light', Helvetica, Arial, sans
+  font-size: 22px
+  color: #6f6f6f
+  letter-spacing: 4px
+  padding: 0 0 14px 7px
+  text-transform: uppercase
+
+.article-item-wrap
+  +clearfix
+  padding: 0 0 16px 10px
+
+.article-photo-wrap
+  +float-left
+  border: 3px solid #CCCCCC
+
+.article-link-wrap
+  +float-right
+  width: 206px
+
+.article-link
+  color: #af554c
+  font-size: 11px
+  font-weight: bold
+  line-height: 14px
+
+.article-link:hover
+  color: #000
+
+#last-article-item
+  padding: 0 0 0 2px
+
+#last-photo
+  border: none
+
+#upper-footer-bg
+  background: url("/img/footer-bg-1.jpeg")
+
+#upper-footer
+  +clearfix
+  width: 900px
+  margin: 0 auto
+  padding: 18px 0 48px
+
+.footer-item
+  +float-left
+  width: 265px
+  padding: 0 30px 0 0
+
+.footer-photo
+  +float-left
+
+.footer-content-wrap
+  +float-right
+  width: 185px
+  padding: 17px 0 0
+
+.footer-title
+  font-size: 20px
+  color: #979797
+  padding: 0 0 12px
+
+.footer-link
+  font-weight: bold
+  font-size: 13px
+  background: url("/img/link.png") no-repeat right 0px
+  color: #af554c
+  padding: 0 18px 0 0
+  vertical-align: top
+
+.footer-link:hover
+  background: url("/img/link2.png") no-repeat right
+  color: #000
+  border-bottom: 1px dotted #000
+
+.footer-content
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans
+  color: #999
+  font-size: 13px
+  padding: 0 0 1px
+  line-height: normal
+
+.footer-span
+  font-weight: bold
+
+#where-link
+  background: none
+  padding: 0
+
+#downer-footer-bg
+  background: url("/img/footer-bg-2.jpeg")
+
+#downer-footer
+  +clearfix
+  width: 900px
+  margin: 0 auto
+  padding: 20px 0 100px
+
+.downer-footer-item
+  +float-left
+  width: 265px
+  padding: 0 30px 0 0
+
+.downer-footer-title
+  color: #999
+  font-size: 13px
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans
+  font-weight: bold
+  padding: 0 0 4px
+
+.downer-footer-content-wrap
+  +float-right
+  width: 185px
+
+.downer-footer-photo-wrap
+  +float-left
+
+.downer-footer-link
+  color: #777
+  font-size: 13px
+  font-weight: bold
+  vertical-align: top
+
+.downer-footer-link:hover
+  color: #000
+  border-bottom: 1px dotted #000
+
+.footer-info
+  color: #999
+  font-size: 9px
+  line-height: normal
+
+#downer-footer-info-wrap
+  width: 310px
+  padding: 0
+
+.info-link
+  color: #777
+  font-weight: bold
+  vertical-align: top
+
+.info-link:hover
+  border-bottom: 1px dotted #777
+
+#sublogo
+  background: url("/img/default.gif") no-repeat
+  text-indent: -9999px
+  width: 62px
+  height: 25px
+  position: fixed
+  bottom: 0
+  right: 0
