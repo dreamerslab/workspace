@@ -11,7 +11,8 @@ a
   text-decoration: none
 
 a:hover
-  text-decoration: underline
+  text-decoration: none
+  color: #000
 
 ul
   +clearfix
@@ -125,13 +126,19 @@ nav
 .previous, .next
   +float-left
   text-indent: -9999px
-  background: url("/img/prevnext.jpeg") no-repeat top left
+  background: url("/img/prevnext.jpeg") no-repeat left top
   width: 20px
   height: 20px
 
 .next
   +float-right
   background: url("/img/prevnext.jpeg") no-repeat -20px top
+
+.previous:hover
+  background: url("/img/prevnext.jpeg") no-repeat left -20px
+
+.next:hover
+  background: url("/img/prevnext.jpeg") no-repeat -20px -20px
 
 #gallery
   padding: 40px 0 0 11px
@@ -197,6 +204,9 @@ nav
   position: absolute
   bottom: 0px
   right: 0px
+
+#top:hover
+  background: url("/img/backtop.jpeg") no-repeat left -20px
 
 footer
   +clearfix
