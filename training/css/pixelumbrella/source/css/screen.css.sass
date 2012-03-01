@@ -1,0 +1,280 @@
+@import "compass"
+@import "compass/reset"
+// You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+a, img
+  +inline-block
+  vertical-align: top
+
+ul
+  +clearfix
+
+#original
+  background: url("/img/original.png") no-repeat center top
+  width: 1261px
+  height: 1095px
+  text-indent: -9999px
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -630px
+  opacity: 0.5
+  z-index: 9999
+
+body
+  background: url(/img/bg-body.gif) 0 5px repeat-x white
+  border-top: 5px solid #474747
+  font-family: Verdana, Arial, Helvetica, sans-serif
+
+#logo
+  @include bg_text( 288px, 85px, "logo")
+
+header
+  background: url("/img/bg-header.gif") no-repeat center top
+  text-align: center
+  padding: 21px 0 14px
+
+#desc-bg
+  background: url(/img/bg-feature.gif) top center repeat-x #FAFAFA
+  border-top: 1px solid #DADBD9
+
+#desc
+  +clearfix
+  width: 790px
+  margin: 0 auto
+  padding: 0 0 23px
+
+#desc-left
+  +float-left
+  width: 330px
+  padding: 24px 28px 0 30px
+
+#desc-left-top
+  padding: 0 0 21px
+
+.title
+  color: #434343
+  font-family: Arial, Helvetica, Verdana, sans-serif
+  font-size: 19px
+  font-weight: bold
+  line-height: 20px
+  padding: 0 0 8px
+
+.content
+  color: #8d8c8c
+  font-family: Verdana, Arial, Helvetica, sans-serif
+  font-size: 11px
+  line-height: 17px
+
+#desc-left-subtitle
+  color: #434343
+  font-size: 12px
+  line-height: 13px
+
+.desc-list-item
+  display: inline-block
+  color: #424242
+  font-weight: bold
+  font-size: 11px
+  line-height: 13px
+  padding: 4px 18px 8px 27px
+
+#desc-list-first-item
+  background: url("/img/bg-li-num01.gif") no-repeat left top
+
+#desc-list-second-item
+  background: url("/img/bg-li-num02.gif") no-repeat left top
+
+#desc-right
+  +float-left
+  background: url("/img/bg-feature-separator.gif") no-repeat left 4px
+  width: 402px
+
+#photo-nav
+  +clearfix
+  padding: 22px 0 3px 42px
+
+#previous-photo, #next-photo
+  margin: 50px 12px 0 0
+
+#previous-photo
+  +float-left
+  background: url("/img/btn-arrow-feature-l.gif") no-repeat
+  text-indent: -9999px
+  width: 24px
+  height: 25px
+
+#previous-photo:hover
+  background: url("/img/btn-arrow-feature-l.gif") no-repeat -24px top
+
+#current-photo
+  +float-left
+  padding: 0 9px 0 0
+
+#next-photo
+  +float-left
+  background: url("/img/btn-arrow-feature-r.gif") no-repeat
+  text-indent: -9999px
+  width: 24px
+  height: 25px
+
+#next-photo:hover
+  background: url("/img/btn-arrow-feature-r.gif") no-repeat -24px top
+
+#feature-site-wrap
+  color: #BEBFBE
+  text-align: center
+  font-size: 10px
+  padding: 9px 0 0
+  margin: 0 0 0 78px
+  width: 277px
+  border-top: 1px solid #EBEBEB
+
+#feature-site-span
+  color: #8d8c8c
+  font-weight: bold
+  letter-spacing: -1px
+
+#gallery
+  width: 750px
+  margin: 0 auto
+  padding: 30px 0 40px
+
+.gallery-item
+  +inline-block
+  width: 211px
+  height: 177px
+  padding: 0 0 30px 26px
+
+.photo-link
+  background: url(/img/bg-piece.gif) repeat
+  padding: 5px
+
+.photo-link
+  display: block
+
+.gallery-content-wrap
+  background: url("/img/bg-piece-web.gif") no-repeat left top
+  height: 60px
+  border-top: 5px solid #DBDBDB
+  padding: 10px 0 0 23px
+
+.gallery-title, .gallery-subtitle
+  text-decoration: none
+
+.gallery-title
+  font-family: Georgia, 'Times New Roman', Times, serif
+  font-style: italic
+  font-size: 16px
+  line-height: 16px
+  color: #464646
+  padding: 0 0 6px
+
+.gallery-subtitle
+  color: #6d6d6d
+  font-family: Arial, Helvetica, Verdana, sans-serif
+  font-size: 10px
+  line-height: 14px
+
+#more-work-wrap
+  padding: 0 0 0 26px
+
+#more-work
+  background: url("/img/more-work.gif") no-repeat
+  text-indent: -9999px
+  width: 697px
+  height: 57px
+
+#footer-bg
+  background: whiteSmoke
+  border-top: 1px solid #D2D2D2
+  border-bottom: 5px solid #474747
+
+footer
+  +clearfix
+  width: 730px
+  margin: 0 auto
+
+#footer-about
+  +float-left
+  width: 476px
+  padding: 17px 0 0
+
+.about-img
+  +float-left
+
+#about-content-wrap
+  +float-right
+  width: 220px
+  padding: 7px 10px 0 0
+
+#about-title
+  padding: 0 0 7px
+
+#footer-about .content
+  padding: 0 0 13px
+  line-height: 15px
+  font-family: Arial, Helvetica, Verdana, sans-serif
+  font-size: 13px
+
+#footer-elsewhere
+  +float-left
+  background: url(/img/bg-footer.gif) top left repeat-y
+  width: 225px
+  padding: 24px 0 57px 28px
+
+.elsewhere-li
+  +inline-block
+  vertical-align: top
+  padding: 0 10px 0 0
+
+.elsewhere-link
+  background: url("/img/btn-arrow.gif") no-repeat left 4px
+  color: #8D8C8C
+  font-size: 11px
+  font-family: Arial, Helvetica, Verdana, sans-serif
+  line-height: 16px
+  padding: 1px 0 0 16px
+  text-decoration: none
+
+.elsewhere-link:hover
+  text-decoration: underline
+
+#elsewhere-title
+  padding: 0 0 2px
+
+#footer-elsewhere .content
+  line-height: 13px
+  color: #b4b4b4
+  padding: 0 0 9px
+
+#meta
+  width: 730px
+  margin: 0 auto
+  padding: 10px 0 0
+
+#copyright, #xhtml, #css
+  +inline-block
+  color: #909090
+  vertical-align: top
+  font-size: 11px
+  font-family: Arial, Helvetica, Verdana, sans-serif
+
+#xhtml, #css
+  padding: 0 0 0 10px
+  background: url("/img/bg-li.gif") no-repeat left top
+
+#copyright
+  color: #bfbfbf
+  font-size: 11px
+
+#top
+  +float-right
+  color: #909090
+  font-family: Arial, Helvetica, Verdana, sans-serif
+  font-size: 11px
+  text-decoration: none
+
+#top:hover
+  text-decoration: underline
