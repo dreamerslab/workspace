@@ -1,0 +1,110 @@
+<% content_for :head do %>
+  <title>Siplex Preview - ThemeForest</title>
+  <link href='http://fonts.googleapis.com/css?family=Amaranth:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<% end %>
+<!-- <div id="original"></div> -->
+
+<div id="page-wrap">
+  <div id="header">
+    <header>
+      <h1><a href="#" id="logo">Siplex</a></h1>
+      <h2>A brand new theme!</h2>
+      <img id="placeholder" src="/img/468x60.png" alt="468x60">
+    </header>
+    <nav>
+      <ul>
+        <li class="nav-item"><a href="#" id="nav-current" class="nav-link">Home</a></li>
+        <% 6.times do %>
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div> <!-- #header -->
+  <div id="main">
+    <h3 id="main-title">We create <span id="main-sapn">high quality</span> themes</h3>
+    <h4 id="main-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Sed posuere consectetur est at lobortis.</h4>
+    <a href="#"><img src="/img/nav-photo.png" alt="Photo"></a>
+  </div> <!-- #main -->
+  <div id="from">
+    <div class="title-wrap">
+      <h3 class="title">From the blog</h3>
+      <div class="prenext-wrap">
+        <a class="previous" href="#">Previous</a>
+        <a class="next" href="#">Next</a>
+      </div>
+    </div> <!-- .title-wrap -->
+    <div id="gallery">
+      <ul>
+        <% 4.times do |num| %>
+        <li class="gallery-item">
+          <a href="#"><img class="gallery-photo" src="/img/portfolio-<%= num+1 %>.jpeg" alt="Portfolio <%= num+1 %>"></a>
+          <h3 class="gallery-title">A small river named Duden</h3>
+          <h4 class="gallery-subtitle">Integer posuere erat a ante venenatis dapibus posuere velit aliquet...</h4>
+        </li>
+        <% end %>
+      </ul>
+    </div> <!-- #gallery -->
+  </div> <!-- #from -->
+  <div id="latest-test-wrap">
+    <div id="latest">
+      <div class="title-wrap">
+        <h3 class="title">Latest Work</h3>
+        <div class="prenext-wrap">
+          <a class="previous" href="#">Previous</a>
+          <a class="next" href="#">Next</a>
+        </div>
+      </div>
+      <div id="latest-content">
+        <a href="#" id="work-link-first" class="work-link"><img src="/img/portfolio-9.jpeg" alt="Work Item" class="work-item"></a>
+        <a href="#" class="work-link"><img src="/img/portfolio-8.jpeg" alt="Work Item" class="work-item"></a>
+      </div>
+    </div> <!-- #latest -->
+    <div id="test">
+      <div class="title-wrap">
+        <h3 class="title">Testimonials</h3>
+        <div class="prenext-wrap">
+          <a class="previous" href="#">Previous</a>
+          <a class="next" href="#">Next</a>
+        </div>
+      </div>
+      <p class="test-content">“Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod..” <span class="author">John Doe</span></p>
+    </div> <!-- #test -->
+    <a href="#" id="top"></a>
+  </div> <!-- #latest-test-wrap -->
+  <footer>
+    <div id="widget">
+      <div class="footer-title-wrap">
+        <h3 class="title">Text Widget</h3>
+      </div>
+      <p class="footer-content">Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.</p>
+    </div>
+    <div id="links" class="footer-content">
+      <div class="footer-title-wrap">
+        <h3 class="title">Links</h3>
+      </div>
+      <div id="footer-link-wrap">
+        <ul>
+          <% 5.times do %>
+          <li class="footer-li-border"><a class="footer-link" href="#">» Become a friend on Facebook</a></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <div id="newsletter">
+      <div class="footer-title-wrap">
+        <h3 class="title">Newsletter</h3>
+      </div>
+      <p class="footer-content">Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras mattis consectetur purus sit amet fermentum.</p>
+      <div id="form-wrap">
+        <form action="#">
+          <input name="email" id="email" type="text" value="Email your email address.">
+          <input name="subscribe" type="image" src="/img/subscribe.png">
+        </form>
+      </div>
+    </div> <!-- #newsletter -->
+  </footer>
+  <div id="meta">
+    <div id="copyright">© 2011 Siplex. All rights reserved. <a href="#" class="meta-link">Siplex</a> theme by <a href="#" class="meta-link">Niels De Craecker</a> .</div>
+    <div id="twitter">Follow us on <a href="#" class="meta-link">Twitter</a></div>
+  </div>
+</div> <!-- #page-wrap -->

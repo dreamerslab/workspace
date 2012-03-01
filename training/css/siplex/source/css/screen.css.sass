@@ -1,0 +1,272 @@
+@import "compass"
+@import "compass/reset"
+// You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+a, img
+  +inline-block
+  vertical-align: top
+
+a
+  text-decoration: none
+
+a:hover
+  text-decoration: underline
+
+ul
+  +clearfix
+
+body
+  font-family: 'Helvetica Neue', Helvetica, Geneva, Arial, sans-serif
+
+#original
+  background: url("/img/original.png") no-repeat center top
+  width: 1261px
+  height: 1961px
+  text-indent: -9999px
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -630px
+  opacity: 0.3
+  z-index: 9999
+
+h1, h2, h3, h4, h5, h6, #logo
+  color: #191919
+  font-family: 'Amaranth', sans-serif
+  font-weight: 400
+
+#page-wrap
+  width: 940px
+  margin: 0 auto
+  padding: 50px 0 0
+
+header
+  +clearfix
+
+h1
+  +float-left
+  padding: 4px 0 0
+
+#logo
+  font-size: 40px
+
+h2
+  +float-left
+  color: #d4d4d4
+  font-size: 15px
+  padding: 20px 0 0 30px
+
+#placeholder
+  +float-right
+
+nav
+  padding: 54px 0 0
+
+.nav-item
+  display: inline
+  padding: 0 37px 0 0
+
+.nav-link
+  color: #646464
+  font-size: 12px
+  font-weight: bold
+  font-family: 'Helvetica Neue', Helvetica, Geneva, Arial, sans-serif
+
+.nav-link:hover
+  color: #191919
+
+#nav-current
+  color: #000
+  border-bottom: 3px solid #191919
+  padding: 0 0 13px 0
+
+#main
+  border-top: 1px solid #F3F3F3
+  margin: -3px 0 0
+  text-align: center
+  padding: 52px 0 54px
+
+#main-title
+  color: #191919
+  font-size: 30px
+  padding: 0 0 31px
+
+#main-sapn
+  background: #87DBC9
+  color: #fff
+  padding: 5px
+
+#main-content
+  color: #6e6e6e
+  font-size: 20px
+  line-height: 34px
+  padding: 0 0 39px
+
+#from
+  padding: 0 0 53px
+
+.title-wrap
+  +clearfix
+  border-bottom: 1px solid #F3F3F3
+  padding: 0 0 6px
+
+.title
+  +float-left
+  font-size: 12px
+  font-weight: bold
+  font-family: 'Helvetica Neue', Helvetica, Geneva, Arial, sans-serif
+
+.prenext-wrap
+  +clearfix
+  +float-right
+  width: 42px
+
+.previous, .next
+  +float-left
+  text-indent: -9999px
+  background: url("/img/prevnext.jpeg") no-repeat top left
+  width: 20px
+  height: 20px
+
+.next
+  +float-right
+  background: url("/img/prevnext.jpeg") no-repeat -20px top
+
+#gallery
+  padding: 40px 0 0 11px
+
+.gallery-item
+  display: inline-block
+  width: 220px
+  padding: 0 6px 0 0
+
+.gallery-photo
+  border: 5px solid #F3F3F3
+
+.gallery-title, .gallery-subtitle
+  font-family: 'Helvetica Neue', Helvetica, Geneva, Arial, sans-serif
+  padding: 0 0 0 5px
+
+.gallery-title
+  font-size: 13px
+  padding: 16px 0 0 5px
+  word-spacing: 2px
+
+.gallery-subtitle
+  color: #7b8183
+  font-size: 12px
+  padding: 10px 0 0 5px
+  line-height: 20px
+
+#latest
+  +float-left
+  width: 462px
+
+#latest-content
+  padding: 46px 0 0 16px
+
+#work-link-first
+  padding: 0 16px 0 0
+
+#test
+  +float-right
+  width: 460px
+
+.test-content
+  width: 400px
+  color: #7b8183
+  font-size: 12px
+  line-height: 20px
+  padding: 42px 0 0 11px
+
+.author
+  font-weight: bold
+  padding: 0 0 0 20px
+
+#latest-test-wrap
+  +clearfix
+  position: relative
+  padding: 0 0 65px
+  border-bottom: 1px solid #F3F3F3
+
+#top
+  background: url("/img/backtop.jpeg") no-repeat
+  width: 20px
+  height: 20px
+  position: absolute
+  bottom: 0px
+  right: 0px
+
+footer
+  +clearfix
+  padding: 0 0 40px
+
+.footer-title-wrap
+  border-bottom: 1px solid #F3F3F3
+  padding: 0 0 26px
+
+#widget, #links, #newsletter
+  +clearfix
+  +float-left
+  width: 220px
+  padding: 64px 0 0
+
+.footer-content
+  color: #7b8183
+  font-size: 11px
+  line-height: 18px
+  padding: 41px 0 0
+
+#links
+  padding: 64px 0 0 21px
+
+#newsletter
+  width: 460px
+  padding: 64px 0 0 19px
+
+#footer-link-wrap
+  padding: 49px 0 0 9px
+
+.footer-li-border
+  border-bottom: 1px dotted #ECECEC
+  margin: 0 0 11px
+
+.footer-link
+  color: #7b8183
+  line-height: 12px
+
+#email
+  +float-left
+  @include box-sink( 0px, 0px, 5px, 0, rgba(0,0,0,.15) )
+  border: none
+  color: #A0A0A0
+  width: 319px
+  height: 43px
+  padding: 0 0 0 15px
+
+#email:focus
+  background: #F8F8F8
+
+#form-wrap
+  padding: 21px 0 0 4px
+
+#meta
+  border-top: 1px solid #ECECEC
+  padding: 23px 0 60px
+
+.meta-link
+  color: #000
+
+.meta-link:hover
+  color: #5ee0cb
+
+#copyright
+  +float-left
+  color: #7b8183
+  font-size: 11px
+
+#twitter
+  +float-right
+  color: #7b8183
+  font-size: 11px
