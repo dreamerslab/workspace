@@ -1,0 +1,52 @@
+<% content_for :head do %>
+  <title>Speaker Deck - Share Presentations without the Mess</title>
+<% end %>
+<!-- <div id="original"></div> -->
+<div id="top-bg">
+  <div id="top">Speaker Deck has been acquired by GitHub. <a href="#" id="more">Read More »</a> </div>
+</div>
+<div id="header-bg">
+  <div id="header">
+    <header>
+      <h1><a href="#" id="logo">Speaker Deck</a></h1>
+    </header>
+    <a href="#" id="sign-in">Sign In</a>
+  </div> <!-- #header -->
+</div> <!-- #header-bg -->
+<div id="desc-wrap">
+  <img id="intro-slide" src="/img/main-photo.png" alt="Example">
+  <div id="desc">
+    <h2>Share Presentations <span id="desc-span">without the Mess</span></h2>
+    <p id="desc-content">Speaker Deck is the best way to share presentations online. Simply upload your slides as a PDF, and we’ll turn them into a beautiful online experience. View them on SpeakerDeck.com, or share them on any website with an embed code.</p>
+    <div id="sign-up-wrap"><a href="#" id="sign-up">Sign Up</a></div>
+  </div>
+</div> <!-- #desc-wrap -->
+<div id="main-bg">
+  <div id="main">
+    <div id="presentations">
+      <h3 class="main-title">Featured Presentations</h3>
+      <ul>
+        <% 6.times do %>
+        <li class="main-item">
+          <a href="#"><img src="/img/gallery-1.jpg" alt="Gallery 1" class="presentation-pic"></a>
+          <div class="pre-desc-wrap">
+            <h4 class="item-title"><a href="#" class="main-link"><%= lorem.words 4 %></a></h4>
+            <p class="item-info">Nov 16, 2011 by <a href="#" class="author"><%= lorem.words 1 %></a></p>
+          </div>
+        </li>
+        <% end %>
+      </ul>
+    </div> <!-- #presentations -->
+    <div id="browse">
+      <h3 class="main-title">Browse</h3>
+      <ul id="browse-list">
+        <% 14.times do %>
+        <li class="browse-item"><a href="#" class="browse-link"><%= lorem.word %></a></li>
+        <% end %>
+      </ul>
+    </div> <!-- #browse -->
+  </div> <!-- #main -->
+</div> <!-- #main-bg -->
+<footer>
+  <div id="copyright">Copyright © 2010 <a href="#" class="footer-link">Ordered List</a> Inc. All slide content and descriptions are owned by their creators.</div>
+</footer>

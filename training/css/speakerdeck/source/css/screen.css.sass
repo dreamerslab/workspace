@@ -1,0 +1,227 @@
+@import "compass"
+@import "compass/reset"
+// You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+$page-width: 960px
+$body-font: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif
+$top-color: #999999
+$link-font: 'Abadi MT W02 Exra Light', HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif
+$link-color: #569465
+$link-color-hover: #8ad3af
+$desc-color: #88d2ad
+$browse-link-color: #88b297
+$main-title-color: #222
+$main-link-color: #339966
+
+a, img
+  +inline-block
+  vertical-align: top
+
+a
+  color: $link-color
+  text-decoration: none
+
+a:hover
+  color: $link-color-hover
+  text-decoration: none
+
+ul
+  +clearfix
+
+body
+  background: url("/img/grey.jpeg")
+  font-family: $body-font
+
+#original
+  background: url("/img/original.png") no-repeat center top
+  width: 1261px
+  height: 1238px
+  text-indent: -9999px
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 30px 0 0 -630px
+  opacity: 0.3
+  z-index: 9999
+
+// #logo
+//   @include bg_text( 288px, 85px, "logo")
+
+#top-bg
+  background: #000
+
+#top
+  text-align: center
+  color: $top-color
+  font-size: 12px
+  font-weight: 300
+  padding: 10px 0
+
+#more
+  color: $link-color
+
+#more:hover
+  color: $link-color-hover
+
+#header-bg
+  background: url("/img/dark.png")
+
+#header
+  +clearfix
+  @include center( $page-width )
+  padding: 0 0 13px
+
+header
+  +float-left
+  padding: 11px 0 0
+
+#logo
+  @include sprite_clean( "logo" )
+  height: 26px
+  padding: 8px 0 0 58px
+  color: #fff
+  font-weight: 300
+  letter-spacing: 1px
+
+#sign-in
+  +float-right
+  padding: 18px 13px 0 0
+  font-size: 18px
+  color: #fff
+
+#desc-bg
+  // background: url("/img/grey.jpeg")
+
+#desc-wrap
+  +clearfix
+  @include center( $page-width )
+  padding: 27px 0 56px
+
+#desc
+  +float-right
+  width: 456px
+  padding: 0 6px 0 0
+
+#intro-slide
+  +float-left
+
+h2
+  font-family: $link-font
+  font-size: 49px
+  color: #fff
+  line-height: 43px
+  letter-spacing: -2px
+  padding: 0 0 33px
+
+#desc-span
+  color: #3ab278
+
+#desc-content
+  color: $desc-color
+  font-weight: 300
+  font-size: 21px
+  line-height: 34px
+  word-spacing: 2px
+  padding: 0 0 31px 3px
+
+#sign-up-wrap
+  display: inline
+  padding: 0 0 0 2px
+
+#sign-up
+  @include bg_text( 230px, 48px, "find-out-button" )
+
+#main-bg
+  background: #e4e4e4 url("/img/white.png")
+
+#main
+  @include center( $page-width )
+  +clearfix
+  padding: 25px 0 28px
+
+#presentations
+  +float-left
+  width: 750px
+
+.main-title
+  color: #333
+  font-size: 34px
+  letter-spacing: -2px
+  word-spacing: 6px
+  padding: 0 0 21px
+
+.presentation-pic
+  border: 1px solid #a1a1a1
+  @include border-radius(5px, 5px)
+  @include box-shadow( rgba(0,0,0,0.2) 0 0 0 1px, rgba(0,0,0,0.3) 0 2px 5px )
+
+.main-link
+  color: $main-title-color
+  font-size: 17px
+  line-height: 18px
+  text-transform: capitalize
+
+.main-link:hover
+  color: $main-title-color
+
+.main-item
+  +inline-block
+  width: 210px
+  height: 223px
+  padding: 0 36px 35px 0
+
+.item-title
+  color: $main-title-color
+  padding: 7px 0 0
+
+.item-info
+  color: #777
+  font-size: 14px
+  padding: 8px 0 0
+
+.author
+  color: $main-link-color
+
+.author:hover
+  color: $main-link-color
+
+#browse
+  +float-right
+  width: 210px
+
+#browse-list
+  border-top: 1px solid #ccc
+  border-top: 1px solid rgba(0, 0, 0, 0.12)
+  border-bottom: 1px solid #efefef
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7)
+
+.browse-link
+  text-transform: capitalize
+  font-size: 13px
+  line-height: 20px
+  padding: 6px 0 5px 11px
+
+.browse-item
+  border-top: 1px solid #efefef
+  border-top: 1px solid rgba(255, 255, 255, 0.7)
+  border-bottom: 1px solid #ccc
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+
+#footer-bg
+  // background: url("/img/grey.jpeg")
+
+footer
+  @include center( $page-width )
+  padding: 33px 0 20px
+  word-spacing: 2px
+
+#copyright
+  font-size: 15px
+  color: #aaa
+
+.footer-link
+  color: $browse-link-color
+
+.footer-link:hover
+  color: $link-color-hover
