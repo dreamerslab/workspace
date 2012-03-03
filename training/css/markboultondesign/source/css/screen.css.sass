@@ -1,0 +1,223 @@
+@import "compass"
+@import "compass/reset"
+// You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+$page-width: 980px
+$body-font: proxima-nova-1, proxima-nova-2, HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif
+$nav-link-font: ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, serif
+$main-color: #565552
+$intro-link-color: #0086c3
+$intro-link-border: 1px dotted $intro-link-color
+
+a, img
+  +inline-block
+  vertical-align: top
+
+a
+  font-family: $body-font
+  text-decoration: none
+
+ul
+  +clearfix
+
+#original
+  background: url("/img/original.png") no-repeat center top
+  width: 1261px
+  height: 1238px
+  text-indent: -9999px
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -630px
+  opacity: 0.3
+  z-index: 9999
+
+body
+  background: #dcdad2 url("/img/bgrtile.jpeg")
+  font-family: $body-font
+
+#header-bg
+  background: url("/img/home-promo-standard.gif") repeat-x top
+
+#header
+  +clearfix
+  @include center( $page-width + 28px )
+  height: 360px
+  position: relative
+  padding: 25px 0 30px
+
+header
+  +float-left
+  padding: 0 0 0 14px
+
+#logo
+  @include bg_text( 230px, 40px, "logo")
+
+nav
+  +float-right
+
+.nav-item
+  display: inline
+  padding: 0 0 0 12px
+
+.nav-link
+  font-family: $nav-link-font
+  color: #000
+  font-size: 18px
+  padding: 12px 15px 9px
+
+.nav-link:hover
+  background: #eae9e4
+
+#desc-wrap
+  position: absolute
+  top: 173px
+  right: 29px
+  width: 450px
+  height: 200px
+  z-index: 1
+
+.desc
+  background: #000
+
+#space
+  +float-left
+  background: #000
+  width: 400px
+  height: 41px
+
+.desc-title
+  color: #fff
+  font-family: $nav-link-font
+  font-size: 36px
+  padding: 30px 0 0 17px
+
+.desc-content
+  color: #fff
+  font-size: 14px
+  line-height: 25px
+  padding: 17px 20px 0
+  word-spacing: -1px
+
+.desc-link, .desc-link:visited
+  color: #ffa800
+  border-bottom: 1px dotted #ffa800
+
+.pre-next-wrap
+  +float-right
+  padding: 10px 2px 0 0
+
+.pre
+  @include bg_text( 18px, 18px, "prev")
+
+.pre:hover
+  background-position: 0 -107px
+
+.next
+  @include bg_text( 18px, 18px, "next")
+
+.next:hover
+  background-position: 0 -65px
+
+#h2-intro-bg
+  background: #fff
+
+#h2-intro-wrap
+  @include center( $page-width )
+  +clearfix
+  padding: 41px 0 83px
+
+h2
+  color: $main-color
+  font-size: 32px
+  line-height: 42px
+  padding: 0 0 60px
+
+.h2-link
+  display: inline
+  color: $intro-link-color
+  border-bottom: $intro-link-border
+
+.h2-link:hover
+  border-bottom: none
+
+.intro
+  +float-left
+  border-top: 1px solid #c2bfb9
+  width: 216px
+  color: #494945
+  font-size: 14px
+  line-height: 18px
+  padding: 0 38px 0 0
+
+.intro-title
+  color: #56554f
+  font-size: 11px
+  padding: 6px 0 23px
+  letter-spacing: 1px
+
+.intro-content
+  padding: 0 0 10px
+  word-spacing: 1px
+
+.what-span
+  font-weight: bold
+
+.what-conclusion
+  padding: 10px 0 0
+
+.intro-link
+  color: $intro-link-color
+  border-bottom: $intro-link-border
+
+.intro-link:hover
+  border-bottom: none
+
+#our-pic
+  padding: 0 0 4px
+
+#our-content
+  padding: 24px 0 0
+
+#intro-last
+  padding: 0 0 0 2px
+
+footer
+  @include center( $page-width )
+  +clearfix
+  padding: 28px 0 60px
+
+#meta
+  +float-left
+
+#meta-info
+  +clearfix
+
+.meta-item
+  display: inline
+  padding: 0 6px 0 0
+
+.meta-link
+  color: #000
+  font-family: $body-font
+  font-size: 14px
+  font-weight: bold
+
+#twitter
+  @include sprite_clean( "twitter")
+  +float-right
+  height: 21px
+  padding: 0 0 0 35px
+  color: #000
+  font-family: $body-font
+  font-size: 13px
+  font-weight: bold
+
+#twitter:hover
+  background-position: 0 -145px
+
+#copyright
+  +float-right
+  color: #56554f
+  font-size: 14px
