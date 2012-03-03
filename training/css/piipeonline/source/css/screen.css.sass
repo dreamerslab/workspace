@@ -1,0 +1,176 @@
+@import "compass"
+@import "compass/reset"
+// You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+$page-width: 920px
+$page-font: 'Trebuchet MS', Helvetica, Geneva, sans-serif
+
+a, img
+  +inline-block
+  vertical-align: top
+
+a
+  text-decoration: none
+
+ul
+  +clearfix
+
+// #original
+//   background: url("/img/original.png") no-repeat center top
+//   width: 1261px
+//   height: 780px
+//   text-indent: -9999px
+//   position: absolute
+//   top: 0
+//   left: 50%
+//   margin: 0 0 0 -630px
+//   opacity: 0.3
+//   z-index: 9999
+
+body
+  background: url("/img/bg1.jpeg") no-repeat center top
+  font-family: $page-font
+
+#main
+  @include center( $page-width )
+  background: url("/img/logop.png") no-repeat 281px 195px
+  position: relative
+  height: 747px
+
+header
+  padding: 20px 0 0
+
+#logo
+  @include bg_text( 121px, 76px, "piipelogo")
+
+#eng
+  @include bg_text( 72px, 25px, "eng")
+  position: absolute
+  top: 0
+  right: 13px
+
+#contact
+  @include bg_text( 271px, 244px, "btr1")
+  position: absolute
+  top: 344px
+  left: 79px
+
+#profile
+  @include bg_text( 203px, 221px, "btr2")
+  position: absolute
+  top: 165px
+  left: 175px
+
+#portfolio
+  @include bg_text( 210px, 244px, "btr3")
+  position: absolute
+  top: 156px
+  left: 488px
+
+#blog
+  @include bg_text( 223px, 173px, "btr4")
+  position: absolute
+  top: 370px
+  left: 650px
+
+#designer
+  text-indent: -9999px
+  position: absolute
+  top: 624px
+  left: 497px
+  width: 138px
+  height: 25px
+
+#illustrator
+  text-indent: -9999px
+  position: absolute
+  top: 622px
+  left: 654px
+  width: 88px
+  height: 25px
+
+#colombia
+  text-indent: -9999px
+  position: absolute
+  top: 645px
+  left: 325px
+  width: 85px
+  height: 25px
+
+#intro
+  @include bg_text( 650px, 171px, "banner2")
+  position: absolute
+  top: 578px
+  left: 142px
+  z-index: -1
+
+#twitter-info-bg
+  background: url("/img/twitterico.png") no-repeat left top
+  position: absolute
+  top: 80px
+  right: 0
+  padding: 45px 0 0 71px
+  width: 147px
+  height: 180px
+
+#twitter-info
+  background: url("/img/globo-twitter.png") no-repeat left top
+  color: #0071bc
+  font-size: 10px
+  line-height: 10px
+  text-align: center
+  width: 147px
+  height: 130px
+  padding: 45px 0 0
+
+.twitter-info-link
+  color: #4d4d4d
+  font-size: 10px
+  display: block
+
+footer
+  background: url("/img/ban1.png")
+  position: fixed
+  bottom: 0
+  height: 24px
+  width: 100%
+  padding: 6px 0 0
+
+#sns-link
+  +float-left
+  padding: 0 0 0 30px
+
+.sns-wrap
+  +inline-block
+  padding: 0 6px 0 0
+
+#myspace
+  @include bg_text( 60px, 13px, "myspace")
+
+#facebook
+  @include bg_text( 60px, 13px, "facebook")
+
+#twitter
+  @include bg_text( 60px, 13px, "twitter")
+
+#powered-wrap
+  color: #0071bc
+  font-size: 11px
+  text-align: center
+  padding: 2px 0 0
+
+#sublogo
+  @include bg_text( 33px, 20px, "piipe-logo")
+  padding: 0 35px 0 0
+  margin: -2px 0 0 3px
+
+#powered
+  color: #29abe2
+  font-weight: bold
+
+#copyright
+  +float-right
+  color: #fff
+  font-size: 9px
+  padding: 2px 44px 0 0
