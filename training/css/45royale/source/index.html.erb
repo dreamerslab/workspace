@@ -1,0 +1,70 @@
+<% content_for :head do %>
+  <title>45royale Inc. — A web design studio in Atlanta, Georgia</title>
+<% end %>
+<!-- <div id="original"></div> -->
+
+<div id="header-bg">
+  <div id="header">
+    <header>
+      <h1><a href="#" id="logo">45royale Inc.</a></h1>
+    </header>
+    <nav>
+      <ul>
+        <li class="nav-item"><a href="#" id="current" class="nav-home">HOME</a></li>
+        <li class="nav-item"><a href="#" class="nav-about">ABOUT</a></li>
+        <li class="nav-item"><a href="#" class="nav-work" >WORK</a></li>
+        <li class="nav-item"><a href="#" class="nav-blog" >BLOG</a></li>
+        <li id="nav-item-shop" class="nav-item"><a href="#" class="nav-shop" class="nav-link">SHOP</a><img src="/img/nav-icon-new-day.png" alt="New" id="new-abs"></li>
+        <li class="nav-item"><a href="#" class="nav-contact" class="nav-link">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div id="desc-wrap">
+      <h2 id="desc"><%= lorem.paragraph %></h2>
+    </div>
+  </div>
+</div>
+<div id="main">
+  <div class="main-block">
+    <div class="img-wrap">
+      <img src="/img/recent-criterion-1.jpeg" alt="Recent Criterion 1">
+      <div id="recent-link-wrap">
+        <a href="#" id="recent-current" class="recent-link-1">1</a>
+        <a href="#" class="recent-link-2">2</a>
+        <a href="#" class="recent-link-3">3</a>
+      </div>
+    </div>
+    <h4 class="main-subtitle">RECENT WORK</h4>
+    <h3><a class="main-title" href="#">Tapulous</a></h3>
+    <p class="main-content">While we were at SXSW last year we got a call from our pal Bart Decrem asking for help building a site for his new company. <span href="#" class="main-span">In a crowded Austin hotel room</span> we met the newly formed team and Tapulous, the makers of the hit application <span href="#" class="main-span">Tap Tap Revenge</span>, was born.</p>
+  </div>
+  <div class="main-block">
+    <div class="img-wrap">
+      <img src="/img/img-frontpage-awa2011.jpeg" alt="Frontpage Awa2011">
+    </div>
+    <h4 class="main-subtitle">FROM THE BLOG</h4>
+    <h3><a class="main-title" href="#">A Web Afternoon</a></h3>
+    <p class="main-content">We were honored to sponsor A Web Afternoon, an event that aims to bring speakers and attendees from from a variety of disciplines together for one purpose—a passion for making the web a better place.<a href="#" class="main-link"></a></p>
+  </div>
+  <div id="ceo">
+    <h3 id="ceo-title">Bart Decrem</h3>
+    <h4 id="ceo-subtitle">CEO, Tapulous</h4>
+    <p id="ceo-content">"45royale headed the Tapulous site build and they continue to deliver clean, elegant design – perfectly executed, on time and on budget."</p>
+  </div>
+</div> <!-- #main -->
+<div id="footer-bg">
+  <footer>
+    <div id="royale">
+      <div id="royale-img-wrap"><img src="/img/bg-footer-whoisthis.jpeg" alt="Who is this?"></div>
+      <div id="royale-content-wrap">
+        <h4><a href="#" class="footer-title">45royale Inc.</a></h4>
+        <p class="footer-content"><span class="footer-span">a web design studio</span> 34.23N, 84.42W</p>
+      </div>
+    </div>
+    <% 3.times do %>
+    <div class="footer-info">
+      <h4 class="footer-title">Want to work with us?</h4>
+      <p class="footer-content">Fill out our <a href="#" class="footer-link">Request for Proposal form</a> and tell us about your project.</p>
+    </div>
+    <% end %>
+  </footer>
+</div> <!-- #footer-bg -->
