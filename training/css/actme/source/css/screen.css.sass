@@ -1,0 +1,393 @@
+@import "compass"
+@import "compass/reset"
+// You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+$page-width: 980px
+$main-width: 958px
+$link-font: 'Droid Sans', 'Helvetica Neue', Arial, Helevtica, Verdana, san-serif
+$body-font: 'PT Sans Narrow', serif
+
+a, img
+  +inline-block
+  vertical-align: top
+
+a
+  text-decoration: none
+
+ul
+  +clearfix
+
+body
+  position: relative
+  font-family: $body-font
+
+#original
+  background: url("/img/original.png") no-repeat center top
+  width: 1261px
+  height: 1686px
+  text-indent: -9999px
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -630px
+  opacity: 0.3
+  z-index: 9999
+
+#top-bg-l
+  background: url("/img/header-left-bg.png") repeat-x
+  width: 31%
+  height: 47px
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+
+#top-bg-r
+  background: url("/img/header-right-bg.png") repeat-x
+  width: 69%
+  height: 47px
+  position: absolute
+  top: 0
+  right: 0
+  z-index: -1
+
+#header
+  +clearfix
+  @include center( $page-width )
+  background: url("/img/header-center-bg.png") no-repeat
+  height: 47px
+
+header
+  +float-left
+
+h1
+  padding: 0 0 0 10px
+
+#logo
+  @include bg_text( 150px, 43px, "logo")
+
+nav
+  +float-left
+  padding: 18px 0 0 45px
+
+.nav-item
+  display: inline
+  padding: 0 29px 0 0
+
+#nav-link-active
+  color: #eeeedc
+
+.nav-link
+  color: #7c7d7d
+  font-size: 12px
+  font-family: $link-font
+
+.nav-link:hover
+  color: #eeeedc
+
+#search-wrap
+  +float-right
+  padding: 10px 9px 0 0
+
+#search
+  background: url("/img/bg-search.png")
+  border: none
+  padding: 0 0 0 25px
+  color: #c1c1c5
+  font-size: 11px
+  font-style: italic
+  width: 185px
+  height: 27px
+
+#main-bg
+  background: url("/img/bg-body.png")
+
+#pr-tw-wrap
+  @include center( $main-width )
+  +clearfix
+#feature
+  @include center( $page-width - 42px )
+  background: url("/img/line-header.png")
+  position: relative
+  padding: 0px 10px 10px
+
+#feature-top-line
+  background: url("/img/line-header.png")
+  height: 8px
+
+#feature-title
+  background: #53504a
+  position: absolute
+  top: 70px
+  left: 40px
+  color: #fff
+  font-size: 22px
+  opacity: 0.8
+  padding: 16px 21px 12px
+
+#feature-subtitle
+  background: #fff
+  position: absolute
+  top: 120px
+  left: 40px
+  color: #A9A49E
+  font-size: 14px
+  padding: 13px
+  opacity: 0.6
+
+.feature-pre
+  @include bg_text( 15px, 15px, "arrow-prev2")
+  position: absolute
+  bottom: 22px
+  left: 40px
+
+.feature-next
+  @include bg_text( 15px, 15px, "arrow-next2")
+  position: absolute
+  bottom: 22px
+  left: 55px
+
+#feature-bot-line
+  @include center( 943px )
+  background: url("/img/shadow-slider-fw.png") repeat-x
+  height: 10px
+  padding: 0 0 29px
+
+.personal-block
+  +float-left
+  width: 210px
+  padding: 20px 0 0 50px
+
+#personal
+  +float-left
+  position: relative
+  width: 508px
+  padding: 0 25px 10px 0
+
+#personal-content-wrap
+  +float-right
+  width: 260px
+  height: 230px
+  background: #fff
+  margin: 0 3px 0 0
+
+#personal-pic-wrap
+  +float-left
+  background: url("/img/personal.png") no-repeat
+  padding: 0 0 0 15px
+
+#info-wrap
+  background: url("/img/entry-quote.png") no-repeat 20px 62px
+  padding: 22px 0 0 50px
+
+#info
+  border-left: 2px solid #d3d6db
+  color: #2f3231
+  font-size: 15px
+  line-height: 20px
+  padding: 16px 40px 16px 14px
+
+#gallery-wrap
+  background: url("/img/entry-link.png") no-repeat 20px 23px
+
+#gallery
+  border-left: 2px solid #d3d6db
+  padding: 0 40px 0 14px
+
+#gallery-link
+  color: #2f3231
+  font-size: 15px
+  line-height: 20px
+
+#gallery-link:hover
+  color: #a22f29
+
+#sns-link-wrap
+  background: url("/img/entry-users.png") no-repeat 20px 23px
+
+#sns-link
+  border-left: 2px solid #d3d6db
+  padding: 3px 0 0 16px
+
+.sns-item
+  display: inline
+  padding: 0 2px 0 0
+
+#sns-facebook
+  @include bg_text( 16px, 16px, "facebook")
+
+#ribbon-posts
+  background: url("/img/ribbon-posts.png") no-repeat center top
+  width: 70px
+  height: 70px
+  position: absolute
+  top: -8px
+  right: 21px
+
+#ps-bot-line
+  background: url("/img/personal-content-shadow.png") no-repeat center top
+  width: 490px
+  height: 10px
+  position: absolute
+  bottom: 0px
+  margin: 0 0 0 15px
+
+#tweets-wrap
+  +float-left
+  background: url("/img/tweets.png") no-repeat left top
+  position: relative
+  width: 408px
+  padding: 0 0 10px 17px
+
+#tweets
+  background: url(/img/line-header.png)
+  padding: 12px 11px 24px 13px
+
+.tweet
+  background: #fff
+  color: #666
+  font-size: 12px
+  font-family: $link-font
+  line-height: 20px
+  padding: 13px 10px 13px
+  margin: 0 0 11px
+
+.tweet-link
+  color: #a22f29
+
+.tweet-link:hover
+  color: #2f3231
+
+#tw-bot-line
+  background: url("/img/personal-twitter-shadow.png") no-repeat left top
+  width: 410px
+  height: 10px
+
+#blog-bg
+  background: url("/img/bg-body.png")
+
+#blog
+  @include center( $main-width - 9px + 27px )
+  +clearfix
+  background: url("/img/blog.png") no-repeat 22px 18px
+  padding: 18px 0 73px 23px
+  clear: both
+
+.article-wrap
+  +float-left
+  width: 210px
+  padding: 0 19px 25px 15px
+
+.article-title
+  color: #a22f29
+  padding: 15px 0 0 9px
+  word-spacing: 1px
+
+.article-title:hover
+  color: #2f3231
+
+.article-desc
+  color: #666
+  line-height: 20px
+  padding: 17px 10px 0 10px
+
+.article
+  background: #fff
+  padding: 0 0 21px
+
+.article-bot-line
+  background: url(/img/post-personal-shadow.png) no-repeat center
+  width: 210px
+  height: 10px
+
+#pager-wrap
+  clear: both
+  padding: 0 16px
+
+#pager
+  +clearfix
+  background: #fff
+  padding: 14px 0 6px 8px
+
+#pager-list
+  +float-left
+
+.pager-item
+  display: inline
+  padding: 10px 9px
+
+#pager-active
+  color: #a22f29
+
+.pager-link
+  font-family: $link-font
+  color: #4b4e4d
+  font-size: 12px
+
+.pager-link:hover
+  color: #a22f29
+
+#page-count
+  +float-right
+  font-family: $link-font
+  font-size: 12px
+  padding: 0 19px 0 0
+
+#pager-bot-line
+  background: url(/img/personal-nav.png) no-repeat center -37px
+  width: 943px
+  height: 10px
+
+#footer-bot-line
+  background: url("/img/line-header.png")
+  height: 10px
+
+#footer-bg
+  background: url("/img/bg-footer-top.png") center top no-repeat
+
+footer
+  @include center( $main-width )
+  +clearfix
+  padding: 27px 0 40px 4px
+
+.footer-sns-item
+  display: inline
+
+#footer-sns-link
+  +float-left
+  padding: 0px 15px 0 0
+
+.footer-sns-item
+  padding: 0 2px 0 0
+
+#footer-sns-rss
+  @include bg_text( 16px, 16px, "rss")
+
+#footer-sns-facebook
+  @include bg_text( 16px, 16px, "facebook")
+
+#footer-sns-twitter
+  @include bg_text( 16px, 16px, "twitter")
+
+#meta
+  +float-left
+  padding: 2px 0 0
+
+.meta-item
+  display: inline
+  padding: 0px 15px 0 0
+
+.meta-link
+  color: #878787
+  font-size: 13px
+  font-family: $link-font
+
+.meta-link:hover
+  color: #a22f29
+
+#powered
+  +float-right
+  color: #878787
+  font-size: 12px
+  font-family: $link-font

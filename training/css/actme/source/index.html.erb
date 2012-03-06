@@ -1,0 +1,115 @@
+<% content_for :head do %>
+  <title>Actme</title>
+<% end %>
+<!-- <div id="original"></div> -->
+
+<div id="top-bg-l"></div>
+<div id="top-bg-r"></div>
+<div id="header">
+  <header>
+    <h1><a href="#" id="logo">Actme</a></h1>
+  </header>
+  <nav>
+    <ul>
+      <li class="nav-item"><a href="#" id="nav-link-active" class="nav-link">Home</a></li>
+      <% 5.times do %>
+      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+      <% end %>
+    </ul>
+  </nav>
+  <div id="search-wrap">
+    <input type="text" id="search" value="To search type and hit enter">
+  </div>
+</div> <!-- #header -->
+<div id="main-bg">
+  <div id="feature-top-line"></div>
+  <div id="feature">
+    <img src="/img/51.jpeg" alt="Slider" class="feature-pic">
+    <h3 id="feature-title">Slider Options for every slider / template</h3>
+    <h4 id="feature-subtitle">Slider Options, 2 effects, time and hover pause</h4>
+    <a href="#" class="feature-pre">Previous</a>
+    <a href="#" class="feature-next">Next</a>
+  </div> <!-- #feature -->
+  <div id="feature-bot-line"></div>
+  <div id="pr-tw-wrap">
+    <div id="personal">
+      <div id="personal-pic-wrap"><img src="/img/alina.jpeg" alt="Alina" id="personal-pic"></div>
+      <div id="personal-content-wrap">
+        <div id="info-wrap" class="personal-block">
+          <div id="info">My name is Jonathan Sense. Below is a collection of some of my best pics.</div>
+        </div>
+        <div id="gallery-wrap" class="personal-block">
+          <div id="gallery"><a href="#" id="gallery-link">Check out my Gallery</a></div>
+        </div>
+        <div id="sns-link-wrap" class="personal-block">
+          <div id="sns-link">
+            <ul>
+              <% 8.times do %>
+              <li class="sns-item"><a href="#" id="sns-facebook">facebook</a></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- #personal-content-wrap -->
+      <div id="ribbon-posts"></div>
+      <div id="ps-bot-line"></div>
+    </div> <!-- #personal -->
+    <div id="tweets-wrap">
+      <div id="tweets">
+        <div class="tweet">Check out this item 'Sense - Semi-liquid Premium Wordpress Theme for Creative \ Portfolio or Blog Magazine by IulianN.' <a href="#" class="tweet-link">http://t.co/tp8gZeS</a> 190 days ago</div>
+        <div class="tweet">Check out this great WordPress Premium Theme 'Bestia - Creative Portfolio and Blog WP Theme' by IulianN. <a href="#" class="tweet-link">http://t.co/AKjl6Sk</a> 190 days ago</div>
+      </div>
+      <div id="tw-bot-line"></div>
+    </div> <!-- #tweets-wrap -->
+  </div> <!-- #pr-tw-wrap -->
+  <div id="blog-bg">
+    <div id="blog">
+      <% 8.times do %>
+      <div class="article-wrap">
+        <div class="article">
+          <img src="/img/this-is-a-nice-post-for-our-cool-blog.jpeg" alt="Cool Car">
+          <h3><a href="#" class="article-title">This is a nice post for o . .</a></h3>
+          <h4 class="article-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean ligula eget ...</h4>
+        </div>
+        <div class="article-bot-line"></div>
+      </div>
+      <% end %>
+      <div id="pager-wrap">
+        <div id="pager">
+          <div id="pager-list">
+            <ul>
+              <li class="pager-item"><a href="#" id="pager-active" class="pager-link">1</a></li>
+              <li class="pager-item"><a href="#" class="pager-link">2</a></li>
+              <li class="pager-item"><a href="#" class="pager-link">»</a></li>
+            </ul>
+          </div>
+          <div id="page-count">Page 1 of 2</div>
+        </div> <!-- #pager -->
+        <div id="pager-bot-line"></div>
+      </div> <!-- #pager-wrap -->
+    </div> <!-- #blog -->
+  </div> <!-- #blog-bg -->
+</div> <!-- #main-bg -->
+<div id="footer-bot-line"></div>
+<div id="footer-bg">
+  <footer>
+    <div id="footer-sns-link">
+      <ul>
+        <li class="footer-sns-item"><a href="#" id="footer-sns-rss">RSS</a></li>
+        <li class="footer-sns-item"><a href="#" id="footer-sns-facebook">Facebook</a></li>
+        <li class="footer-sns-item"><a href="#" id="footer-sns-twitter">Twitter</a></li>
+      </ul>
+    </div>
+    <div id="meta">
+      <ul>
+        <li class="meta-item"><a class="meta-link">Copyright 2011</a></li>
+        <li class="meta-item"><a class="meta-link" href="#">Home</a></li>
+        <li class="meta-item"><a class="meta-link" href="#">Blog</a></li>
+        <li class="meta-item"><a class="meta-link" href="#">404</a></li>
+        <li class="meta-item"><a class="meta-link" href="#">Sitemap</a></li>
+        <li class="meta-item"><a class="meta-link" href="#">Contact</a></li>
+      </ul>
+    </div> <!-- #meta -->
+    <div id="powered">Wordpress Theme by lulianN</div>
+  </footer>
+</div>
