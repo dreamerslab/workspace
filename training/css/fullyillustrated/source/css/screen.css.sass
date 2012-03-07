@@ -1,0 +1,358 @@
+@import "compass"
+@import "compass/reset"
+// You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
+@import "lib"
+
+$page-width: 915px
+
+#original
+  background: url("/img/original.png") no-repeat center top
+  width: 1261px
+  height: 1576px
+  text-indent: -9999px
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -630px
+  opacity: 0.3
+  z-index: 9999
+
+body
+  background: #000
+
+#header-bg
+  background: url("/img/background-header.gif") repeat-x
+  height: 103px
+
+#header
+  @include center( $page-width )
+  position: relative
+  padding: 36px 0 0
+
+#logo
+  @include bg_text( 302px, 25px, "logo")
+  +inline-block
+
+nav
+  position: absolute
+  width: 415px
+  height: 67px
+  top: 28px
+  right: -60px
+
+.nav-item
+  +float-left
+
+.nav-link
+  +inline-block
+  vertical-align: top
+  background: url("/img/background-navigation.gif") no-repeat
+  text-indent: -9999px
+  height: 15px
+  padding: 20px 0 0
+
+#nav-selected
+  background-position: 0 -36px
+
+.nav-home
+  background-position: 0 0
+  width: 64px
+
+.nav-home:hover
+  background-position-y: -36px
+
+.nav-about
+  background-position: -64px 0
+  width: 66px
+
+.nav-about:hover
+  background-position-y: -36px
+
+.nav-portfolio
+  background-position: -130px 0
+  width: 83px
+
+.nav-portfolio:hover
+  background-position-y: -36px
+
+.nav-blog
+  background-position: -312px 0
+  width: 73px
+
+.nav-blog:hover
+  background-position-y: -36px
+
+.nav-contact
+  background-position: -385px 0
+  width: 73px
+
+.nav-contact:hover
+  background-position-y: -36px
+
+#nav-highlight
+  background: url("/img/background-highlight.png") no-repeat
+  height: 62px
+  width: 124px
+  position: absolute
+  top: 17px
+  left: -32px
+
+#showcase
+  @include center( $page-width )
+  padding: 8px 0 0 5px
+
+#showcase-nav
+  position: relative
+
+.show-item
+  +float-left
+
+.show-link
+  +inline-block
+  background: url("/img/background-homepage-nav.gif") no-repeat 0 -3px
+  text-indent: -9999px
+  width: 151px
+  height: 27px
+
+$show-nav-width: -151px
+$show-ori-position-y: -3px
+$show-hover-position-y: -31px
+
+#show-selected
+  background-position-y: $show-hover-position-y
+
+.show-latest
+  background-position: 0 $show-ori-position-y
+
+.show-latest:hover
+  background-position-y: $show-hover-position-y
+
+.show-design
+  background-position: $show-nav-width $show-ori-position-y
+
+.show-design:hover
+  background-position-y: $show-hover-position-y
+
+.show-illu
+  background-position: $show-nav-width*2 $show-ori-position-y
+
+.show-illu:hover
+  background-position-y: $show-hover-position-y
+
+.show-branding
+  background-position: $show-nav-width*3 $show-ori-position-y
+
+.show-branding:hover
+  background-position-y: $show-hover-position-y
+
+.show-3d
+  background-position: $show-nav-width*4 $show-ori-position-y
+
+.show-3d:hover
+  background-position-y: $show-hover-position-y
+
+.show-photography
+  background-position: $show-nav-width*5 $show-ori-position-y
+
+.show-photography:hover
+  background-position-y: $show-hover-position-y
+
+#show-seleted
+  background: url("/img/background-home-highlight.png") no-repeat 0 $show-ori-position-y
+  width: 151px
+  height: 52px
+  position: absolute
+  left: 152px
+  top: 0
+
+#desc-blog-wrap
+  @include center( $page-width )
+  +clearfix
+  padding: 36px 0 28px
+
+#desc
+  +float-left
+  width: 595px
+  padding: 0 16px 0 0
+
+.title
+  color: #fff
+  font-size: 32px
+  font-family: sans-serif
+  padding: 0 0 15px
+
+.content
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 11px
+  line-height: 15px
+  color: #666
+  padding: 0 0 12px
+
+.link-with-img
+  +inline-block
+  background: url("/img/background-button.gif")
+  vertical-align: top
+  width: 120px
+  height: 19px
+  padding: 8px 0 0 15px
+  margin: 5px 4px 0 0
+  font-size: 11px
+  font-family: sans-serif
+  text-transform: uppercase
+  text-decoration: none
+  color: #fff
+
+.link-with-img:hover
+  color: #3399ff
+
+#blog
+  +float-left
+  width: 290px
+
+.title-link
+  +inline-block
+  color: #39f
+  font-weight: normal
+  background: url("/img/icons.gif") no-repeat left -35px
+  padding-left: 18px
+  margin-bottom: 10px
+  font-size: 11px
+  font-family: Arial, Helvetica, sans-serif
+  line-height: 14px
+  text-decoration: none
+
+.title-link:hover
+  color: #fff
+
+#to-blog-link
+  +float-right
+
+#latest-sneaky-wrap
+  @include center( $page-width )
+  +clearfix
+  padding: 0 0 26px
+
+#latest
+  +float-left
+  width: 610px
+
+.latest-block
+  +float-left
+  width: 305px
+
+#modern
+  +inline-block
+  @include bg_text( 304px, 182px, "modern-war-live-latest")
+  margin: 0 0 11px
+
+#modern:hover
+  @include sprite-hover-position( "modern-war-live-latest", -182px )
+
+#nd
+  +inline-block
+  @include bg_text( 304px, 182px, "nd-hud-ui-latest")
+  margin: 0 0 11px
+
+#nd:hover
+  @include sprite-hover-position( "nd-hud-ui-latest", -182px )
+
+#sneaky
+  +float-left
+  width: 305px
+
+.sneaky-link
+  +inline-block
+  +float-left
+  @include bg_text( 60px, 60px, "fully-illustrated-interwave-sneak")
+  margin: 0 1px 1px 0
+
+.sneaky-link:hover
+  @include sprite-hover-position( "fully-illustrated-interwave-sneak", -60px )
+
+#sneaky-title-link
+  margin-top: 11px
+
+#fave-twitter-wrap
+  @include center( $page-width )
+  +clearfix
+  padding: 0 0 45px
+
+#fave
+  +float-left
+  width: 610px
+
+.fave-block
+  +float-left
+  width: 305px
+
+#twitter
+  +float-left
+  width: 305px
+
+#inter
+  +inline-block
+  @include bg_text( 304px, 90px, "fully-illustrated-interwave-fave")
+  margin: 0 0 11px
+
+#inter:hover
+  @include sprite-hover-position( "fully-illustrated-interwave-fave", -90px )
+
+#puffr
+  +inline-block
+  @include bg_text( 304px, 90px, "fully-illustrated-interwave-fave")
+  margin: 0 0 11px
+
+#puffr:hover
+  @include sprite-hover-position( "fully-illustrated-interwave-fave", -90px )
+
+#twitter-link
+  +inline-block
+  @include bg_text( 304px, 90px, "fully-illustrated-on-twitter")
+  margin: 0 0 11px
+
+#twitter-link:hover
+  @include sprite-hover-position( "fully-illustrated-on-twitter", -90px )
+
+.twitter-block-link
+  text-decoration: none
+  color: #39f
+
+.twitter-block-link:hover
+  color: #fff
+
+footer
+  @include center( $page-width )
+  border-top: 1px solid #171717
+  padding: 11px 0 30px
+
+#meta-nav
+  +float-left
+
+.meta-item
+  +float-left
+
+.meta-link
+  border-left: 1px solid #666
+  color: #666
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 11px
+  text-decoration: none
+  padding: 0 8px
+
+.meta-link:hover
+  color: #fff
+
+#meta-link-home
+  border-left: none
+  padding: 0 8px 0 0
+
+.meta-span
+  color: #09F
+
+#copyright
+  +float-right
+  background: url("/img/icons.gif") no-repeat right 0
+  padding: 2px 38px 4px 0
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 11px
+  color: #666
