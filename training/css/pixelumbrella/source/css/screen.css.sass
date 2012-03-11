@@ -28,7 +28,9 @@ body
   font-family: Verdana, Arial, Helvetica, sans-serif
 
 #logo
+  behavior: url("/css/PIE.htc")
   @include bg_text( 288px, 85px, "logo")
+  position: relative
 
 header
   background: url("/img/bg-header.gif") no-repeat center top
@@ -73,7 +75,7 @@ header
   line-height: 13px
 
 .desc-list-item
-  display: inline-block
+  +float-left
   color: #424242
   font-weight: bold
   font-size: 11px

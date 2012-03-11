@@ -34,7 +34,9 @@ body
 
 #main
   @include center( $page-width )
+  behavior: url("/css/PIE.htc")
   background: url("/img/logop.png") no-repeat 281px 195px
+  -pie-background: url("/img/logop.png") no-repeat 281px 195px
   position: relative
   height: 747px
 
@@ -42,33 +44,39 @@ header
   padding: 20px 0 0
 
 #logo
+  behavior: url("/css/PIE.htc")
   @include bg_text( 121px, 76px, "piipelogo")
 
 #eng
+  behavior: url("/css/PIE.htc")
   @include bg_text( 72px, 25px, "eng")
   position: absolute
   top: 0
   right: 13px
 
 #contact
+  behavior: url("/css/PIE.htc")
   @include bg_text( 271px, 244px, "btr1")
   position: absolute
   top: 344px
   left: 79px
 
 #profile
+  behavior: url("/css/PIE.htc")
   @include bg_text( 203px, 221px, "btr2")
   position: absolute
   top: 165px
   left: 175px
 
 #portfolio
+  behavior: url("/css/PIE.htc")
   @include bg_text( 210px, 244px, "btr3")
   position: absolute
   top: 156px
   left: 488px
 
 #blog
+  behavior: url("/css/PIE.htc")
   @include bg_text( 223px, 173px, "btr4")
   position: absolute
   top: 370px
@@ -99,6 +107,7 @@ header
   height: 25px
 
 #intro
+  behavior: url("/css/PIE.htc")
   @include bg_text( 650px, 171px, "banner2")
   position: absolute
   top: 578px
@@ -106,7 +115,9 @@ header
   z-index: -1
 
 #twitter-info-bg
+  behavior: url("/css/PIE.htc")
   background: url("/img/twitterico.png") no-repeat left top
+  -pie-background: url("/img/twitterico.png") no-repeat left top
   position: absolute
   top: 80px
   right: 0
@@ -115,7 +126,9 @@ header
   height: 180px
 
 #twitter-info
+  behavior: url("/css/PIE.htc")
   background: url("/img/globo-twitter.png") no-repeat left top
+  -pie-background: url("/img/globo-twitter.png") no-repeat left top
   color: #0071bc
   font-size: 10px
   line-height: 10px
@@ -130,7 +143,9 @@ header
   display: block
 
 footer
+  behavior: url("/css/PIE.htc")
   background: url("/img/ban1.png")
+  -pie-background: url("/img/ban1.png")
   position: fixed
   bottom: 0
   height: 24px
@@ -146,13 +161,19 @@ footer
   padding: 0 6px 0 0
 
 #myspace
+  behavior: url("/css/PIE.htc")
   @include bg_text( 60px, 13px, "myspace")
+  position: relative
 
 #facebook
+  behavior: url("/css/PIE.htc")
   @include bg_text( 60px, 13px, "facebook")
+  position: relative
 
 #twitter
+  behavior: url("/css/PIE.htc")
   @include bg_text( 60px, 13px, "twitter")
+  position: relative
 
 #powered-wrap
   color: #0071bc
@@ -161,7 +182,9 @@ footer
   padding: 2px 0 0
 
 #sublogo
+  behavior: url("/css/PIE.htc")
   @include bg_text( 33px, 20px, "piipe-logo")
+  position: relative
   padding: 0 35px 0 0
   margin: -2px 0 0 3px
 
