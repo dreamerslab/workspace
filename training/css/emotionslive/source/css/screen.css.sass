@@ -8,11 +8,8 @@ $font-color: #000
 body
   font-family: $font-family
   color: $font-color
-  background: url("/img/main-bg.jpeg") repeat-x
-  background-color: #82B64A
+  background: url("/img/main-bg.jpeg") repeat-x #82B64A
 
-a, img
-  display: block
 
 #page-wrap
   position: relative
@@ -44,7 +41,10 @@ a, img
   padding: 46px 0 0
 
 #logo
+  display: block
+  behavior: url(/css/PIE.htc)
   @include bg_text( 390px, 91px, "logo" )
+  position: relative
 
 nav
   position: absolute
@@ -55,20 +55,32 @@ nav
   +float-left
 
 #nav-home
+  display: block
+  behavior: url(/css/PIE.htc)
   @include bg_text( 144px, 26px, "m1" )
+  position: relative
 
 #nav-portfolio
+  display: block
+  behavior: url(/css/PIE.htc)
   @include bg_text( 143px, 26px, "m2" )
+  position: relative
 
 #nav-about
+  display: block
+  behavior: url(/css/PIE.htc)
   @include bg_text( 144px, 26px, "m3" )
+  position: relative
 
 #about-wrap
   padding: 30px 0 20px
   width: 350px
 
 #about
+  display: block
+  behavior: url(/css/PIE.htc)
   @include bg_text( 94px, 13px, "about" )
+  position: relative
 
 .info
   color: #eaeaea
@@ -77,17 +89,25 @@ nav
   padding: 13px 0 0 3px
 
 #gallery-list
+  +clearfix
+  behavior: url(/css/PIE.htc)
   background: url("/img/line.png") no-repeat left top
+  -pie-background: url("/img/line.png") no-repeat left top
   padding: 20px 0 0
+  position: relative
 
 .item-title-web
+  +inline-block
+  behavior: url(/css/PIE.htc)
   @include bg_text( 25px, 14px, "p-web" )
 
-#item-title-logo
+.item-title-logo
+  display: block
+  behavior: url(/css/PIE.htc)
   @include bg_text( 27px, 16px, "p-logo" )
 
 .gallery-item
-  +inline-block
+  +float-left
   padding: 0 22px 12px 0
 
 .photo-wrap
@@ -96,23 +116,33 @@ nav
   height: 72px
 
 .item-link
+  display: block
   padding: 8px 0 0 7px
 
 #gallery-bottom-wrap
   +clearfix
+  behavior: url(/css/PIE.htc)
   background: url("/img/line2.png") no-repeat
+  -pie-background: url("/img/line2.png") no-repeat left top
   width: 375px
   padding: 0 0 10px
+  position: relative
 
 #gallery-more
+  behavior: url(/css/PIE.htc)
   @include bg_text( 54px, 26px, "more" )
   +float-right
+  position: relative
 
 #contact
+  display: block
+  behavior: url(/css/PIE.htc)
   @include bg_text( 114px, 56px, "mail" )
 
 #copyright
+  behavior: url(/css/PIE.htc)
   @include bg_text( 118px, 17px, "copyright" )
-  position: absolute
+  position: fixed
   bottom: 0px
-  right: 50%
+  left: 50%
+  margin: 0 0 0 -59px
