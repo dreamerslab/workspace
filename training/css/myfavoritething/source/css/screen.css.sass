@@ -40,7 +40,9 @@ body
   padding: 40px 0 0
 
 #logo
+  behavior: url("/css/PIE.htc")
   @include bg_text( 115px, 71px,"logo")
+  position: relative
   +float-left
 
 nav
@@ -75,7 +77,10 @@ nav
 
 #main-bg
   +clearfix
+  behavior: url("/css/PIE.htc")
   background: url("/img/post-bg.png") no-repeat
+  -pie-background: url("/img/post-bg.png") no-repeat
+  position: relative
   width: 562px
   height: 346px
   padding: 23px 0 0 23px
@@ -103,7 +108,9 @@ nav
   padding: 0 64px 0 0
 
 #last-more
+  behavior: url("/css/pie.htc")
   background: url("/img/link.png") no-repeat right
+  -pie-background: url("/img/post-bg.png") no-repeat
   color: #C08882
   font-size: 11px
   font-weight: bold
@@ -179,7 +186,7 @@ nav
 
 .article-photo-wrap
   +float-left
-  border: 3px solid #CCCCCC
+  border: 3px solid #ccc
 
 .article-link-wrap
   +float-right
