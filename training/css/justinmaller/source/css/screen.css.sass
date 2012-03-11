@@ -32,13 +32,18 @@ a:hover
 #header
   background: #000
   width: $page-width
-  position: fixed
+  position: fixed!important
+  _position: absolute
+  top: 0
+  _top: 0
   padding: 7px 0 0
   text-align: center
   border-bottom: 1px solid #ccc
   z-index: 1
+  _z-index: 10
 
 #logo
+  behavior: url("/css/PIE.htc")
   @include bg_text( 400px, 120px, "logo")
   margin: 0 auto
 
@@ -50,6 +55,7 @@ a:hover
   padding: 0px 11px 10px
 
 #nav-twitter
+  behavior: url("/css/PIE.htc")
   @include bg_text( 25px, 20px, "justinmaller")
 
 #gallery-wrap
@@ -60,6 +66,7 @@ a:hover
   padding: 0 0 3px
 
 .item-wrap
+  behavior: url("/css/PIE.htc")
   @include border-radius(2px, 2px)
   position: relative
   background: $gallery-bg
@@ -96,13 +103,19 @@ footer
   background: #000
   width: $page-width
   height: 35px
-  position: fixed
+  position: fixed!important
+  _position: absolute
   bottom: 0
+  _bottom: 0
+  _left: 0
   text-align: center
   border-top: 1px solid #ccc
+  _z-index: 10
 
 #footer-top
+  behavior: url("/css/PIE.htc")
   background: url("/img/footer-top.png")
+  -pie-background: url("/img/footer-top.png")
   width: $page-width
   height: 40px
   position: absolute
@@ -110,6 +123,7 @@ footer
   left: 0px
 
 #contact
+  behavior: url("/css/PIE.htc")
   @include border-radius(5px, 5px)
   background: #000
   position: absolute
@@ -129,15 +143,21 @@ footer
   padding: 8px 0 0
 
 #depthcore
+  position: relative
+  behavior: url("/css/PIE.htc")
   @include bg_text( 104px, 11px, "depthcore")
   +float-left
   margin: 0 0 0 5px
 
 #hosting
+  position: relative
+  behavior: url("/css/PIE.htc")
   @include bg_text( 192px, 11px, "mediatemple")
   +float-right
   margin: 0 6px 0 0
 
 #copyright
+  position: relative
+  behavior: url("/css/PIE.htc")
   @include bg_text( 322px, 10px, "copyright")
   margin: 0 auto
