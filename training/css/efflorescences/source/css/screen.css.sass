@@ -10,7 +10,7 @@ $work-width: 49px
 $about-pos: $work-pos + $work-width + $nav-padding-r
 $about-width: 55px
 $links-pos: $about-pos + $about-width + $nav-padding-r + 6px
-$links-width: 49px
+$links-width: 45px
 
 a, img
   +inline-block
@@ -46,7 +46,11 @@ h1
   +inline-block
 
 #logo
-  text-indent: -9999px
+  font: 0/0 serif
+  text-shadow: none
+  color: transparent
+  overflow: hidden
+  line-height: 0
   width: 237px
   height: 58px
 
@@ -59,18 +63,21 @@ nav
   position: absolute
   top: $nav-top
   left: $work-pos
+  clear: both
 
 #nav-about
   @include bg_text( $about-width, 13px, "about")
   position: absolute
   top: $nav-top
   left: $about-pos
+  clear: both
 
 #nav-links
   @include bg_text( $links-width, 13px, "links")
   position: absolute
   top: $nav-top
   left: $links-pos
+  clear: both
 
 #nav-work:hover, #nav-about:hover, #nav-links:hover
   padding: 0 0 9px
