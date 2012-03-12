@@ -49,12 +49,16 @@ body
   color: #fff
 
 #facebook
+  behavior: url("/css/PIE.htc")
   @include bg_text( 15px, 15px, "facebook")
+  position: relative // for css3 pie to show up the background
   +inline-block
   margin: -3px 2px 0
 
 #twitter
+  behavior: url("/css/PIE.htc")
   @include bg_text( 15px, 15px, "twitter")
+  position: relative // for css3 pie to show up the background
   +inline-block
   margin: -3px 0 0
 
@@ -72,8 +76,10 @@ body
   padding: 0 0 0 95px
 
 h1
-  +float-left
   padding: 0 0 0 16px
+
+header
+  +float-left
 
 #logo
   @include bg_text( 109px, 89px, "logo")
@@ -83,17 +89,19 @@ h1
 
 #header
   +clearfix
+  position: relative
   width: 900px
   margin: 0 auto
   padding: 24px 0 21px
   border-bottom: 1px solid #aaa
 
 nav
-  +float-right
-  padding: 74px 4px 0 0
+  position: absolute
+  top: 94px
+  left: 395px
 
 .nav-item
-  +inline-block
+  +float-left
 
 #nav-client
   @include bg_text( 77px, 12px, "our-clients")

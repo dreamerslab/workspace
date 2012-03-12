@@ -139,9 +139,14 @@ $sprite: sprite-map( "sprite/*.png" )
 
 @mixin _sprite( $dir, $file, $x:0, $y:0 )
   background: $dir no-repeat sprite-position( $dir, $file, $x, $y )
+  -pie-background: $dir no-repeat sprite-position( $dir, $file, $x, $y )
 
 @mixin bg_text( $width, $height, $sprite-name )
-  text-indent: -9999px
+  font: 0/0 serif
+  text-shadow: none
+  color: transparent
+  overflow: hidden
+  line-height: 0
   width: $width
   height: $height
   @include _sprite( $sprite, $sprite-name )
