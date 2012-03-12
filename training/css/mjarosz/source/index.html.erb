@@ -1,84 +1,86 @@
 <% content_for :head do %>
   <title>Mjarosz.com</title>
 <% end %>
-<div id="page-wrap">
-  <a href="#logo" id="top">Logo</a>
-  <header>
-     <h1><a id="logo" href="#">Mjarosz</a></h1>
-  </header>
-  <nav>
-    <ul>
-      <li class="nav-item"><a class="nav-link" href="#">About Mlchat</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <article>
-    <h2 id="article-title">About Michat</h2>
-    <p><img class="content-img" src="/img/content.png" alt=""><span class="content-bold"><%= lorem.sentences 1 %></span></p>
-    <h3 class="article-subtitle">CV</h3>
-    <div class="content-list-wrap">
+<a href="#logo" id="top">Logo</a>
+<div id="fixed-hack-wrap">
+  <div id="page-wrap">
+    <header>
+       <h1><a id="logo" href="#">Mjarosz</a></h1>
+    </header>
+    <nav>
       <ul>
-        <li class="content-list-item"><span class="content-bold">July 2008 - Currently</span></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Mlchat</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
       </ul>
-    </div>
-    <p>
-      <%= lorem.sentences 1 %>
-    </p>
-    <blockquote>
-      <div class="b-content-list-wrap">
+    </nav>
+    <article>
+      <h2 id="article-title">About Michat</h2>
+      <p><img class="content-img" src="/img/content.png" alt=""><span class="content-bold"><%= lorem.sentences 1 %></span></p>
+      <h3 class="article-subtitle">CV</h3>
+      <div class="content-list-wrap">
         <ul>
-          <% 11.times do %>
-          <li class="b-list-item"><%= lorem.words 1 %></li>
+          <li class="content-list-item"><span class="content-bold">July 2008 - Currently</span></li>
+        </ul>
+      </div>
+      <p>
+        <%= lorem.sentences 1 %>
+      </p>
+      <blockquote>
+        <div class="b-content-list-wrap">
+          <ul>
+            <% 11.times do %>
+            <li class="b-list-item"><%= lorem.words 1 %></li>
+            <% end %>
+          </ul>
+        </div>
+      </blockquote>
+      <div class="content-list-wrap">
+        <ul>
+          <li><span class="content-bold">March 2007 - July 2008</span></li>
+        </ul>
+      </div>
+      <p>
+        <%= lorem.sentences 1 %>
+      </p>
+      <h3 class="article-subtitle">Me on web:</h3>
+      <div class="b-content-list-with-title-wrap">
+        <ul>
+          <% 3.times do %>
+          <li class="content-list-item"><a href="#"><%= lorem.words 1 %></a></li>
           <% end %>
         </ul>
       </div>
-    </blockquote>
-    <div class="content-list-wrap">
+      <h3 class="article-subtitle">Client that I worked for:</h3>
+      <p><%= lorem.sentences 1 %></p>
+      <blockquote>
+        <div class="b-content-list-wrap">
+          <ul>
+            <% 11.times do %>
+            <li class="b-list-item"><%= lorem.word %></li>
+            <% end %>
+            <br /><br />
+            <% 12.times do %>
+            <li class="b-list-item"><%= lorem.word %></li>
+            <% end %>
+          </ul>
+        </div>
+      </blockquote>
+      <p id="permalink-p"><a href="#" id="permalink">Permalink</a> (17,015 views)</p>
+    </article>
+    <div id="gallery-wrap">
       <ul>
-        <li><span class="content-bold">March 2007 - July 2008</span></li>
-      </ul>
-    </div>
-    <p>
-      <%= lorem.sentences 1 %>
-    </p>
-    <h3 class="article-subtitle">Me on web:</h3>
-    <div class="b-content-list-with-title-wrap">
-      <ul>
-        <% 3.times do %>
-        <li class="content-list-item"><a href="#"><%= lorem.words 1 %></a></li>
+        <% 8.times do |num| %>
+        <li class="gallery-item">
+          <div class="item-wrap">
+            <a class="item-link" href="#">
+              <img src="img/gallery-<%= num+1 %>.png" alt="Gallery item">
+            </a>
+            <h3 class="item-title"><%= lorem.word %></h3>
+            <h4 class="item-subtitle"><%= lorem.words 3 %></h3>
+          </div>
+        </li>
         <% end %>
       </ul>
-    </div>
-    <h3 class="article-subtitle">Client that I worked for:</h3>
-    <p><%= lorem.sentences 1 %></p>
-    <blockquote>
-      <div class="b-content-list-wrap">
-        <ul>
-          <% 11.times do %>
-          <li class="b-list-item"><%= lorem.word %></li>
-          <% end %>
-          <br /><br />
-          <% 12.times do %>
-          <li class="b-list-item"><%= lorem.word %></li>
-          <% end %>
-        </ul>
-      </div>
-    </blockquote>
-    <p id="permalink-p"><a href="#" id="permalink">Permalink</a> (17,015 views)</p>
-  </article>
-  <div id="gallery-wrap">
-    <ul>
-      <% 8.times do |num| %>
-      <li class="gallery-item">
-        <div class="item-wrap">
-          <a class="item-link" href="#">
-            <img src="img/gallery-<%= num+1 %>.png" alt="Gallery item">
-          </a>
-          <h3 class="item-title"><%= lorem.word %></h3>
-          <h4 class="item-subtitle"><%= lorem.words 3 %></h3>
-        </div>
-      </li>
-      <% end %>
-    </ul>
-  </div> <!-- #gallery-wrap -->
-</div> <!-- #page-wrap -->
+    </div> <!-- #gallery-wrap -->
+  </div> <!-- #page-wrap -->
+</div> <!-- #fixed-hack-wrap -->

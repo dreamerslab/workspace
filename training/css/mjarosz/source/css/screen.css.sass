@@ -11,10 +11,18 @@ $nav-color: #CCCCCC
 $page-width: 1220px
 $gallery-bg: #000000
 
+html
+  _overflow: hidden //if disabled, the page can be scrolled, but the scroll bar belonged to the unknown element
+
+body, #fixed-hack-wrap
+  _position: relative
+  _height: 100%
+
 body
   font-family: $font-family
   color: $font-color
   background: #222222
+  _overflow: hidden
 
 a, img
   display: block
@@ -37,6 +45,9 @@ p
 .content-bold
   font-weight: bold
 
+#fixed-hack-wrap
+  _overflow: auto //if disabled, the page can't be scrolled
+
 #page-wrap
   +clearfix
   position: relative
@@ -50,7 +61,8 @@ p
 #top
   @include bg_text( 20px, 20px, "top")
   position: fixed
-  top: 670px
+  _position: absolute
+  bottom: 100px
   right: 110px
 
 nav
