@@ -59,7 +59,10 @@ h2
   margin: 0 0 0 4px
 
 #download
+  behavior: url("/css/PIE.htc")
   @include bg_text( 193px, 59px,"download")
+  position: relative
+
 
 #buy
   @include bg_text( 160px, 59px,"buy")
@@ -72,10 +75,12 @@ h2
   padding: 109px 36px 0 0
 
 #note
+  behavior: url("/css/PIE.htc")
   @include box-sink( 0px, 0px, 6px )
   @include border-radius( 5px )
   +float-right
   background: url("/img/note-bg.png") repeat-x
+  position: relative
   color: #A7AEB6
   width: 367px
   padding: 10px
