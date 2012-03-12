@@ -33,17 +33,19 @@
 - make a kick ass name card browser app!!!
 - make a kick ass project management browser app based on github!!!
 
+
+
 ### Delayed Jobs
 - finish project coke v0.0.2
 
 
 
 ### Ben
-- employee insurance(50% done, wait for reply)
 - [coke]: protect_from_forgery
 - [coke]: easier extend coke generator
 - blog about making a promotion video
-- buy domain for coke-js.org and whisky-js.org
+
+
 
 ### Fred
 - 20120215
@@ -68,6 +70,9 @@
   - todo list sample website with whisky and blogging
 - 201203013
   - fixed all training pages for ie6789
+
+
+
 ## Mason
 - 20120331
   - all coke docs and code comments finished
