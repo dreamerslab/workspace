@@ -8,11 +8,6 @@ $link-hover: #aaf
 $page-width: 1207px
 $gallery-bg: #191919
 
-body
-  font-family: $font-family
-  color: $font-color
-  background: #000
-
 a, img
   display: block
 
@@ -24,28 +19,47 @@ a:hover
   color: $link-hover
   text-decoration: none
 
-#page-wrap
-  position: relative
+html
+  _overflow: hidden //if disabled, the page can be scrolled, but the scroll bar belonged to the unknown element
+
+body
+  font-family: $font-family
+  color: $font-color
+  background: #000
+  line-height: 1
+  _overflow: hidden
+
+body, #wrap
+  _position: relative
+  _height: 100%
+
+#wrap
+  _overflow: auto //if disabled, the page can't be scrolled
+
+#page
   width: $page-width
   margin: 0 auto
+
+#header-wrap
+  position: fixed
+  _position: absolute
+  top: 0
+  width: 100%
+  z-index: 1
 
 #header
   background: #000
   width: $page-width
-  position: fixed!important
-  _position: absolute
-  top: 0
-  _top: 0
+  margin: 0 auto
   padding: 7px 0 0
   text-align: center
   border-bottom: 1px solid #ccc
-  z-index: 1
-  _z-index: 10
 
 #logo
   behavior: url("/css/PIE.htc")
   @include bg_text( 400px, 120px, "logo")
   margin: 0 auto
+  position: relative
 
 .nav-item
   +inline-block
@@ -57,22 +71,26 @@ a:hover
 #nav-twitter
   behavior: url("/css/PIE.htc")
   @include bg_text( 25px, 20px, "justinmaller")
+  position: relative
 
 #gallery-wrap
-  padding: 160px 0 70px 3px
+  +clearfix
+  padding: 160px 0 70px 6px
 
 .gallery-item
-  +inline-block
-  padding: 0 0 3px
+  +float-left
+  padding: 0 4px 3px 0
 
 .item-wrap
   behavior: url("/css/PIE.htc")
   @include border-radius(2px, 2px)
   position: relative
   background: $gallery-bg
-  width: 287px
-  height: 322px
-  padding: 5px 6px 5px 3px
+  width: 296px
+  height: 332px
+
+.inner-wrap
+  padding: 5px 3px 0px 3px
 
 .item-wrap:hover
   background: #fff
@@ -100,17 +118,22 @@ a:hover
   font-size: 11px
 
 footer
-  background: #000
-  width: $page-width
-  height: 35px
-  position: fixed!important
+  position: fixed
   _position: absolute
   bottom: 0
-  _bottom: 0
-  _left: 0
+  left: 0
+  right: 0
+  height: 35px
+  z-index: 50
+
+#footer-wrap
+  background: #000
+  position: relative
+  width: $page-width
   text-align: center
   border-top: 1px solid #ccc
-  _z-index: 10
+  height: 35px
+  margin: 0 auto
 
 #footer-top
   behavior: url("/css/PIE.htc")
