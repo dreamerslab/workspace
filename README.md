@@ -66,7 +66,8 @@
   - todo list sample website with backbone and blogging
 - 201203012
   - todo list sample website with whisky and blogging
-
+- 201203013
+  - fixed all training pages for ie6789
 ## Mason
 - 20120331
   - all coke docs and code comments finished
