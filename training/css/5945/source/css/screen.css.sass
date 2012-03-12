@@ -3,6 +3,23 @@
 // You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
 @import "lib"
 
+// for fixed position ie hack
+
+html
+  _overflow: hidden //if disabled, the page can be scrolled, but the scroll bar belonged to the unknown element
+
+body, #fixed-hack-wrap
+  _position: relative
+  _height: 100%
+
+body
+  _overflow: hidden
+
+#fixed-hack-wrap
+  _overflow: auto //if disabled, the page can't be scrolled
+
+// for fixed position ie hack
+
 body
   font-family: sans-serif
   line-height: 18px
@@ -34,12 +51,14 @@ ul
 #nav-bg
   background: #41B6EA
   position: fixed
+  _position: absolute // for fixed position ie hack
   top: 0px
   width: 100%
   height: 44px
 
 #nav-wrap
   +clearfix
+  position: relative
   width: 955px
   margin: 0 auto
   padding: 14px 0 0
@@ -50,6 +69,7 @@ nav
   padding: 2px 0 0
 
 #sublogo
+  behavior: url("/css/PIE.htc")
   @include bg_text( 111px, 17px, "sublogo")
   +float-left
   padding: 0 37px 0 0
@@ -63,9 +83,10 @@ nav
   font-size: 16px
 
 #fb-login
+  behavior: url("/css/PIE.htc")
   @include bg_text( 58px, 22px, "fb")
-  +float-right
-  padding: 0 198px 0 0
+  position: absolute
+  right: 198px
   margin: -3px 0 0
 
 $header-bg-padding: 231px
