@@ -28,9 +28,20 @@ ul
 //   opacity: 0.3
 //   z-index: 9999
 
+html
+  _overflow: hidden //if disabled, the page can be scrolled, but the scroll bar belonged to the unknown element
+
+body, #fixed-hack-wrap
+  _position: relative
+  _height: 100%
+
 body
   background: url("/img/bg1.jpeg") no-repeat center top
   font-family: $page-font
+  _overflow: hidden
+
+#fixed-hack-wrap
+  _overflow: auto //if disabled, the page can't be scrolled
 
 #main
   @include center( $page-width )
@@ -147,6 +158,7 @@ footer
   background: url("/img/ban1.png")
   -pie-background: url("/img/ban1.png")
   position: fixed
+  _position: absolute
   bottom: 0
   height: 24px
   width: 100%
