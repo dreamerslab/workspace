@@ -4,7 +4,6 @@
 @import "lib"
 
 $page-width: 960px
-$nav-home-current: sprite-position( $sprite, "bg-nav-home", 0px, -222px )
 $body-font: Helvetica, Arial, 'Lucida Grande', sans-serif
 
 a, img
@@ -35,59 +34,83 @@ body
   font-family: $body-font
 
 #header-bg
+  behavior: url("/css/PIE.htc")
+  position: relative
   background: url("/img/bg-slide-clouds.png") repeat-x bottom
+  -pie-background: url("/img/bg-slide-clouds.png") repeat-x bottom
 
 #header
   +clearfix
   @include center( $page-width )
   background: url("/img/bg-wrap.jpeg") no-repeat center bottom
   padding: 0 0 42px
+  position: relative
 
 header
   +float-left
   padding: 52px 0 0
 
 #logo
+  behavior: url("/css/PIE.htc")
   @include bg_text( 209px, 50px, "logo")
+  position: relative
 
 nav
   +float-right
+  _position: absolute
+  _left: 500px
 
 .nav-item
-  +inline-block
+  +float-left
   vertical-align: top
   position: relative
   padding: 0 0 0 2px
 
 #current
-  background-position: $nav-home-current
+  behavior: url("/css/PIE.htc")
+  position: relative
+  @include sprite_clean_hover( "bg-nav-home", -222px )
 
 .nav-home
+  behavior: url("/css/PIE.htc")
+  position: relative
   @include bg_text( 71px, 111px, "bg-nav-home")
 
 .nav-about
+  behavior: url("/css/PIE.htc")
+  position: relative
   @include bg_text( 77px, 111px, "bg-nav-about")
 
 .nav-about:hover
-  @include sprite-hover-position( "bg-nav-about", -111px )
+  behavior: url("/css/PIE.htc")
+  @include sprite_clean_hover( "bg-nav-about", -111px )
 
 .nav-work
+  behavior: url("/css/PIE.htc")
+  position: relative
   @include bg_text( 71px, 111px, "bg-nav-work")
 
 .nav-work:hover
-  @include sprite-hover-position( "bg-nav-work", -111px )
+  behavior: url("/css/PIE.htc")
+  @include sprite_clean_hover( "bg-nav-work", -111px )
 
 .nav-blog
+  behavior: url("/css/PIE.htc")
+  position: relative
   @include bg_text( 63px, 111px, "bg-nav-blog")
 
 .nav-blog:hover
-  @include sprite-hover-position( "bg-nav-blog", -111px )
+  behavior: url("/css/PIE.htc")
+  @include sprite_clean_hover( "bg-nav-blog", -111px )
 
 .nav-shop
+  behavior: url("/css/PIE.htc")
+  position: relative
   @include bg_text( 63px, 111px, "bg-nav-shop")
 
 .nav-shop:hover
-  @include sprite-hover-position( "bg-nav-shop", -111px )
+  behavior: url("/css/PIE.htc")
+  @include sprite_clean_hover( "bg-nav-shop", -111px )
 
 #new-abs
   position: absolute
@@ -95,16 +118,21 @@ nav
   right: -14px
 
 .nav-contact
+  behavior: url("/css/PIE.htc")
+  position: relative
   @include bg_text( 96px, 111px, "bg-nav-contact")
 
 .nav-contact:hover
-  @include sprite-hover-position( "bg-nav-contact", -111px )
+  behavior: url("/css/PIE.htc")
+  @include sprite_clean_hover( "bg-nav-contact", -111px )
 
 #desc-wrap
   padding: 34px 0 0
   clear: both
 
 #desc
+  behavior: url("/css/PIE.htc")
+  position: relative
   @include bg_text( 960px, 107px, "bg-banner-home")
 
 #main
@@ -177,25 +205,30 @@ nav
   width: 285px
   height: 233px
   padding: 132px 15px 0 0
+  text-align: right
 
 #ceo-title
-  +float-right
   background: #e75139
   font-size: 20px
   padding: 5px 10px 7px 45px
+  margin: 0 0 0 114px
+  *margin: 0 0 0 110px
 
 #ceo-subtitle
-  +float-right
+  behavior: url("/css/PIE.htc")
+  position: relative
   background: url("/img/bg-songartist.png")
+  -pie-background: url("/img/bg-songartist.png")
   font-size: 13px
   padding: 5px 10px 7px 10px
-  clear: both
+  margin: 0 0 0 175px
+  *margin: 0 0 0 170px
 
 #ceo-content
-  clear: both
   font-size: 18px
   line-height: 26px
   padding: 16px 0 0 11px
+  *padding: 16px 0 0 15px
 
 #footer-bg
   background: #dfe2e2
