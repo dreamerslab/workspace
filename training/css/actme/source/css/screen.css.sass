@@ -57,6 +57,7 @@ body
   @include center( $page-width )
   background: url("/img/header-center-bg.png") no-repeat
   height: 47px
+  position: relative
 
 header
   +float-left
@@ -65,6 +66,8 @@ h1
   padding: 0 0 0 10px
 
 #logo
+  position: relative
+  behavior: url("/css/PIE.htc")
   @include bg_text( 150px, 43px, "logo")
 
 nav
@@ -86,10 +89,6 @@ nav
 .nav-link:hover
   color: #eeeedc
 
-#search-wrap
-  +float-right
-  padding: 10px 9px 0 0
-
 #search
   background: url("/img/bg-search.png")
   border: none
@@ -98,14 +97,24 @@ nav
   font-size: 11px
   font-style: italic
   width: 185px
+  width/*\**/: 157px\9
+  _width: 157px
   height: 27px
+  height/*\**/: 19px\9
+  _height: 19px
+  position: absolute
+  top: 10px
+  right: 9px
+  padding/*\**/: 8px\9 0\9 0\9 28px\9
+  _padding: 8px 0 0 28px
 
 #main-bg
   background: url("/img/bg-body.png")
 
 #pr-tw-wrap
-  @include center( $main-width )
+  @include center( $main-width + 5px )
   +clearfix
+
 #feature
   @include center( $page-width - 42px )
   background: url("/img/line-header.png")
@@ -117,7 +126,9 @@ nav
   height: 8px
 
 #feature-title
+  behavior: url("/css/PIE.htc")
   background: #53504a
+  -pie-background: rgba(83, 80, 74, 0.5)
   position: absolute
   top: 70px
   left: 40px
@@ -127,7 +138,9 @@ nav
   padding: 16px 21px 12px
 
 #feature-subtitle
+  behavior: url("/css/PIE.htc")
   background: #fff
+  -pie-background: rgba(255, 255, 255, 0.5)
   position: absolute
   top: 120px
   left: 40px
@@ -137,12 +150,16 @@ nav
   opacity: 0.6
 
 .feature-pre
+  position: relative
+  behavior: url("/css/PIE.htc")
   @include bg_text( 15px, 15px, "arrow-prev2")
   position: absolute
   bottom: 22px
   left: 40px
 
 .feature-next
+  position: relative
+  behavior: url("/css/PIE.htc")
   @include bg_text( 15px, 15px, "arrow-next2")
   position: absolute
   bottom: 22px
@@ -215,6 +232,8 @@ nav
   padding: 0 2px 0 0
 
 #sns-facebook
+  position: relative
+  behavior: url("/css/PIE.htc")
   @include bg_text( 16px, 16px, "facebook")
 
 #ribbon-posts
@@ -345,11 +364,13 @@ nav
 
 #footer-bg
   background: url("/img/bg-footer-top.png") center top no-repeat
+  text-align: center
 
 footer
   @include center( $main-width )
   +clearfix
   padding: 27px 0 40px 4px
+  text-align: left
 
 .footer-sns-item
   display: inline
@@ -362,12 +383,18 @@ footer
   padding: 0 2px 0 0
 
 #footer-sns-rss
+  position: relative
+  behavior: url("/css/PIE.htc")
   @include bg_text( 16px, 16px, "rss")
 
 #footer-sns-facebook
+  position: relative
+  behavior: url("/css/PIE.htc")
   @include bg_text( 16px, 16px, "facebook")
 
 #footer-sns-twitter
+  position: relative
+  behavior: url("/css/PIE.htc")
   @include bg_text( 16px, 16px, "twitter")
 
 #meta
