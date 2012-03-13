@@ -30,7 +30,9 @@ body
   padding: 36px 0 0
 
 #logo
+  behavior: url("/css/PIE.htc")
   @include bg_text( 302px, 25px, "logo")
+  position: relative
   +inline-block
 
 nav
@@ -47,7 +49,11 @@ nav
   +inline-block
   vertical-align: top
   background: url("/img/background-navigation.gif") no-repeat
-  text-indent: -9999px
+  font: 0/0 serif
+  text-shadow: none
+  color: transparent
+  overflow: hidden
+  line-height: 0
   height: 15px
   padding: 20px 0 0
 
@@ -90,7 +96,9 @@ nav
   background-position-y: -36px
 
 #nav-highlight
+  behavior: url("/css/PIE.htc")
   background: url("/img/background-highlight.png") no-repeat
+  -pie-background: url("/img/background-highlight.png") no-repeat
   height: 62px
   width: 124px
   position: absolute
@@ -110,7 +118,11 @@ nav
 .show-link
   +inline-block
   background: url("/img/background-homepage-nav.gif") no-repeat 0 -3px
-  text-indent: -9999px
+  font: 0/0 serif
+  text-shadow: none
+  color: transparent
+  overflow: hidden
+  line-height: 0
   width: 151px
   height: 27px
 
@@ -157,12 +169,15 @@ $show-hover-position-y: -31px
 .show-photography:hover
   background-position-y: $show-hover-position-y
 
-#show-seleted
+#show-seleted-bg
+  behavior: url("/css/PIE.htc")
   background: url("/img/background-home-highlight.png") no-repeat 0 $show-ori-position-y
+  -pie-background: url("/img/background-home-highlight.png") no-repeat 0 $show-ori-position-y
   width: 151px
   height: 52px
   position: absolute
   left: 152px
+  _left: -1654px //this is very weired... but it works... figured out later...
   top: 0
 
 #desc-blog-wrap
