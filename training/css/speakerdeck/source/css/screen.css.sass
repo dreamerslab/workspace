@@ -5,14 +5,14 @@
 
 $page-width: 960px
 $body-font: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif
-$top-color: #999999
+$top-color: #999
 $link-font: 'Abadi MT W02 Exra Light', HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif
 $link-color: #569465
 $link-color-hover: #8ad3af
 $desc-color: #88d2ad
 $browse-link-color: #88b297
 $main-title-color: #222
-$main-link-color: #339966
+$main-link-color: #396
 
 a, img
   +inline-block
@@ -45,9 +45,6 @@ body
   opacity: 0.3
   z-index: 9999
 
-// #logo
-//   @include bg_text( 288px, 85px, "logo")
-
 #top-bg
   background: #000
 
@@ -59,6 +56,7 @@ body
   padding: 10px 0
 
 #more
+  *margin: 3px 0 0
   color: $link-color
 
 #more:hover
@@ -77,7 +75,9 @@ header
   padding: 11px 0 0
 
 #logo
+  behavior: url("/css/PIE.htc")
   @include sprite_clean( "logo" )
+  position: relative //for pie issue
   height: 26px
   padding: 8px 0 0 58px
   color: #fff
@@ -89,9 +89,6 @@ header
   padding: 18px 13px 0 0
   font-size: 18px
   color: #fff
-
-#desc-bg
-  // background: url("/img/grey.jpeg")
 
 #desc-wrap
   +clearfix
@@ -153,8 +150,10 @@ h2
 
 .presentation-pic
   border: 1px solid #a1a1a1
+  behavior: url("/css/PIE.htc")
   @include border-radius(5px, 5px)
   @include box-shadow( rgba(0,0,0,0.2) 0 0 0 1px, rgba(0,0,0,0.3) 0 2px 5px )
+  position: relative
 
 .main-link
   color: $main-title-color
@@ -207,9 +206,6 @@ h2
   border-top: 1px solid rgba(255, 255, 255, 0.7)
   border-bottom: 1px solid #ccc
   border-bottom: 1px solid rgba(0, 0, 0, 0.12)
-
-#footer-bg
-  // background: url("/img/grey.jpeg")
 
 footer
   @include center( $page-width )
