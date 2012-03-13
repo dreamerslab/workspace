@@ -94,13 +94,17 @@ $header-width: 1075px - $header-bg-padding
 
 #header
   +clearfix
+  behavior: url("/css/PIE.htc")
   background: url("/img/header-bg.png") no-repeat bottom
+  position: relative
   width: $header-width
   margin: 0 auto
   padding: 147px 0 56px $header-bg-padding
 
 #logo
+  behavior: url("/css/PIE.htc")
   @include bg_text( 167px, 114px, "logo")
+  position: relative
   +float-left
 
 #header-content-wrap
@@ -242,7 +246,6 @@ $header-width: 1075px - $header-bg-padding
   font-size: 11px
   color: #7D8484
   display: inline
-  padding: 0 4px 0 0
 
 .tutorial-title
   padding: 0 0 2px
@@ -251,7 +254,10 @@ $header-width: 1075px - $header-bg-padding
   color: #41B6EA
 
 .tutorial-more
-  @include bg_text( 4px, 11px, "sidebar-link")
+  behavior: url("/css/PIE.htc")
+  @include bg_text( auto, auto, "sidebar-link")
+  margin: 0 0 0 4px
+  padding: 11px 0 0 4px
 
 #footer-link-wrap
   +clearfix

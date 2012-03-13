@@ -3,6 +3,19 @@
 // You must put a png file in /img/sprite, or the compass won't generate css file, because it can't fint any png to sprite
 @import "lib"
 
+html
+  _overflow: hidden //if disabled, the page can be scrolled, but the scroll bar belonged to the unknown element
+
+body, #wrap
+  _position: relative
+  _height: 100%
+
+body
+  _overflow: hidden
+
+#wrap
+  _overflow: auto //if disabled, the page can't be scrolled
+
 a, img
   +inline-block
 
@@ -224,6 +237,9 @@ nav
 .footer-photo
   +float-left
 
+.footer-photo-pie
+  behavior: url("/css/PIE.htc")
+
 .footer-content-wrap
   +float-right
   width: 185px
@@ -237,13 +253,19 @@ nav
 .footer-link
   font-weight: bold
   font-size: 13px
+  behavior: url("/css/PIE.htc")
   background: url("/img/link.png") no-repeat right 0px
+  -pie-background: url("/img/link.png") no-repeat right 0px
+  position: relative //for pie issue
   color: #af554c
   padding: 0 18px 0 0
   vertical-align: top
 
 .footer-link:hover
+  behavior: url("/css/PIE.htc")
   background: url("/img/link2.png") no-repeat right 0px
+  -pie-background: url("/img/link2.png") no-repeat right 0px
+  position: relative //for pie issue
   color: #000
   border-bottom: 1px dotted #000
 
@@ -322,5 +344,7 @@ nav
   width: 62px
   height: 25px
   position: fixed
+  _position: absolute
   bottom: 0
   right: 0
+  _right: 16px

@@ -147,6 +147,11 @@ nav
   display: inline-block
   width: 220px
   padding: 0 6px 0 0
+  min-height: 230px
+  vertical-align: top
+  zoom: 1
+  *display: inline
+  _height: 230px
 
 .gallery-photo
   border: 5px solid #F3F3F3
@@ -248,12 +253,16 @@ footer
 
 #email
   +float-left
-  @include box-sink( 0px, 0px, 5px, 0, rgba(0,0,0,.15) )
+  @include box-sink( 0px, 0px, 5px, 0, rgba( 0, 0, 0, .15 ) )
   border: none
   color: #A0A0A0
   width: 319px
+  *width: 316px
   height: 43px
+  *height: 27px
   padding: 0 0 0 15px
+  *padding: 13px 0 0 15px
+  *font-size: 12px
 
 #email:focus
   background: #F8F8F8
