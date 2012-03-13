@@ -138,15 +138,23 @@ $sprite: sprite-map( "sprite/*.png", $new-position: 0%, $new-spacing: 0px, $new-
 
 @mixin _sprite( $dir, $file, $x:0, $y:0 )
   background: $dir no-repeat sprite-position( $dir, $file, $x, $y )
+  -pie-background: $dir no-repeat sprite-position( $dir, $file, $x, $y )
 
 @mixin bg_text( $width, $height, $sprite-name )
-  text-indent: -9999px
+  font: 0/0 serif
+  text-shadow: none
+  color: transparent
+  overflow: hidden
+  line-height: 0
   width: $width
   height: $height
   @include _sprite( $sprite, $sprite-name )
 
 @mixin sprite_clean( $sprite-name )
   @include _sprite( $sprite, $sprite-name )
+
+@mixin sprite_clean_hover( $sprite-name, $y:0 )
+  @include _sprite( $sprite, $sprite-name, 0, $y )
 
 @mixin center( $width )
   width: $width

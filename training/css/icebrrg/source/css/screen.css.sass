@@ -10,6 +10,8 @@ $link-font: verdana, Arial, helvetica, sans-serif
 a, img
   +inline-block
   vertical-align: top
+  zoom: 1
+  *display: inline
 
 a
   text-decoration: none
@@ -38,6 +40,7 @@ body
   font-family: $body-font
 
 #new-intergrated-payment
+  behavior: url("/css/PIE.htc")
   @include bg_text( 160px, 130px, "payments")
   position: absolute
   top: 0
@@ -81,9 +84,13 @@ nav
 
 .nav-item
   display: inline-block
+  vertical-align: top //for ie hack
+  zoom: 1 //for ie hack
+  *display: inline//for ie hack
   padding: 0 0 0 7px
 
 #nav-what, #nav-how, #nav-sign-up
+  behavior: url("/css/PIE.htc")
   padding: 7px 0 0
   font-size: 16px
   font-weight: bold
@@ -96,20 +103,27 @@ nav
 
 #nav-what
   background: url("/img/nav-what.png") no-repeat left top
+  -pie-background: url("/img/nav-what.png") no-repeat left top
+  position: relative
   width: 144px - 17px
 
 #nav-how
   background: url("/img/nav-how.png") no-repeat left top
+  -pie-background: url("/img/nav-how.png") no-repeat left top
+  position: relative
   width: 152px - 17px
 
 #nav-sign-up
   background: url("/img/nav-sign.png") no-repeat left top
+  -pie-background: url("/img/nav-sign.png") no-repeat left top
+  position: relative
   width: 106px - 17px
 
 #desc
   +clearfix
   @include center( $page-width )
   padding: 26px 0 0 50px
+  height: 229px
 
 .desc-content-wrap
   +float-left
@@ -149,6 +163,9 @@ nav
 
 .step-item
   display: inline-block
+  vertical-align: top
+  zoom: 1
+  *display: inline
 
 .step-link
   height: 38px
@@ -159,22 +176,28 @@ nav
   margin: -20px 0 0
 
 #step-one
+  behavior: url("/css/PIE.htc")
   @include sprite_clean( "one" )
+  position: relative
 
 #step-one:hover
-  background-position: 0 -224px
+  @include sprite_clean_hover( "one", -58px )
 
 #step-two
+  behavior: url("/css/PIE.htc")
   @include sprite_clean( "two" )
+  position: relative
 
 #step-two:hover
-  background-position: 0 -606px
+  @include sprite_clean_hover( "two", -58px )
 
 #step-three
+  behavior: url("/css/PIE.htc")
   @include sprite_clean( "three" )
+  position: relative
 
 #step-three:hover
-  background-position: 0 -490px
+  @include sprite_clean_hover( "three", -58px )
 
 .step-link:hover
   color: #fff
@@ -225,13 +248,17 @@ nav
   padding: 18px 0 0 8px
 
 #video-demo
+  behavior: url("/css/PIE.htc")
   @include bg_text( 216px, 39px, "video-demo")
+  position: relative //for pie issue
 
 #video-demo:hover
-  background-position: 0 -703px
+  @include sprite_clean_hover( "video-demo", -39px )
 
 #lightcms
+  behavior: url("/css/PIE.htc")
   @include bg_text( 125px, 40px, "lightcms-logo")
+  position: relative //for pie issue
   +float-right
 
 #lightcms-wrap
