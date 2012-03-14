@@ -74,6 +74,8 @@
 
 
 ## Mason
+- 20120320
+  - forum.coke gets ready to serve
 - 20120331
   - all coke docs and code comments finished
 
