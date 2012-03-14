@@ -5,36 +5,48 @@
 $font-family: Tahoma
 $font-color: #000
 
+// fixed positon ie hack
+html
+  _overflow: hidden //if disabled, the page can be scrolled, but the scroll bar belonged to the unknown element
+
+body, #page-wrap
+  _position: relative
+  _height: 100%
+
+body
+  _overflow: hidden
+
+#page-wrap
+  _overflow: auto //if disabled, the page can't be scrolled
+// fixed positon ie hack
+
 body
   font-family: $font-family
   color: $font-color
   background: url("/img/main-bg.jpeg") repeat-x #82B64A
 
-
 #page-wrap
   position: relative
-  width: 841px
-  margin: 0 auto
 
 #shadow
-  background: url("/img/shadow.jpeg") no-repeat
-  width: 1034px
+  background: url("/img/shadow.jpeg") no-repeat -36px 0px
+  width: 841px
   height: 519px
-  position: absolute
-  top: 27px
-  left: -136px
-  z-index: -1
+  margin: 26px auto 0
+  padding: 0 98px
 
 #main-pic
   +float-left
   background: url("/img/main-pic.jpeg") no-repeat
   width: 323px
   height: 545px
+  margin: -26px 0 0
 
 #main-wrap
   +float-right
   background: url("/img/content-bg.jpeg") no-repeat
   width: 518px
+  margin: -26px 0 0
 
 #header
   position: relative
@@ -105,6 +117,7 @@ nav
   display: block
   behavior: url(/css/PIE.htc)
   @include bg_text( 27px, 16px, "p-logo" )
+  position: relative
 
 .gallery-item
   +float-left
@@ -122,8 +135,8 @@ nav
 #gallery-bottom-wrap
   +clearfix
   behavior: url(/css/PIE.htc)
-  background: url("/img/line2.png") no-repeat
-  -pie-background: url("/img/line2.png") no-repeat left top
+  background: url("/img/line2.png") no-repeat left top
+  -pie-background: url("/img/line2.png") no-repeat
   width: 375px
   padding: 0 0 10px
   position: relative
@@ -143,6 +156,7 @@ nav
   behavior: url(/css/PIE.htc)
   @include bg_text( 118px, 17px, "copyright" )
   position: fixed
+  _position: absolute
   bottom: 0px
   left: 50%
   margin: 0 0 0 -59px

@@ -11,3 +11,5 @@ This page has a logo, a nav, two description blocks, a gallery block and a link 
 - commit often by git from draft
 - when building css, using padding instead of margin. If want to use bg_text() and want to move the div, wrap the div with another div, and add padding to the outer div.
 - if you want to batch compress or resize and rename png to jpg by photoshop, use file -> scripts -> image processor
+
+- this #show-seleted-bg on ie6 with c33 pie is very weired... I have to set _left: -1654px to make it works... maybe it's caused by css3 pie, because the weired position is the position I modified before

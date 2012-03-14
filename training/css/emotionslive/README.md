@@ -16,3 +16,6 @@ This page is similar to the fifth practice page. The page has a logo, descriptio
 - when building css, using padding instead of margin unless there's special situation(use img to replace text as a background)
 - when using unfixed height inline block element, remember to set width and height to the element if necessary
 - if you want to batch compress or resize and rename png to jpg by photoshop, use file -> scripts -> image processor
+
+### Notes after done and fixed ie bug
+- if the background's position is not the same as the stylesheet, apply the fixed bar ie hack, the position maybe fixed.

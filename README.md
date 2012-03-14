@@ -12,12 +12,13 @@
 ### General
 
 #### FEB
-- 15, dreamerscorp.com rewrote
 - 27, whisky v0.0.1
 - 28, all existing projects on github documented
 
 #### MAR
+- 15, dreamerscorp.com rewrote
 - 24, all whisky docs and code comments finished
+- 28, all existing projects on github documented
 - 31, all coke docs and code comments finished
 
 #### APR
@@ -48,28 +49,28 @@
 
 
 ### Fred
-- 20120215
+- 20120314
+  - fixed all training pages for ie6789
+- 20120315
   - rewrite dreamerscorp.com
-- 20120217
+- 20120319
   - rewrite cvl with coke
-- 20120228
+- 20120330
   - learn jsdoc
   - write docs for existing projects including jquery and node
   - check if existing node.js and jQuery projects with for in, if yes, node.js projects changed the for in to Object.keys(obj).forEach(function(name){}), jQuery projects added hasOwnproperty to check whethter default value
-- 20120302
+- 20120402
   - write a simple jquery light-box plugin and blogging
-- 20120305
+- 20120405
   - todo list sample website with codeigniter and blogging
-- 20120306
+- 20120406
   - todo list sample website with rails and blogging
-- 20120307
+- 20120407
   - todo list sample website with coke and blogging
-- 201203010
+- 20120410
   - todo list sample website with backbone and blogging
-- 201203012
+- 20120412
   - todo list sample website with whisky and blogging
-- 201203013
-  - fixed all training pages for ie6789
 
 
 
