@@ -1,0 +1,69 @@
+@import "common"
+@import "about"
+@import "recruit"
+@import "contact"
+
+#original
+  background: url("/img/original-ben.png") no-repeat center top
+  width: 1440px
+  height: 2475px
+  font: 0/0 serif
+  text-shadow: none
+  color: transparent
+  overflow: hidden
+  line-height: 0
+  position: absolute
+  top: 0
+  left: 50%
+  margin: 0 0 0 -720px
+  opacity: 0.3
+  z-index: 9999
+
+.tw
+  display: none
+
+#lan-switcher
+  position: absolute
+  top: 18px
+  right: 0
+  color: #0e76a9
+  font-size: 14px
+  text-align: center
+  padding: 1px 24px 0 0
+
+#change-to-en, #change-to-tw
+  color: #0e76a9
+  font-size: 14px
+  font-weight: 700
+  text-decoration: none
+  &:hover
+    position: relative
+    top: 1px
+
+.intro-title-wrap
+  +float-left
+  @include pie-bg( url("/img/nivbg.png") )
+  margin: -2px 2px 0 0
+
+.title-nav-selected
+  @include pie-bg( url("/img/tdbg.png") )
+  margin: 0 2px 0 0
+
+.intro-title
+  +inline-block
+  color: #598aaf
+  font-size: 14px
+  text-align: center
+  text-decoration: none
+  cursor: pointer
+  width: 104px
+  height: 21px
+  padding: 11px 0 0
+  position: relative
+  &:hover
+    top: 1px
+    color: #fff
+
+.content-article
+  padding: 73px 45px 60px 80px
+  line-height: 1.7em

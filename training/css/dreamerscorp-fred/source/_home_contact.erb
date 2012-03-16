@@ -1,0 +1,61 @@
+<div id="nav-contact">
+  <img class="png-img" src="/img/title-contact.png" alt="Contact" href="#">
+  <%= partial :nav, :locals => {:current_nav => "contact" } %>
+</div> <!-- #nav-contact -->
+<div id="contact-content" class="content-block">
+  <div class="title-wrap">
+    <h3 class="title-nav-selected intro-title-wrap"><a href="#" class="intro-title"><span class="en">Contact</span><span class="tw">聯絡我們</span></a></h3>
+  </div>
+  <div id="contact-form-wrap">
+    <div id="contact-banner-wrap">
+      <img class="png-img" src="http://dreamerscorp.com/img/contact_logo.png" alt="Feel free to contact us if you have any question">
+    </div>
+    <form id="contact-form" action="" method="post" accept-charset="utf-8">
+      <div class="form-row">
+        <label for="name" ><span class="en">Name:</span><span class="tw">姓名:</span></label>
+        <input type="text" id="name" class="contact-input" name="name">
+      </div>
+      <div class="form-row">
+        <label for="email" ><span class="en">Email:</span><span class="tw">電子郵件:</span></label>
+        <input type="text" id="email" class="contact-input" name="email">
+      </div>
+      <div class="form-row">
+        <label for="message" ><span class="en">Comment:</span><span class="tw">內容:</span></label>
+        <textarea type="text" id="message" class="contact-input" name="message">leave a message here</textarea>
+      </div>
+      <div class="form-row">
+        <input id="reset" class="contact-input" type="reset" value="clear"><input id="submit" class="contact-input" type="submit" value="submit">
+      </div>
+    </form>
+    <footer>
+      <div id="contact-info">
+        <div class="footer-info-wrap">
+          <h4 class="footer-title"><img class="png-img" src="/img/contact-p1.png" alt="Call us"></h4>
+          <ul>
+            <li class="footer-info" >T. +886-2-27153759</li>
+            <li class="footer-info" >F. +886-2-27153759</li>
+          </ul>
+        </div>
+        <div class="footer-info-wrap">
+          <h4 class="footer-title"><img class="png-img" src="/img/contact-p2.png" alt="Visit us"></h4>
+          <ul>
+            <li class="footer-info" >1F., No.10, Alley 1, Lane 56, Sec. 4,</li>
+            <li class="footer-info" >Minsheng E. Rd Taipei, Taiwan</li>
+          </ul>
+        </div>
+        <div class="footer-info-wrap">
+          <h4 class="footer-title"><img class="png-img" src="/img/contact-p3.png" alt="Email us"></h4>
+          <ul>
+            <li><img class="png-img" src="/img/mail-inquiry.png " alt="Email us"></li>
+          </ul>
+        </div>
+        <div class="footer-info-wrap">
+          <h4 class="footer-title"><img class="png-img" src="/img/contact-p4.png" alt="Find us on"></h4>
+          <ul>
+            <li><a id="map-link" href="http://maps.google.com.tw/maps/ms?source=s_d&saddr=%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80&daddr=++++++++++++++++++++25.057663,121.55223&hl=zh-TW&geocode=CbzokIoHEZE4FaKtfgEdNZg-Bw%3B&mra=mi&mrsp=1&sz=18&ie=UTF8&brcurrent=3,0x3442abf2b1b30d4f:0xe8724217cec49c01&msa=0&msid=115960903815944449373.000463a41c312451c07d8&ll=25.058233,121.552734&spn=0.013645,0.027895&z=16">Google Map</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div> <!-- #contact-form-wrap -->
+</div> <!--#contact-content-->

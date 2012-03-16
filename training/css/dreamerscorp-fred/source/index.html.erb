@@ -1,0 +1,28 @@
+<% content_for :head do %>
+  <title> DreamersCorp. - web portal, SNS apps, and blog widgets. </title>
+  <%= stylesheet_link_tag 'home' %>
+  <%= stylesheet_link_tag 'jquery.lightbox-0.5' %>
+<% end %>
+<!-- <div id="original"></div> -->
+
+<div id="page-wrap">
+  <header>
+    <h1><a href="#" id="logo">Dreamerscorp.com</a></h1>
+  </header>
+  <div id="lan-switcher">Language : <a href="#" id="change-to-en">English</a> | <a href="#" id="change-to-tw">繁體中文</a>
+  </div> <!--#lan-switcher-->
+  <%= partial "home_about" %>
+  <%= partial "home_recruit" %>
+  <%= partial "home_contact" %>
+  <div id="copyright">Copyright © 2009 <a href="#" class="copyright-link">DreamersCorp.</a> All rights reserved. <a href="#" id="w3c-html">W3C XHTML1.0</a> </div>
+</div> <!-- #page-wrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<%= javascript_include_tag 'jquery-scrollto-min' %>
+<%= javascript_include_tag 'scrollto' %>
+<%= javascript_include_tag 'js' %>
+<%= javascript_include_tag 'jquery.lightbox-0.5.min' %>
+<script>
+  $(function() {
+      $('.gallery-link').lightBox();
+  });
+</script>

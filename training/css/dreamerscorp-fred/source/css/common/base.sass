@@ -1,0 +1,49 @@
+$body-font: "microsoft Sans Serif", "arial", "Century Gothic"
+$link-font: "Century Gothic", Arial, "Microsoft Sans Serif"
+$span-link-color: #f0f0ee
+
+body
+  background: url("/img/1440-900.jpg")  no-repeat center top fixed
+  font-family: $body-font
+
+#page-wrap
+  @include center( 960px )
+  position: relative
+  padding: 80px 0
+
+header
+  position: absolute
+  top: 35px
+
+#logo
+  behavior: url("/css/PIE.htc")
+  position: relative
+  @include bg-text( 430px, 110px, "logo")
+  +float-left
+  &:hover
+    top: 1px
+
+.png-img
+  behavior: url("/css/PIE.htc")
+  -pie-png-fix: true
+
+.content-block
+  padding: 21px 0 0
+
+.opening-title
+  font-size: 20px
+  font-weight: bold
+
+.home-p
+  text-indent: 30px
+
+.home-span
+  color: #ecbd00
+
+.home-link
+  color: #ecbd00
+  font-weight: bold
+  text-decoration: none
+  &:hover
+    position: relative
+    top: 1px
