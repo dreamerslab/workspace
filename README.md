@@ -16,7 +16,6 @@
 - 28, all existing projects on github documented
 
 #### MAR
-- 15, dreamerscorp.com rewrote
 - 24, all whisky docs and code comments finished
 - 28, all existing projects on github documented
 - 31, all coke docs and code comments finished
@@ -49,12 +48,6 @@
 
 
 ### Fred
-- 20120314
-  - fixed all training pages for ie6789
-- 20120315
-  - rewrite dreamerscorp.com
-- 20120319
-  - rewrite cvl with coke
 - 20120330
   - learn jsdoc
   - write docs for existing projects including jquery and node
