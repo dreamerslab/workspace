@@ -1,1 +1,308 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}a,img{display:-moz-inline-box;-moz-box-orient:vertical;display:inline-block;vertical-align:middle;*vertical-align:auto;vertical-align:top}a,img{*display:inline}a{font-family:proxima-nova-1,proxima-nova-2,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Arial,Helvetica,sans-serif;text-decoration:none}ul{overflow:hidden;*zoom:1}#original{background:url("/img/original.png") no-repeat center top;width:1261px;height:1238px;text-indent:-9999px;position:absolute;top:0;left:50%;margin:0 0 0 -630px;opacity:0.3;z-index:9999}body{background:#dcdad2 url("/img/bgrtile.jpeg");font-family:proxima-nova-1,proxima-nova-2,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Arial,Helvetica,sans-serif}#header-bg{background:url("/img/home-promo-standard.gif") repeat-x top}#header{overflow:hidden;*zoom:1;width:1008px;margin:0 auto;height:360px;position:relative;padding:25px 0 30px}header{display:inline;float:left;padding:0 0 0 14px}#logo{text-indent:-9999px;width:230px;height:40px;background:url('/img/sprite-s7862212651.png') no-repeat 0 0}nav{display:inline;float:right}.nav-item{display:inline;padding:0 0 0 12px}.nav-link{font-family:ff-tisa-web-pro-1,ff-tisa-web-pro-2,Georgia,serif;color:#000;font-size:18px;padding:12px 15px 9px}.nav-link:hover{background:#eae9e4}#desc-wrap{position:absolute;top:173px;right:29px;width:450px;height:200px;z-index:1}.desc{background:#000}#space{display:inline;float:left;background:#000;width:400px;height:41px}.desc-title{color:#fff;font-family:ff-tisa-web-pro-1,ff-tisa-web-pro-2,Georgia,serif;font-size:36px;padding:30px 0 0 17px}.desc-content{color:#fff;font-size:14px;line-height:25px;padding:17px 20px 0;word-spacing:-1px}.desc-link,.desc-link:visited{color:#ffa800;border-bottom:1px dotted #ffa800}.pre-next-wrap{display:inline;float:right;padding:10px 2px 0 0}.pre{text-indent:-9999px;width:18px;height:18px;background:url('/img/sprite-s7862212651.png') no-repeat 0 -82px}.pre:hover{background-position:0 -107px}.next{text-indent:-9999px;width:18px;height:18px;background:url('/img/sprite-s7862212651.png') no-repeat 0 -40px}.next:hover{background-position:0 -65px}#h2-intro-bg{background:#fff}#h2-intro-wrap{width:980px;margin:0 auto;overflow:hidden;*zoom:1;padding:41px 0 83px}h2{color:#565552;font-size:32px;line-height:42px;padding:0 0 60px}.h2-link{display:inline;color:#0086c3;border-bottom:1px dotted #0086c3}.h2-link:hover{border-bottom:none}.intro{display:inline;float:left;border-top:1px solid #c2bfb9;width:216px;color:#494945;font-size:14px;line-height:18px;padding:0 38px 0 0}.intro-title{color:#56554f;font-size:11px;padding:6px 0 23px;letter-spacing:1px}.intro-content{padding:0 0 10px;word-spacing:1px}.what-span{font-weight:bold}.what-conclusion{padding:10px 0 0}.intro-link{color:#0086c3;border-bottom:1px dotted #0086c3}.intro-link:hover{border-bottom:none}#our-pic{padding:0 0 4px}#our-content{padding:24px 0 0}#intro-last{padding:0 0 0 2px}footer{width:980px;margin:0 auto;overflow:hidden;*zoom:1;padding:28px 0 60px}#meta{display:inline;float:left}#meta-info{overflow:hidden;*zoom:1}.meta-item{display:inline;padding:0 6px 0 0}.meta-link{color:#000;font-family:proxima-nova-1,proxima-nova-2,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold}#twitter{background:url('/img/sprite-s7862212651.png') no-repeat 0 -124px;display:inline;float:right;height:21px;padding:0 0 0 35px;color:#000;font-family:proxima-nova-1,proxima-nova-2,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold}#twitter:hover{background-position:0 -145px}#copyright{display:inline;float:right;color:#56554f;font-size:14px}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+a, img {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  vertical-align: top; }
+  a, img {
+    *display: inline; }
+
+a {
+  font-family: proxima-nova-1, proxima-nova-2, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  text-decoration: none; }
+
+ul {
+  overflow: hidden;
+  *zoom: 1; }
+
+#original {
+  background: url("../img/original.png") no-repeat center top;
+  width: 1261px;
+  height: 1238px;
+  text-indent: -9999px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -630px;
+  opacity: 0.3;
+  z-index: 9999; }
+
+body {
+  background: #dcdad2 url("../img/bgrtile.jpeg");
+  font-family: proxima-nova-1, proxima-nova-2, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif; }
+
+#header-bg {
+  background: url("../img/home-promo-standard.gif") repeat-x top; }
+
+#header {
+  overflow: hidden;
+  *zoom: 1;
+  width: 1008px;
+  margin: 0 auto;
+  height: 360px;
+  position: relative;
+  padding: 25px 0 30px; }
+
+header {
+  display: inline;
+  float: left;
+  padding: 0 0 0 14px; }
+
+#logo {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  overflow: hidden;
+  line-height: 0;
+  width: 230px;
+  height: 40px;
+  background: url('../img/sprite-s7862212651.png') no-repeat 0 0;
+  -pie-background: url('../img/sprite-s7862212651.png') no-repeat 0 0; }
+
+nav {
+  display: inline;
+  float: right;
+  _position: absolute;
+  _top: 25px;
+  _left: 418px; }
+
+.nav-item {
+  display: inline;
+  padding: 0 0 0 12px; }
+
+.nav-link {
+  font-family: ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, serif;
+  color: black;
+  font-size: 18px;
+  padding: 12px 15px 9px; }
+
+.nav-link:hover {
+  background: #eae9e4; }
+
+#desc-wrap {
+  position: absolute;
+  top: 173px;
+  right: 29px;
+  width: 450px;
+  height: 200px;
+  z-index: 1; }
+
+.desc {
+  background: black; }
+
+#space {
+  display: inline;
+  float: left;
+  background: black;
+  width: 400px;
+  height: 41px; }
+
+.desc-title {
+  color: white;
+  font-family: ff-tisa-web-pro-1, ff-tisa-web-pro-2, Georgia, serif;
+  font-size: 36px;
+  padding: 30px 0 0 17px; }
+
+.desc-content {
+  color: white;
+  font-size: 14px;
+  line-height: 25px;
+  padding: 17px 20px 0;
+  word-spacing: -1px; }
+
+.desc-link, .desc-link:visited {
+  color: #ffa800;
+  border-bottom: 1px dotted #ffa800; }
+
+.pre-next-wrap {
+  display: inline;
+  float: right;
+  padding: 10px 2px 0 0; }
+
+.pre {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  overflow: hidden;
+  line-height: 0;
+  width: 18px;
+  height: 18px;
+  background: url('../img/sprite-s7862212651.png') no-repeat 0 -82px;
+  -pie-background: url('../img/sprite-s7862212651.png') no-repeat 0 -82px; }
+
+.pre:hover {
+  background-position: 0 -107px; }
+
+.next {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  overflow: hidden;
+  line-height: 0;
+  width: 18px;
+  height: 18px;
+  background: url('../img/sprite-s7862212651.png') no-repeat 0 -40px;
+  -pie-background: url('../img/sprite-s7862212651.png') no-repeat 0 -40px; }
+
+.next:hover {
+  background-position: 0 -65px; }
+
+#h2-intro-bg {
+  background: white; }
+
+#h2-intro-wrap {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 41px 0 83px; }
+
+h2 {
+  color: #565552;
+  font-size: 32px;
+  line-height: 42px;
+  padding: 0 0 60px; }
+
+.h2-link {
+  display: inline;
+  color: #0086c3;
+  border-bottom: 1px dotted #0086c3; }
+
+.h2-link:hover {
+  border-bottom: none; }
+
+.intro {
+  display: inline;
+  float: left;
+  border-top: 1px solid #c2bfb9;
+  width: 216px;
+  color: #494945;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0 38px 0 0; }
+
+.intro-title {
+  color: #56554f;
+  font-size: 11px;
+  padding: 6px 0 23px;
+  letter-spacing: 1px; }
+
+.intro-content {
+  padding: 0 0 10px;
+  word-spacing: 1px; }
+
+.what-span {
+  font-weight: bold; }
+
+.what-conclusion {
+  padding: 10px 0 0; }
+
+.intro-link {
+  color: #0086c3;
+  border-bottom: 1px dotted #0086c3; }
+
+.intro-link:hover {
+  border-bottom: none; }
+
+#our-pic {
+  padding: 0 0 4px; }
+
+#our-content {
+  padding: 24px 0 0; }
+
+#intro-last {
+  padding: 0 0 0 2px; }
+
+footer {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 28px 0 60px; }
+
+#meta {
+  display: inline;
+  float: left; }
+
+#meta-info {
+  overflow: hidden;
+  *zoom: 1; }
+
+.meta-item {
+  display: inline;
+  padding: 0 6px 0 0; }
+
+.meta-link {
+  color: black;
+  font-family: proxima-nova-1, proxima-nova-2, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold; }
+
+#twitter {
+  background: url('../img/sprite-s7862212651.png') no-repeat 0 -124px;
+  -pie-background: url('../img/sprite-s7862212651.png') no-repeat 0 -124px;
+  display: inline;
+  float: right;
+  height: 21px;
+  padding: 0 0 0 35px;
+  color: black;
+  font-family: proxima-nova-1, proxima-nova-2, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold; }
+
+#twitter:hover {
+  background-position: 0 -145px; }
+
+#copyright {
+  display: inline;
+  float: right;
+  color: #56554f;
+  font-size: 14px; }
