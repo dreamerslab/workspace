@@ -15,15 +15,15 @@ body
   font-family: sans-serif
   color: #A0A7AF
 
-#original
-  @include bg_text( 1261px, 1322px,"original")
-  background:url
-  position: absolute
-  top: 0
-  left: 50%
-  margin: 0 0 0 -630px
-  opacity: 0.3
-  z-index: 9999
+// #original
+//   @include bg_text( 1261px, 1322px,"original")
+//   background:url
+//   position: absolute
+//   top: 0
+//   left: 50%
+//   margin: 0 0 0 -630px
+//   opacity: 0.3
+//   z-index: 9999
 
 #page-wrap
   +clearfix
@@ -32,7 +32,7 @@ body
   margin: 0 auto
 
 #logo
-  @include bg_text( 194px, 71px,"logo")
+  @include bg_text( 194px, 71px,"logo" )
 
 #header
   +float-left
@@ -40,32 +40,35 @@ body
   padding: 103px 0 0 40px
 
 h2
-  @include text-shadow(#000 0px -1px 1px)
-  color: #ABB1B6
+  @include text-shadow( #000 0px -1px 1px )
+  color: #abb1b6
   font-size: 30px
   font-weight: bold
   padding: 21px 0 20px
   line-height: 33px
 
 #desc
-  @include text-shadow(#000 0px -1px 1px)
-  color: #A7AEB6
+  @include text-shadow( #000 0px -1px 1px )
+  color: #a7aeb6
   line-height: 19px
   padding: 0 0 26px
   text-transform: capitalize
+  font-size: 13px
 
 #watch
-  @include bg_text( 96px, 15px,"watch")
+  @include bg_text( 96px, 15px,"watch" )
   margin: 0 0 0 4px
+  position: relative
+  top: 2px
 
 #download
   behavior: url("/css/PIE.htc")
-  @include bg_text( 193px, 59px,"download")
+  @include bg_text( 193px, 59px,"download" )
   position: relative
 
 
 #buy
-  @include bg_text( 160px, 59px,"buy")
+  @include bg_text( 160px, 59px,"buy" )
 
 #header-link
   padding: 0 0 0 3px
@@ -81,9 +84,7 @@ h2
   +float-right
   background: url("/img/note-bg.png") repeat-x
   position: relative
-  color: #A7AEB6
-  width: 367px
-  padding: 10px
+  color: #a7aeb6
   width: 339px
   padding: 13px
   font-size: 12px
@@ -108,20 +109,20 @@ h2
   padding: 0 0 47px
 
 .main-title
-  @include text-shadow(#000 0px -1px 1px)
+  @include text-shadow( #000 0px -1px 1px )
   display: inline
   font-size: 25px
   font-weight: bold
   margin: 0 7px
-  color: #525D67
+  color: #525d67
   cursor: pointer
 
 .main-title:hover
-  color: #ABB1B6
+  color: #abb1b6
 
 #title-selected
   background: url("/img/title-border.png") repeat-x bottom
-  color: #ABB1B6
+  color: #abb1b6
 
 #feature-list
   +clearfix
@@ -130,7 +131,7 @@ h2
   +clearfix
   +float-left
   width: 390px
-  padding: 0 35px 0px 43px
+  padding: 0 35px 0 43px
   height: 131px
 
 .feature-img
@@ -153,26 +154,25 @@ h2
 
 footer
   background: url("/img/border.png") repeat-x top
-  color: #4E5B68
+  color: #4e5b68
   width: 889px
   margin: 0 auto
   text-align: center
   padding: 50px 0 40px
 
 #sublogo
-  @include bg_text( 180px, 51px, "sublogo")
+  @include bg_text( 180px, 51px, "sublogo" )
 
 #footer-link-wrap
   padding: 17px 0 0
 
 .footer-link
-  color: #4E5B68
+  color: #4e5b68
   font-size: 13px
-  padding: 0 0 2px
-  border-bottom: 1px solid #4E5B68
+  padding: 0 1px 2px
+  border-bottom: 1px solid #4e5b68
   text-decoration: none
-  margin: 0 1px
 
 .footer-link:hover
-  color: #A0A7AF
-  border-bottom: 1px solid #A0A7AF
+  color: #a0a7af
+  border-bottom: 1px solid #a0a7af
